@@ -1,7 +1,7 @@
 ## **Cours TSSR 24/25**
 
 #### Sommaire :
-##### 1) [Méthodes Agiles](https://github.com/NALSED/R-vision/new/main#1-m%C3%A9thodes-agiles) :
+##### 1) [Méthodes Agiles](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#1-m%C3%A9thodes-agiles-) :
  * ##### 1.1 Définition :
  * ##### 1.2 Etapes et Compositions : 
    * ##### 1.2.1  Sprint Backlog.
@@ -9,7 +9,7 @@
    * ##### 1.2.3 Daily scrum.
    * ##### 1.2.4 Sprint review.
  * ##### 1.3 Rôles et Définitions.
- ##### 2) [Git/Git-Hub](https://github.com/NALSED/R-vision/new/main#1-m%C3%A9thodes-agiles) : 
+ ##### 2) [Git/Git-Hub](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#2-gitgit-hub-) : 
    * ##### 2.1 Git :
      * ##### 2.1.1 Dépot Distant.
      * ##### 2.1.2 Branche et Flow. 
@@ -17,8 +17,8 @@
      * ##### 2.1.4 Clé SSH.
    * ##### 2.2 Git-Hub :
      * ##### 2.2.1 Clé SSH.
-##### 3) [Réseau](https://github.com/NALSED/R-vision/new/main#3-r%C3%A9seau--1) :
- * ##### 3.1 [Principes des réseaux](https://github.com/NALSED/R-vision/new/main#31-principes-des-r%C3%A9seaux--1) :  
+##### 3) [Réseau](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#2-gitgit-hub-) :
+ * ##### 3.1 [Principes des réseaux](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#31-principes-des-r%C3%A9seaux-) :  
     * ##### 3.1.1 Introduction.
     * ##### 3.1.2 protocole réseau.
     * ##### 3.1.3 Modéle en couche.
@@ -26,7 +26,7 @@
     * ##### 3.1.5 Modèle OSI.
     * ##### 3.1.6 Modèle TCP\IP.
     * ##### 3.1.7 Matériel d'interconnection.
-* ##### 3.2 [Ethernet](https://github.com/NALSED/R-vision/new/main#312-protocole-r%C3%A9seau-1) :
+* ##### 3.2 [Ethernet](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#31-principes-des-r%C3%A9seaux-) :
    * ##### 3.2.1 Normes et Architecture.
    * ##### 3.2.2 Cablage et équipement.
      * ##### 3.2.2.1 La commutation. 
@@ -34,7 +34,7 @@
    * ##### 3.2.4 Trame ethernet.
    * ##### 3.2.5 Protocole CSMA/CD.
    * ##### 3.2.6 Les VLAN.
-* ##### 3.3 [IPv4](https://github.com/NALSED/R-vision/new/main#33-ipv4-1).
+* ##### 3.3 [IPv4](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#31-principes-des-r%C3%A9seaux-).
    * ##### 3.3.1 Protocole et Définitions.
    * ##### 3.3.2 Les Adresses.
      * ##### 3.3.2.1 Définitions.
