@@ -1,7 +1,7 @@
 ## **Cours TSSR 24/25**
 
 #### Sommaire :
-##### 1) [Méthodes Agiles](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#1-m%C3%A9thodes-agiles-) :
+##### 1) [Méthodes Agiles](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#1-m%C3%A9thodes-agiles) :
  * ##### 1.1 Définition :
  * ##### 1.2 Etapes et Compositions : 
    * ##### 1.2.1  Sprint Backlog.
@@ -9,7 +9,7 @@
    * ##### 1.2.3 Daily scrum.
    * ##### 1.2.4 Sprint review.
  * ##### 1.3 Rôles et Définitions.
- ##### 2) [Git/Git-Hub](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#2-gitgit-hub-) : 
+ ##### 2) [Git/Git-Hub](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#2-gitgit-hub--1) : 
    * ##### 2.1 Git :
      * ##### 2.1.1 Dépot Distant.
      * ##### 2.1.2 Branche et Flow. 
@@ -17,37 +17,37 @@
      * ##### 2.1.4 Clé SSH.
    * ##### 2.2 Git-Hub :
      * ##### 2.2.1 Clé SSH.
-##### 3) [Réseau](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#2-gitgit-hub-) :
- * ##### 3.1 [Principes des réseaux](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#31-principes-des-r%C3%A9seaux-) :  
-    * ##### 3.1.1 Introduction.
-    * ##### 3.1.2 protocole réseau.
-    * ##### 3.1.3 Modéle en couche.
-    * ##### 3.1.4 Encapsulation.
-    * ##### 3.1.5 Modèle OSI.
-    * ##### 3.1.6 Modèle TCP\IP.
-    * ##### 3.1.7 Matériel d'interconnection.
+##### 3) [Réseau](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3-r%C3%A9seau--1) :
+ * ##### 3.1 [Principes des réseaux](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3-r%C3%A9seau--1) :  
+    * ##### 3.1.1 [Introduction](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#311-introduction-1).
+    * ##### 3.1.2 [protocole réseau.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#312-protocole-r%C3%A9seau-1)
+    * ##### 3.1.3 [Modéle en couche.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#312-protocole-r%C3%A9seau-1)
+    * ##### 3.1.4 [Encapsulation.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#314-encapsulation-1)
+    * ##### 3.1.5 [Modèle OSI.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#315-mod%C3%A8le-osi-1)
+    * ##### 3.1.6 [Modèle TCP\IP.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#316-mod%C3%A8le-tcpip-1)
+    * ##### 3.1.7 [Matériel d'interconnection.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#317-mat%C3%A9riel-dinterconnection-1)
 * ##### 3.2 [Ethernet](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#31-principes-des-r%C3%A9seaux-) :
-   * ##### 3.2.1 Normes et Architecture.
-   * ##### 3.2.2 Cablage et équipement.
-     * ##### 3.2.2.1 La commutation. 
-   * ##### 3.2.3 Adresse Mac.
-   * ##### 3.2.4 Trame ethernet.
-   * ##### 3.2.5 Protocole CSMA/CD.
-   * ##### 3.2.6 Les VLAN.
+   * ##### 3.2.1 [Normes et Architecture.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#32-ethernet--1)
+   * ##### 3.2.2 [Cablage et équipement.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#322-cablage-et-%C3%A9quipement-1)
+     * ##### 3.2.2.1 [La commutation.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3221-la-commutation-1)
+   * ##### 3.2.3 [Adresse Mac.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#323-adresse-mac-1)
+   * ##### 3.2.4 [Trame ethernet.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#324-trame-ethernet-1)
+   * ##### 3.2.5 [Protocole CSMA/CD.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#325-protocole-csmacd-1)
+   * ##### 3.2.6 [Les VLAN.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#326-les-vlan-1)
 * ##### 3.3 [IPv4](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#31-principes-des-r%C3%A9seaux-).
-   * ##### 3.3.1 Protocole et Définitions.
-   * ##### 3.3.2 Les Adresses.
-     * ##### 3.3.2.1 Définitions.
-     * ##### 3.3.2.2 CIDR.
-     * ##### 3.3.2.3 Adresse réservées.
-     * ##### 3.3.2.4 Les Masques.
-     * ##### 3.3.2.5 Calculs.
-  * ##### 3.3.3 Configurations du réseau :
-    * ##### 3.3.3.1 Linux.
-    * ##### 3.3.3.2 Microsoft.
-  * ##### 3.3.4 Les paquets :
-  * ##### 3.3.5 Les Protocoles connexes :
-
+   * ##### 3.3.1 [Protocole et Définitions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#331-protocole-et-d%C3%A9finitions-1)
+   * ##### 3.3.2 [Les Adresses.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#332-les-adresses-1)
+     * ##### 3.3.2.1 [Définitions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3321-d%C3%A9finitions-1)
+     * ##### 3.3.2.2 [CIDR.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3322-cidr-1)
+     * ##### 3.3.2.3 [Adresse réservées.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3323-adresse-r%C3%A9serv%C3%A9es-1)
+     * ##### 3.3.2.4 [Les Masques.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3324-les-masques-1)
+     * ##### 3.3.2.5 [Calculs.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3325-calculs-1)
+  * ##### 3.3.3 [Configurations du réseau :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#333-configurations-du-r%C3%A9seau--1)
+    * ##### 3.3.3.1 [Linux.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3331-linux-1)
+    * ##### 3.3.3.2 [Microsoft.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3331-linux-1)
+  * ##### 3.3.4 [Les paquets :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
+  * ##### 3.3.5 [Les Protocoles connexes :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
+[]
 #### 1) Méthodes Agiles 
  * #####  1.1 Définitions
  ##### Création de **cycles répétitif**, ayant pour buts la **réalisations de projets complexes,** en intégrant un procédé **incrémentale**, des différentre étape de la réalisation, des solutions techniques, et des livrables. 
