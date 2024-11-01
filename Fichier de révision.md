@@ -1,6 +1,6 @@
 ## **Cours TSSR 24/25**
 
-##=# Sommaire :
+### Sommaire :
 #### 1) [Méthodes Agiles](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#1-m%C3%A9thodes-agiles) :
  * #### 1.1 Définition :
  * #### 1.2 Etapes et Compositions : 
