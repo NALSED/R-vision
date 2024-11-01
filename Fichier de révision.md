@@ -164,7 +164,7 @@ Automatic merge failed; fix conflicts and then commit the result.
     ##### Le **Modèle OSI** est une norme de communication elle se décompose de la manière suivante:
     ![image](https://btssio-ccicampus-strasbourg.fr/wp-content/uploads/2022/06/OSI.png)
     ![image](https://doknet.fr/wp-content/uploads/2023/11/diagramme-osi-1024x751.png)
-   * #### 3.1.5 Modèle TCP\IP.
+   * #### 3.1.5 Modèle **TCP\IP.**
    ##### Le modéle TCP\IP Interconnexion de réseaux physiques, création de réseaux logiques pouvant communiquer, bien qu'étant sur des réseaux physiques différents par des passerelles.
 ![image](https://upload.wikimedia.org/wikipedia/commons/e/e4/TCPIP_couche_ISO_modele_OSI.png)
    * #### 3.1.6 Matériel d'interconnection.
@@ -196,12 +196,12 @@ Automatic merge failed; fix conflicts and then commit the result.
      * ##### Emetteur-recepteurs (GBIC,SFP,QSFP,CFP,XFP)
      * ##### Switch(commutateurs)
  
-   * #### 3.2.3 Adresse Mac.
+   * #### 3.2.3 Adresse **Mac.**
      ##### Permet de connaitre l'hôtes et le destinataire. Cencées être unique
      ##### **Format :** En 48 bits (6 octets) noté en Héxa
     ![image](https://upload.wikimedia.org/wikipedia/commons/9/94/MAC-48_Address.svg)
 
-   * #### 3.2.4 Trame ethernet.
+   * #### 3.2.4 Trame **ethernet.**
   ##### La [trame](https://fr.slideshare.net/slideshow/les-trames-reseaux-22965265/22965265) ethernet est constituée des éléments suivants:
   #####  Un début de trame (ou **préambule**)
   ##### **Un MAC header** (entête de liaison):
@@ -211,83 +211,94 @@ Automatic merge failed; fix conflicts and then commit the result.
   ##### Le **Payload**: les données à transporter
   ##### **FCS**
 ![image](https://d33wubrfki0l68.cloudfront.net/08c7cec779cc2f558eed99e35cdbb76dcfde07f4/61ddf/assets/images/ccna/lucidchart/0fbb202c-c343-4c90-be0f-384448c27f24.png)
-![image](https://www.researchgate.net/profile/Michiko-Minty/publication/228952508/figure/fig2/AS:669447266263046@1536620074778/Raw-Ethernet-packet-structure.png)
-   * #### 3.2.5 Protocole CSMA/CD.
+![trame](https://github.com/user-attachments/assets/157a8198-c807-4435-bda4-3450f8d234d5)
+
+   * #### 3.2.5 Protocole **CSMA/CD**.
    ##### Permet la bonne gestion du trafic et la transmition de données
+   ##### **CS** (Carrier Sense) ⇒ Écoute de la porteuse
+   ##### **MA** (Multiple Access) ⇒ Accès multiple
+   ##### **Principes :**
+##### **1** Trame prête à être transmise
+##### **2** Si le support physique n'est pas libre, attendre jusqu'à ce qu'il le devienne puis attendre la durée du gap inter-trame
+##### **3** Envoyer la trame
+##### **4** Si une collision est détectée (décalage de tension continue sur le câble) → procédure de gestion des collisions
+  ##### CD (Collision Detection)
+#####   **1** Arrêt des envois de trame
+#####   **2** Envoi d’un signal de collision (jam signal = séquence de 4 à 6 octets).
+ ##### **3** Temps d’attente aléatoire
+#####   **4** Reprise de la CSMA
+##### Si le nombre maximal de transmissions (16) est atteint, la transmission est annulée.
+##### **5** Sinon → transmission réussie
    ![image](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEig6GVhhstxSls2GVXUH5FZ_Kfpe8rRRVs6SrgN3N5uJPeNH4yO_ii3AlWxqQ5R1tONQ2ea4rcCfLCDnQWq1IYWgh9e1-iWQRioubSegiBciS7ak4R4yf5Qak76jjtZTCcYDi5T-xf_qNJo/s1600/algorigrammeCSMACD.png)
    * #### 3.2.6 Les VLAN.
+##### Les VLAN (Virtual LAN) permettent de segmenter un réseau ethernet et il ajoute un entête de 4 octets après l'entête ethernet :
+![vlan](https://github.com/user-attachments/assets/b0203650-79eb-4d72-a942-ad3db0f23e9e)
+   
 * #### 3.3 IPv4.
-   * #### 3.3.1 Protocole et Définitions.
+  * #### 3.3.1 Protocole et Définitions.
+   #####  Le protocol **IP** (Internet Protocol) codée sur **32 bits** permet l'interconnection de réseaux physiques, selon le standard [IETF](https://fr.wikipedia.org/wiki/Internet_Engineering_Task_Force), **couche 3** et compte actuellement 2 versions,la 4 et la 6. Le protocole **distingue les liens**, les **réseaux** et les **interfaces des réseaux.**
+  ##### Le protocole n'a **pas de coordinateur global** => **pas de configuration globale**
+  ##### Chaque interface dispose de **sa propre configuration locale**, donc de sa **propre vision des réseaux logiques**, pour pouvoir communiquer, ces configurations doivent être compatibles.
    * #### 3.3.2 Les Adresses.
-     * #### 3.3.2.1 Définitions.
+   L'adresse est donc codée sur 32 bits (4 octets), comporte deux partie ID réseau et l'ID hôtes => sur 32 bits => n bits(id réseau) et 32-n bits.
+   
+     * #### 3.3.2.1 Définitions. 
+       * #####  L'adresse est donc codée sur 32 bits (4 octets), comporte deux partie ID réseau et l'ID hôtes => sur 32 bits => n bits(id réseau) et 32-n bits
+       * ##### Chaque octet est converti en base 10 => 4 octets => 4 nombres
+       * ##### Chaque adresses à des plages réservées : la première adresse => **l'adresse réseau** et la dernière adresse => ** adresse de diffusion (broadcast)**
+       * #####  Utilisation de masque de sous réseau qui corespond au CIDR
+       * ##### Calcule nombre hôte: 32((ipv4))-21 CIDR  ==> 2^11=2048-2  ((Broadcast et reseau)).
+
      * #### 3.3.2.2 CIDR.
+     ##### Le routage (CIDR) est une méthode d'attribution d'adresses IP qui améliore l'efficacité du routage des données sur Internet.
+     ##### Table de calcule:
+    ![image](https://www.it-connect.fr/wp-content-itc/uploads/2021/05/reseau-adresse-ipv4-calcul-masque-sous-reseau-01.png)
      * #### 3.3.2.3 Adresse réservées.
+       * ##### Adresses réservées pour les réseaux privés RFC [1918](https://datatracker.ietf.org/doc/html/rfc1918)
+         * ##### 10.0.0.0/8
+         * ##### 172.16.0.0/12 (172.16.0.0 - 172.31.255.255)
+         * ##### 192.168.0.0/16
+       * ##### Adresses de bouclage (localhost) : 127.0.0.0/8
+       * ##### Adresse du réseau actuel (si inconnu) : 0.0.0.0/8
+       * ##### Adresses multicast : 224.0.0.0/4
+       * ##### Adresse de diffusion (locale !) sur réseau inconnu : 255.255.255.255/32
      * #### 3.3.2.4 Les Masques.
      * #### 3.3.2.5 Calculs.
-  * #### 3.3.3 Configurations du réseau :
-    * #### 3.3.3.1 Linux.
-    * #### 3.3.3.2 Microsoft.
+
   * #### 3.3.4 Les paquets :
-  * #### 3.3.5 Les Protocoles connexes :
+  IP découpe l'information qu'il doit transmettre, reçu de la couche supérieure (Protocole de couche 4 : TCP, UDP…) => Pour transmission au lien (Protocole de couche 1&2 : Ethernet).Chaque paquet comporte un entête.
+#### **Voici la décoposition de l'entête :**
+![1](https://github.com/user-attachments/assets/05dc7b7f-35dd-4a87-9b8b-7210f896919e)
+
+![2](https://github.com/user-attachments/assets/bd2d7717-df18-42e9-8971-a3a1ea7fc292)
+
+![3](https://github.com/user-attachments/assets/5220b377-7d60-492e-b137-9b30321d4f47)
+
+![4](https://github.com/user-attachments/assets/6a293a0b-d255-4eec-86d3-9c39e5b717f5)
+
+![5](https://github.com/user-attachments/assets/ef134a46-caa1-4769-812b-2f62dc1aed72)
+
+![6](https://github.com/user-attachments/assets/b8bd6f4d-3a9a-4252-9699-92431e00e381)
+
+![7](https://github.com/user-attachments/assets/cc19c4aa-052b-4e14-8009-1a004fb04010)
+
+![8](https://github.com/user-attachments/assets/f7ce76ba-dd8d-49b8-8bfd-20ebe51ec40e)
+
+![9](https://github.com/user-attachments/assets/70dd54fe-257d-42b3-9838-c2055965711e)
+
+##### Liste des [protocoles](https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers) IPv4.
+
+ * #### 3.3.5 Les Protocoles connexes :
+##### Protocoles servant au bon fontionnement de l'ip: ICMP et ARP
+**ICMP** Protocole de niveau 3 **controle les erreurs de transmitions**
+
+![1](https://github.com/user-attachments/assets/b2cf3046-0b51-424b-972a-afda00592932)
+
+**ARP** Protocole **d'association** de l'adresse **IP** et de l'adresse **MAC**
+![3](https://github.com/user-attachments/assets/c7749924-3a82-49c5-94db-1e3b9282c6d6)
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
