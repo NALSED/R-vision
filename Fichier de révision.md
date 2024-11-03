@@ -46,7 +46,11 @@
   * #### 3.3.4 [Les paquets :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
   * #### 3.3.5 [Les Protocoles connexes :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
 * #### 3.4 DHCP.
-  * 
+  * #### 3.4.1 Principes
+  * #### 3.4.2 Mise en oeuvre
+    * #### 3.4.2.1 Débian 12
+    * #### 3.4.2.2 Windows 22 
+    
 #### 1) Méthodes Agiles 
  * ####  1.1 Définitions
    ##### Création de **cycles répétitif**, ayant pour buts la **réalisations de projets complexes,** en intégrant un procédé **incrémentale**, des différentre étape de la réalisation, des solutions techniques, et des livrables. 
@@ -290,9 +294,74 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 ##### **ARP** Protocole **d'association** de l'adresse **IP** et de l'adresse **MAC**
 ![arp](https://github.com/user-attachments/assets/09805071-bd7d-43f4-8d5b-51537b848072)
+* #### 3.4 DHCP.
+  * #### 3.4.1 Principes
+  ##### Gestion dynamique de l'adressage IP des hôtes du réseau. Utilisation Messages UDP - Port serveur 67 / Port client 68
+ ##### **Les messages:**
+##### **DHCPDISCOVER (Client -> broadcast) : demande d'adresse**
+##### **DHCPOFFER (Serveur -> Client) : proposition d'adresse**
+##### **DHCPREQUEST (Client -> Serveur) : demande de réservation d'une adresse**
+##### **DHCPACK (Serveur -> Client) : acceptation avec envoi paramétrage**
+##### DHCPNACK (Serveur -> Client) : refus de réservation
+##### DHCPDECLINE (Client -> Serveur) : après DHCPACK le client doit vérifier (par exemple via ARP) si l'adresse est déjà utilisée, si oui il décline l'offre du serveur
+##### DHCPRELEASE (Client -> Serveur) : résiliation du bail par le client
+##### DHCPINFORM (Client -> Serveur) : demande de paramètre de configuration
+sans réservation d'adresse (client ayant déjà une adresse)
+  * #### 3.4.2 Mise en oeuvre
+    * #### 3.4.2.1 Débian 12
+##### passer en root
+##### télécharger le packet
+	apt-get install isc-dhcp-server
+##### passer en réseau interne
+##### renomer la machine
+	nano /etc/hosts
+	srv-dhcp
+	nano /etc/hostname
+	srv-dhcp
+##### reboot
+	reboot
+ ##### passer en root
+##### configurer le serveur
+	nano /etc/network/interfaces
+	adress 172.20.0.2
+	netmask 255.255.255.0
+##### commenter la ligne IPv6
+	#iface enp0s3 inet6 auto
+##### reboot interface
+	ifdown enp0s3
+	ifup enp0s3
+##### Configurer le serveur DHCP
+	nano /etc/default/isc-dhcp_server
+		
+		host [PC NAME] [ADRESS MAC] {
+			hardware ethernet [ADRESS MAC]
+			fixed-adress [IP] }
+##### reboot DHCP
+	systemctl resart isc-dhcp-server.service
+##### chek le statut
+	systemctl status isc-dhcp-server.service
+###### [vidéo](https://www.youtube.com/watch?v=hdaHQR-7uAM&ab_channel=AlexDavantTech)
+* #### 3.4.2.2 Windows 22 
 
-
-
+* #### Instalation DHCP
+* ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
+  * ##### Choisissez l'option **Role-based or feature-based instalation** et poursuivez.
+  * #####   Continuez, le serveur est déjà selectioné.
+  * ##### Dans la liste cochez "DHCP server" et dans la fenétre **include management tools**.Cliquez sur **Add Features**
+  * ##### Cliquez sur **Install**
+* #### **Configuration** du serveur DHCP :
+ * ##### Ouvrir **Administrativ Tools**
+ * ##### Clic droit sur **IPv4**, choisir **New Scope**
+ * ##### Rentrer la plage d'adresse IP et le masque de sous réseau ici : **start** 172.20.0.100 / **end** 172.20.0.200 / **length** 24 / **subnet mask** 255.255.255.0
+ * ##### Dans Router rentrer un IP éloigné de la plage pour plus de visibilité là 172.20.0.254
+ * ##### Faire **next** jusqu'à la page suivante : **Configure DHCP Options** : cocher **Yes, i want to configure these options now** 
+ * ##### On peux ne pas remplir les Options **Router et DNS** car nous ne sortirons pas du réseau privé.
+*  #### **Machine cliens :**
+   * ##### Ouvrir Powershell : **ipconfig**, pour vérifier l'adresse ip, si elle ne corespond pas à la plage définie **ipconfig /renew**
+   * ##### Si le problème persiste, dans la fenétre de configuration du serveur DHCP, dérouler IPv4 et regarder dans **Scope [172.20.0.0]**, l'option **Activate/Desactivate** est bien sur **Activate**.
+ * #### Créer une **Réservation** :
+   *  ##### Clic droit sur réservation **New Reservation...**, rentrer l'IP **172.20.0.10** de réservation, choisir **DHCP**, puis **add**.
+   *  ##### Chez le client, **ipconfig /renew**==> TADDAAAAAA!!
 
 
 
