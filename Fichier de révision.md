@@ -43,8 +43,7 @@
      * #### 3.3.2.4 [Les Masques.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3324-les-masques-1)
      * #### 3.3.2.5 [Calculs.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3325-calculs-1)
   * #### 3.3.3 [Configurations du réseau :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#333-configurations-du-r%C3%A9seau--1)
-    * #### 3.3.3.1 [Linux.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3331-linux-1)
-    * #### 3.3.3.2 [Microsoft.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3331-linux-1)
+    
   * #### 3.3.4 [Les paquets :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
   * #### 3.3.5 [Les Protocoles connexes :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
 []
@@ -240,8 +239,6 @@ Automatic merge failed; fix conflicts and then commit the result.
   ##### Le protocole n'a **pas de coordinateur global** => **pas de configuration globale**
   ##### Chaque interface dispose de **sa propre configuration locale**, donc de sa **propre vision des réseaux logiques**, pour pouvoir communiquer, ces configurations doivent être compatibles.
    * #### 3.3.2 Les Adresses.
-   L'adresse est donc codée sur 32 bits (4 octets), comporte deux partie ID réseau et l'ID hôtes => sur 32 bits => n bits(id réseau) et 32-n bits.
-   
      * #### 3.3.2.1 Définitions. 
        * #####  L'adresse est donc codée sur 32 bits (4 octets), comporte deux partie ID réseau et l'ID hôtes => sur 32 bits => n bits(id réseau) et 32-n bits
        * ##### Chaque octet est converti en base 10 => 4 octets => 4 nombres
@@ -266,7 +263,7 @@ Automatic merge failed; fix conflicts and then commit the result.
      * #### 3.3.2.5 Calculs.
 
   * #### 3.3.4 Les paquets :
-  IP découpe l'information qu'il doit transmettre, reçu de la couche supérieure (Protocole de couche 4 : TCP, UDP…) => Pour transmission au lien (Protocole de couche 1&2 : Ethernet).Chaque paquet comporte un entête.
+  ##### IP découpe l'information qu'il doit transmettre, reçu de la couche supérieure (Protocole de couche 4 : TCP, UDP…) => Pour transmission au lien (Protocole de couche 1&2 : Ethernet).Chaque paquet comporte un entête.
 #### **Voici la décoposition de l'entête :**
 ![1](https://github.com/user-attachments/assets/05dc7b7f-35dd-4a87-9b8b-7210f896919e)
 
@@ -290,12 +287,11 @@ Automatic merge failed; fix conflicts and then commit the result.
 
  * #### 3.3.5 Les Protocoles connexes :
 ##### Protocoles servant au bon fontionnement de l'ip: ICMP et ARP
-**ICMP** Protocole de niveau 3 **controle les erreurs de transmitions**
-
+##### **ICMP** Protocole de niveau 3 **controle les erreurs de transmitions**
 ![1](https://github.com/user-attachments/assets/b2cf3046-0b51-424b-972a-afda00592932)
+##### **ARP** Protocole **d'association** de l'adresse **IP** et de l'adresse **MAC**
+![IP version 4 - Adresse et paquet-1-67-pages-1.pdf](https://github.com/user-attachments/files/17610571/IP.version.4.-.Adresse.et.paquet-1-67-pages-1.pdf)
 
-**ARP** Protocole **d'association** de l'adresse **IP** et de l'adresse **MAC**
-![3](https://github.com/user-attachments/assets/c7749924-3a82-49c5-94db-1e3b9282c6d6)
 
 
 
