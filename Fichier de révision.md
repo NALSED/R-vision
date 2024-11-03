@@ -28,7 +28,6 @@
 * #### 3.2 [Ethernet](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#32-ethernet--1) 
    * #### 3.2.1 [Normes et Architecture.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#321-normes-et-architecture-1)
    * #### 3.2.2 [Cablage et équipement.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#322-cablage-et-%C3%A9quipement-1)
-     * #### 3.2.2.1 [La commutation.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3221-la-commutation-1)
    * #### 3.2.3 [Adresse Mac.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#323-adresse-mac-1)
    * #### 3.2.4 [Trame ethernet.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#324-trame-ethernet-1)
    * #### 3.2.5 [Protocole CSMA/CD.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#325-protocole-csmacd-1)
