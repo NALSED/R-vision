@@ -45,11 +45,11 @@
     
   * #### 3.3.4 [Les paquets :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
   * #### 3.3.5 [Les Protocoles connexes :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
-* #### 3.4 DHCP.[DHCP ](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#34-dhcp-1)
-  * #### 3.4.1 Principes [principes](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#341-principes-1)
-  * #### 3.4.2 Mise en oeuvre [meo](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#342-mise-en-oeuvre-1)
-    * #### 3.4.2.1 Débian 12 [debian](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3421-d%C3%A9bian-12-1)
-    * #### 3.4.2.2 Windows 22 [win](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3422-windows-22-1)
+* #### 3.4 [DHCP :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#34-dhcp-1)
+  * #### 3.4.1 [Principes.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#341-principes-1)
+  * #### 3.4.2 [Mise en oeuvre.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#342-mise-en-oeuvre-1)
+    * #### 3.4.2.1 [Débian 12.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3421-d%C3%A9bian-12-1)
+    * #### 3.4.2.2 [Windows 22.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3422-windows-22-1)
      
 #### 1) Méthodes Agiles 
  * ####  1.1 Définitions
