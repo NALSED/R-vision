@@ -1,29 +1,4 @@
-### A.
-### B.
-### C.
-### D.
-### E.
-### F.
-### G.
-### H.
-### I.
-### J.
-### K.
-### L.
-### M.
-### N.
-### O.
-### P.
-### Q.
-### R.
-### S.
-### T.
-### U.
-### V.
-### W.
-### X.
-### Y.
-### Z.
+
 ==========================================================================================================================================================================
 ### A
 ### B
@@ -67,6 +42,7 @@
 ##### **.MAC header :(trame ethernet)** Suite de 14 octets, (6 destinataire + 6emetteur + 2 EtherType ), L'adresse source est toujours celle d'une interface unique (unicast). La destination peut être une adresse unique, de groupe (multicast) ou de diffusion générale (broadcast = FF-FF-FF-FF-FF-FF)
 ##### **.Masque de sous réseau :** Un masque de sous-réseau (désigné par subnet mask, netmask ou address mask en anglais) est un masque distinguant les bits d'une adresse IPv4 utilisés pour identifier le sous-réseau de ceux utilisés pour identifier l'hôte.
 
+##### **.MTU (et fragmentation)  :** Chaque réseau/routeur/ordinateur/... a une taille de paquet maximale qu'il accepte et/ou peut gérer : le Maximum Transmission Unit (unité de transmission maximale), ou MTU.Pour la fragmentation ce que fait le routeur : il découpe le paquet en plusieurs mini-paquets compatibles avec le MTU de l'équipement, qui sont envoyés un par un. Les mini-paquets créés par le routeur sont appelés des fragments. Notons que l'en-tête du paquet IP originel est recopié au début de chaque fragment, sans quoi ceux-ci ne pourraient pas être routés correctement. De plus, les fragments sont envoyés uns par uns par le routeur, si possible dans l'ordre.
 ##### **.Le modèle OSI :** (de l'anglais Open Systems Interconnection) est une norme de communication de tous les systèmes informatiques en réseau. C'est un modèle de communications entre ordinateurs proposé par l'ISO (Organisation internationale de normalisation) qui décrit les fonctionnalités nécessaires à la communication et l'organisation de ces fonctions.
 ##### **Les différentes couches** :
    * ##### Couche 1: Physique (PDU: bit) Définie l’interface, les connecteurs, le câblage.
