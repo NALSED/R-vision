@@ -46,7 +46,8 @@
     
   * #### 3.3.4 [Les paquets :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
   * #### 3.3.5 [Les Protocoles connexes :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
-[]
+* #### 3.4 DHCP.
+  * 
 #### 1) Méthodes Agiles 
  * ####  1.1 Définitions
    ##### Création de **cycles répétitif**, ayant pour buts la **réalisations de projets complexes,** en intégrant un procédé **incrémentale**, des différentre étape de la réalisation, des solutions techniques, et des livrables. 
@@ -265,32 +266,32 @@ Automatic merge failed; fix conflicts and then commit the result.
   * #### 3.3.4 Les paquets :
   ##### IP découpe l'information qu'il doit transmettre, reçu de la couche supérieure (Protocole de couche 4 : TCP, UDP…) => Pour transmission au lien (Protocole de couche 1&2 : Ethernet).Chaque paquet comporte un entête.
 #### **Voici la décoposition de l'entête :**
-![1](https://github.com/user-attachments/assets/05dc7b7f-35dd-4a87-9b8b-7210f896919e)
+![1](https://github.com/user-attachments/assets/7d2cd000-53c1-4ab4-ae5e-d13c1691c46b)
 
-![2](https://github.com/user-attachments/assets/bd2d7717-df18-42e9-8971-a3a1ea7fc292)
 
-![3](https://github.com/user-attachments/assets/5220b377-7d60-492e-b137-9b30321d4f47)
+![2](https://github.com/user-attachments/assets/9f2caeec-5790-4ce0-84f9-1e688697c11c)
 
-![4](https://github.com/user-attachments/assets/6a293a0b-d255-4eec-86d3-9c39e5b717f5)
 
-![5](https://github.com/user-attachments/assets/ef134a46-caa1-4769-812b-2f62dc1aed72)
+![3](https://github.com/user-attachments/assets/a5a0a259-53a0-409f-a0ad-0fd4f2a6d4a3)
 
-![6](https://github.com/user-attachments/assets/b8bd6f4d-3a9a-4252-9699-92431e00e381)
 
-![7](https://github.com/user-attachments/assets/cc19c4aa-052b-4e14-8009-1a004fb04010)
+![4](https://github.com/user-attachments/assets/802276c8-7c22-43c3-83ac-fe32fd6c55b2)
+![5](https://github.com/user-attachments/assets/821d44a1-8276-44c6-8c75-de959720ae7b)
+![6](https://github.com/user-attachments/assets/6578cdec-f721-490f-a37f-9d43ebf28127)
+##### Le champs protocol contient le numéro du protocole encapsulé, voir [liste](https://fr.wikipedia.org/wiki/Protocole_r%C3%A9seau).
 
-![8](https://github.com/user-attachments/assets/f7ce76ba-dd8d-49b8-8bfd-20ebe51ec40e)
-
-![9](https://github.com/user-attachments/assets/70dd54fe-257d-42b3-9838-c2055965711e)
+##### Quand le paquet IP doit être transmis dans la trame sous-jacent, le plus la trame ainsi que son MTU sont inférieur
 
 ##### Liste des [protocoles](https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers) IPv4.
 
  * #### 3.3.5 Les Protocoles connexes :
 ##### Protocoles servant au bon fontionnement de l'ip: ICMP et ARP
 ##### **ICMP** Protocole de niveau 3 **controle les erreurs de transmitions**
-![1](https://github.com/user-attachments/assets/b2cf3046-0b51-424b-972a-afda00592932)
+![7](https://github.com/user-attachments/assets/8126582a-2c8c-4227-be4b-eaf301f2d299)
+
 ##### **ARP** Protocole **d'association** de l'adresse **IP** et de l'adresse **MAC**
-![IP version 4 - Adresse et paquet-1-67-pages-1.pdf](https://github.com/user-attachments/files/17610571/IP.version.4.-.Adresse.et.paquet-1-67-pages-1.pdf)
+![arp](https://github.com/user-attachments/assets/09805071-bd7d-43f4-8d5b-51537b848072)
+
 
 
 
