@@ -245,7 +245,7 @@ Automatic merge failed; fix conflicts and then commit the result.
      * #### 3.3.2.1 Définitions. 
        * #####  L'adresse est donc codée sur 32 bits (4 octets), comporte deux partie ID réseau et l'ID hôtes => sur 32 bits => n bits(id réseau) et 32-n bits
        * ##### Chaque octet est converti en base 10 => 4 octets => 4 nombres
-       * ##### Chaque adresses à des plages réservées : la première adresse => **l'adresse réseau** et la dernière adresse => ** adresse de diffusion (broadcast)**
+       * ##### Chaque adresses à des plages réservées : la première adresse => **l'adresse réseau** et la dernière adresse => **adresse de diffusion (broadcast)**
        * #####  Utilisation de masque de sous réseau qui corespond au CIDR
        * ##### Calcule nombre hôte: 32((ipv4))-21 CIDR  ==> 2^11=2048-2  ((Broadcast et reseau)).
 
