@@ -42,14 +42,16 @@
      * #### 3.3.2.4 [Les Masques.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3324-les-masques-1)
      * #### 3.3.2.5 [Calculs.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3325-calculs-1)
   * #### 3.3.3 [Configurations du réseau :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#333-configurations-du-r%C3%A9seau--1)
-    
   * #### 3.3.4 [Les paquets :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
   * #### 3.3.5 [Les Protocoles connexes :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
-* #### 3.4 [DHCP :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#34-dhcp-1)
-  * #### 3.4.1 [Principes.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#341-principes-1)
-  * #### 3.4.2 [Mise en oeuvre.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#342-mise-en-oeuvre-1)
-    * #### 3.4.2.1 [Débian 12.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3421-d%C3%A9bian-12-1)
-    * #### 3.4.2.2 [Windows 22.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3422-windows-22-1)
+* #### 3.4 [IPv6]
+  * ####
+
+* #### 3.5 [DHCP :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#34-dhcp-1)
+  * #### 3.5.1 [Principes.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#341-principes-1)
+  * #### 3.5.2 [Mise en oeuvre.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#342-mise-en-oeuvre-1)
+    * #### 3.5.2.1 [Débian 12.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3421-d%C3%A9bian-12-1)
+    * #### 3.5.2.2 [Windows 22.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3422-windows-22-1)
      
 #### 1) Méthodes Agiles 
  * ####  1.1 Définitions
@@ -293,8 +295,19 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 ##### **ARP** Protocole **d'association** de l'adresse **IP** et de l'adresse **MAC**
 ![arp](https://github.com/user-attachments/assets/09805071-bd7d-43f4-8d5b-51537b848072)
-* #### 3.4 DHCP.
-  * #### 3.4.1 Principes
+* ####  
+
+
+
+
+
+
+
+
+
+
+* #### 3.5 DHCP.
+  * #### 3.5.1 Principes
   ##### Gestion dynamique de l'adressage IP des hôtes du réseau. Utilisation Messages UDP - Port serveur 67 / Port client 68
  ##### **Les messages:**
 ##### **DHCPDISCOVER (Client -> broadcast) : demande d'adresse**
@@ -306,8 +319,8 @@ Automatic merge failed; fix conflicts and then commit the result.
 ##### DHCPRELEASE (Client -> Serveur) : résiliation du bail par le client
 ##### DHCPINFORM (Client -> Serveur) : demande de paramètre de configuration
 sans réservation d'adresse (client ayant déjà une adresse)
-  * #### 3.4.2 Mise en oeuvre
-    * #### 3.4.2.1 Débian 12
+  * #### 3.5.2 Mise en oeuvre
+    * #### 3.5.2.1 Débian 12
 ##### passer en root
 ##### télécharger le packet
 	apt-get install isc-dhcp-server
