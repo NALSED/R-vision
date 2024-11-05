@@ -156,8 +156,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 #####  Pour transporter l'information, découpage de l'information, et du réseau via le principe de datagramme et le routage.
 
  * #### 3.1.2 protocole réseau.
-     ##### Définitions: Un protocole réseau est mis œuvre sur un réseau informatique ou un réseau de télécommunication. Ensemble des règles que doivent suivre tous
-   ##### les équipements pour pouvoir communiquer.L'idée est qu'un premier service soit appuyé sur un autre lui même appuyé sur un autre, lé découpage de problémes complexs facilite leurs resolutions.
+     ##### Définitions: Un protocole réseau est mis œuvre sur un réseau informatique ou un réseau de télécommunication. Ensemble des règles que doivent suivre tous les équipements pour pouvoir communiquer.L'idée est qu'un premier service soit appuyé sur un autre lui même appuyé sur un autre, lé découpage de problémes complexs facilite leurs resolutions.
    
   * #### 3.1.3 Modéle en couche.
     ##### Pour pallier au différents probléme lié au transport d'information et de donnée, nous avons recourt à l'encapsulation.
