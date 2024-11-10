@@ -44,15 +44,44 @@
   * #### 3.3.3 [Configurations du réseau :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#333-configurations-du-r%C3%A9seau--1)
   * #### 3.3.4 [Les paquets :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
   * #### 3.3.5 [Les Protocoles connexes :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
-* #### 3.4 [IPv6]
-  * ####
+* #### 3.4 IPv6 : 
+  * #### 3.4.1 Objectifs.
+  * #### 3.4.2 Définition + Notions.
+  * #### 3.4.3 Autoconfiguration.
+  * #### 3.4.4 Entêtes.
+  * #### 3.4.5 Protocoles associés.
+
 
 * #### 3.5 [DHCP :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#34-dhcp-1)
   * #### 3.5.1 [Principes.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#341-principes-1)
   * #### 3.5.2 [Mise en oeuvre.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#342-mise-en-oeuvre-1)
     * #### 3.5.2.1 [Débian 12.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3421-d%C3%A9bian-12-1)
     * #### 3.5.2.2 [Windows 22.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3422-windows-22-1)
-     
+ * #### 3.6 Le routage :
+   * #### 3.6.1 Définition et notions.
+   * #### 3.6.2 Mécaniques.
+   * #### 3.6.3 Tables de routages.
+   * #### 3.6.4 Routage dynamique
+     * #### 3.6.4.1 Protocoles dynamiques
+     * #### 3.6.4.2 Protocoles de transport
+       * #### 3.6.4.3.1 UDP
+       * #### 3.6.4.3.2 TCP(FAIRE DES ALLEZ REOTUR DANS CETTE PARTIE DU COURS)
+      * #### 3.6.4.3 Les ports(Liens du sites avec tous les ports + les principaux)
+      * #### 3.6.4.4 Mécanisme TCP de connection/dialogue
+      
+* #### 3.6.5 NAT :
+     * #### 3.6.5.1 Définition et notions 
+      * #### 3.6.5.2 Basic NAT
+      * #### 3.6.5.3 NAPT
+
+
+
+
+
+
+
+
+
 #### 1) Méthodes Agiles 
  * ####  1.1 Définitions
    ##### Création de **cycles répétitif**, ayant pour buts la **réalisations de projets complexes,** en intégrant un procédé **incrémentale**, des différentre étape de la réalisation, des solutions techniques, et des livrables. 
@@ -297,7 +326,25 @@ Automatic merge failed; fix conflicts and then commit the result.
 ![arp](https://github.com/user-attachments/assets/09805071-bd7d-43f4-8d5b-51537b848072)
 * ####  
 
+* #### 3.4 IPv6
+  * #### 3.4.1 Objectifs.
+  ##### Ce protocole de v6 à pour but de:
+    * ##### Etendre les capacités d'adressage (lutter contre la pénurie de v4).
+    * ##### Simplification des entêtes (par rapport à v4).
+    * ##### Automatiser la configuration.
+    * ##### Authentification et confidentialité
+    * ##### Supprimer/diminuer la fragmentation
+  * #### 3.4.2 Définition + Notions
+  ##### Une adresse IPv6 est sur 128 bits (IPv4 32 bits), il existe 3 catégories :
+    * ##### Unicast (une interface)
+    * #####  Multicast : adresses de diffusion (un groupe)
+    * ##### Anycast : adresse de groupe (un parmi le groupe)
+    ##### Disparition des broadcasts 
+    ##### L'adresse IPv6  se compose de 8 groupes de 16 bits
 
+  * #### 3.4.3 Autoconfiguration
+  * #### 3.4.4 Entêtes
+  * #### 3.4.5 Protocoles associés.
 
 
 
@@ -353,7 +400,7 @@ sans réservation d'adresse (client ayant déjà une adresse)
 ##### chek le statut
 	systemctl status isc-dhcp-server.service
 ###### [vidéo](https://www.youtube.com/watch?v=hdaHQR-7uAM&ab_channel=AlexDavantTech)
-* #### 3.4.2.2 Windows 22 
+* #### 3.5.2.2 Windows 22 
 
 * #### Instalation DHCP
 * ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
@@ -374,7 +421,23 @@ sans réservation d'adresse (client ayant déjà une adresse)
  * #### Créer une **Réservation** :
    *  ##### Clic droit sur réservation **New Reservation...**, rentrer l'IP **172.20.0.10** de réservation, choisir **DHCP**, puis **add**.
    *  ##### Chez le client, **ipconfig /renew**==> TADDAAAAAA!!
-
+ 
+* #### 3.6 Le routage :
+    * #### 3.6.1 Définition et notions. 
+    * #### 3.6.2 Mécaniques.
+   * #### 3.6.3 Tables de routages.
+   * #### 3.6.4 Routage dynamique
+     * #### 3.6.4.1 Protocoles dynamiques
+     * #### 3.6.4.2 Protocoles de transport
+       * #### 3.6.4.3.1 UDP
+       * #### 3.6.4.3.2 TCP(FAIRE DES ALLEZ REOTUR DANS CETTE PARTIE DU COURS)
+      * #### 3.6.4.3 Les ports(Liens du sites avec tous les ports + les principaux)
+      * #### 3.6.4.4 Mécanisme TCP de connection/dialogue
+      
+* #### 3.6.5 NAT
+     * #### 3.6.5.1 Définition et notions 
+     * #### 3.6.5.2 Basic NAT
+     * #### 3.6.5.3 NAPT
 
 
 
