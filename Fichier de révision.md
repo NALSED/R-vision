@@ -344,34 +344,35 @@ Automatic merge failed; fix conflicts and then commit the result.
 
     * ##### Anycast : adresse de groupe (un parmi le groupe)
 ![anycast](https://github.com/user-attachments/assets/6c4da70e-1def-492f-b2eb-12c421ad6e33)
-
-    ##### (Disparition des broadcasts) 
-    ##### L'adresse IPv6  se compose de 8 groupes de 16 bits séparés par :
-    ##### Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac1f:8001
-    ##### Tout comme IPv4, IPv6 se compose d'un netID et d'un hostID, en fonction du CIDR.
-    ##### IPv6 comprend aussi des adresses particulières :
-    * #####  **::1** => Boucle locale (loopback) Equivalent à 127.0.0.1 en IPv4, utilisée pour des tests et des services locaux sur la même machine
-    * ##### **::** => Adresse indéfinie, Equivalent à 0.0.0.0 en IPv4, utilisée pour signifier qu'une adresse n'est pas spécifiée.
-    * ##### **ff00::/8** => Adresses multicast, utilisées pour communiquer avec plusieurs hôtes en une seule transmission, utilisées dans le routage, la découverte de voisins, etc
-    * ##### **fe80::/64** => Adresses unicast lien local, adressage propre à un réseau physique, communication avec les interfaces du même lien et passage routeur impossible, configuration manuelle ou automatique (en général automatique) 
-    * ##### **fc00::/7** => Adresses unicast locales uniques (RFC 4193) Réservées à des usages privés (réseaux internes), similaire aux adresses privées IPv4, non routable sur internet, facilement identifiable, globalemùùent unique, elle permet l'interconnection de site, pas de conflits si routage par erreur
-    ![unicast local](https://github.com/user-attachments/assets/e8387d59-e025-43b5-83aa-f34bb930961c)
-    * ##### **reste** => Adresses unicast globales (Internet/publiques)
+    
+ ##### (Disparition des broadcasts) 
+##### L'adresse IPv6  se compose de 8 groupes de 16 bits séparés par :
+##### :small_blue_diamond: Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac1f:8001
+##### :small_blue_diamond: Tout comme IPv4, IPv6 se compose d'un netID et d'un hostID, en fonction du CIDR.
+##### :small_blue_diamond: IPv6 comprend aussi des adresses particulières :
+ * #####  **::1** => Boucle locale (loopback) Equivalent à 127.0.0.1 en IPv4, utilisée pour des tests et des services locaux sur la même machine
+ * ##### **::** => Adresse indéfinie, Equivalent à 0.0.0.0 en IPv4, utilisée pour signifier qu'une adresse n'est pas spécifiée.
+ * ##### **ff00::/8** => Adresses multicast, utilisées pour communiquer avec plusieurs hôtes en une seule transmission, utilisées dans le routage, la découverte de voisins, etc
+ * ##### **fe80::/64** => Adresses unicast lien local, adressage propre à un réseau physique, communication avec les interfaces du même lien et passage routeur impossible, configuration manuelle ou automatique (en général automatique) 
+ * ##### **fc00::/7** => Adresses unicast locales uniques (RFC 4193) Réservées à des usages privés (réseaux internes), similaire aux adresses privées IPv4, non routable sur internet, facilement identifiable, globalemùùent unique, elle permet l'interconnection de site, pas de conflits si routage par erreur
+    
+![unicast local](https://github.com/user-attachments/assets/e8387d59-e025-43b5-83aa-f34bb930961c)
+ * ##### **reste** => Adresses unicast globales (Internet/publiques)
   ##### SYNTHESE :
   ![sd](https://github.com/user-attachments/assets/362e2508-4086-4e28-b218-faf166ddfadc)
 
   
   * #### 3.4.3 Autoconfiguration
+  ##### C'est un des avantage de IPv6, une machine est capable d’obtenir automatiquement une adresse sans avoir besoin d’une configuration manuelle ou d’un serveur. Il existe 2 méthodes avec et sans état. 
+##### :large_blue_diamond:  Sans état est un mixe entre le préfixe réseau et de son identifiant d’interface. Le préfixe réseau est la partie de l’adresse qui identifie le segment de réseau et est généralement annoncée par un routeur. L’identificateur d’interface est la partie de l’adresse qui identifie le périphérique et est généralement dérivé de son adresse MAC
+##### :large_blue_diamond: avec état via un DHCPv6
   * #### 3.4.4 Entêtes
+  ![ENTËTE IPv6](https://github.com/user-attachments/assets/4c3d9910-2784-4cd6-9483-cb091f7716a1)
+##### La fragmentation devient optionnelle, en utilisant le PMUTUd, le paquet est rejeté jusqu'à que l'emméteur adapte la taille du paquet.
   * #### 3.4.5 Protocoles associés.
-
-
-
-
-
-
-
-
+![icmpv6](https://github.com/user-attachments/assets/3f4cd98a-23eb-40f5-90f6-6ec37d51faa6)
+![dhcpv6](https://github.com/user-attachments/assets/3436e1f6-e2ab-4dee-891a-f22b23584e7d)
+ ##### IPSEC : IPv6 amène des protocoles optionnels pour sécuriser les communications au niveau IP : IPsec. Authentification, contrôle d'intégrité et confidentialité cryptographique, avec protocole AH, ESP, IKE…
 * #### 3.5 DHCP.
   * #### 3.5.1 Principes
   ##### Gestion dynamique de l'adressage IP des hôtes du réseau. Utilisation Messages UDP - Port serveur 67 / Port client 68
