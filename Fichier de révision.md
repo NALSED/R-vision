@@ -335,13 +335,32 @@ Automatic merge failed; fix conflicts and then commit the result.
     * ##### Authentification et confidentialité
     * ##### Supprimer/diminuer la fragmentation
   * #### 3.4.2 Définition + Notions
-  ##### Une adresse IPv6 est sur 128 bits (IPv4 32 bits), il existe 3 catégories :
+  ##### Une adresse IPv6 est sur 128 bits (IPv4 32 bits), en héxadécimal, il existe 3 catégories :
     * ##### Unicast (une interface)
-    * #####  Multicast : adresses de diffusion (un groupe)
-    * ##### Anycast : adresse de groupe (un parmi le groupe)
-    ##### Disparition des broadcasts 
-    ##### L'adresse IPv6  se compose de 8 groupes de 16 bits
+    ![unicast](https://github.com/user-attachments/assets/683d205d-09bf-4590-83ca-5da2fa14e18b)
 
+    * #####  Multicast : adresses de diffusion (un groupe)
+    ![multicast](https://github.com/user-attachments/assets/6b7cc955-27e7-421b-9fab-01319e446623)
+
+    * ##### Anycast : adresse de groupe (un parmi le groupe)
+![anycast](https://github.com/user-attachments/assets/6c4da70e-1def-492f-b2eb-12c421ad6e33)
+
+    ##### (Disparition des broadcasts) 
+    ##### L'adresse IPv6  se compose de 8 groupes de 16 bits séparés par :
+    ##### Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac1f:8001
+    ##### Tout comme IPv4, IPv6 se compose d'un netID et d'un hostID, en fonction du CIDR.
+    ##### IPv6 comprend aussi des adresses particulières :
+    * #####  **::1** => Boucle locale (loopback) Equivalent à 127.0.0.1 en IPv4, utilisée pour des tests et des services locaux sur la même machine
+    * ##### **::** => Adresse indéfinie, Equivalent à 0.0.0.0 en IPv4, utilisée pour signifier qu'une adresse n'est pas spécifiée.
+    * ##### **ff00::/8** => Adresses multicast, utilisées pour communiquer avec plusieurs hôtes en une seule transmission, utilisées dans le routage, la découverte de voisins, etc
+    * ##### **fe80::/64** => Adresses unicast lien local, adressage propre à un réseau physique, communication avec les interfaces du même lien et passage routeur impossible, configuration manuelle ou automatique (en général automatique) 
+    * ##### **fc00::/7** => Adresses unicast locales uniques (RFC 4193) Réservées à des usages privés (réseaux internes), similaire aux adresses privées IPv4, non routable sur internet, facilement identifiable, globalemùùent unique, elle permet l'interconnection de site, pas de conflits si routage par erreur
+    ![unicast local](https://github.com/user-attachments/assets/e8387d59-e025-43b5-83aa-f34bb930961c)
+    * ##### **reste** => Adresses unicast globales (Internet/publiques)
+  ##### SYNTHESE :
+  ![sd](https://github.com/user-attachments/assets/362e2508-4086-4e28-b218-faf166ddfadc)
+
+  
   * #### 3.4.3 Autoconfiguration
   * #### 3.4.4 Entêtes
   * #### 3.4.5 Protocoles associés.
@@ -364,8 +383,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 ##### DHCPNACK (Serveur -> Client) : refus de réservation
 ##### DHCPDECLINE (Client -> Serveur) : après DHCPACK le client doit vérifier (par exemple via ARP) si l'adresse est déjà utilisée, si oui il décline l'offre du serveur
 ##### DHCPRELEASE (Client -> Serveur) : résiliation du bail par le client
-##### DHCPINFORM (Client -> Serveur) : demande de paramètre de configuration
-sans réservation d'adresse (client ayant déjà une adresse)
+##### DHCPINFORM (Client -> Serveur) : demande de paramètre de configuration sans réservation d'adresse (client ayant déjà une adresse)
   * #### 3.5.2 Mise en oeuvre
     * #### 3.5.2.1 Débian 12
 ##### passer en root
