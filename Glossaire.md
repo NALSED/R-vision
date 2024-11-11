@@ -62,6 +62,7 @@
 ##### **.Protocoles**:  
 >[!IMPORTANT]
 >   * ##### **.ARP :** L’Address Resolution Protocol (ARP, protocole de résolution d’adresse) est un protocole utilisé pour associer l'adresse de protocole de couche réseau (typiquement une adresse IPv4) d'un hôte distant, à son adresse de protocole de couche de liaison (typiquement une adresse MAC). Il se situe à >l’interface entre la couche réseau (couche 3 du modèle OSI) et la couche de liaison (couche 2 du modèle OSI).
+>   * ##### **.BGP :** (Border Gateway Protocol) est un protocole d'échange de route externe (un EGP), utilisé notamment sur le réseau Internet. Son objectif principal est d'échanger des informations de routage et d'accessibilité de réseaux (appelés préfixes) entre Autonomous Systems (AS). Comme il circule sur TCP, >il est considéré comme appartenant à la couche application du modèle OSI
 >   * ##### **CSMA/CD** :(Carrier Sense Multiple Access with Collision Detection) cette méthode permet à une station d'écouter le support physique de liaison (câble ou fibre) pour déterminer si une autre station transmet une trame de données (niveau déterminé de tension électrique ou de lumière). Si tel n'est pas le >cas (donc s'il n'y a pas eu de signal), elle suppose qu'elle peut émettre
 > 
 >  * ##### **.ICMP :** Internet Control Message Protocol (ICMP, Protocole de message de contrôle sur Internet) est l’un des protocoles fondamentaux constituant la suite des protocoles Internet. C'est un protocole de couche réseau (couche no 3 du modèle OSI), au même niveau que le protocole Internet (IP). Le >protocole IP ne gérant que le transport des paquets et ne permettant pas l'envoi de messages d'erreur, on lui associe ICMP pour contrôler les erreurs de transmission
@@ -69,6 +70,7 @@
  >  * #####  **HTTP** (Hypertext Transfer Protocol) port 80 ⇒ Protocole de communication du web
  >  * ##### **FTP** (File Transfer Protocol) port 21 ⇒ Définition des envois de fichiers sur un réseau.
  >  * ##### **NDP** (Neighbor Discovery Protocol) est un protocole utilisé par IPv6. Il opère en couche 3 et est responsable de la découverte des autres hôtes sur le même lien, de la détermination de leur adresse et de l'identification des routeurs présents.
+ >  * ##### **OSPF** (Open Shortest Path First) Dans OSPF, chaque routeur établit des relations d'adjacence avec ses voisins immédiats en envoyant des messages hello à intervalle régulier. Chaque routeur communique ensuite la liste des réseaux auxquels il est connecté par des messages Link-state advertisements (LSA) > propagés de proche en proche à tous les routeurs du réseau.
  >  * ##### **PDU** (Protocol Data Unit) ⇒  est l'unité de mesure des informations échangées dans un réseau informatique. 
  >  * #####  **SMTP** (Simple Mail Transfer Protocol) port 25 ⇒ Sert à envoyer les e-mails.
 ### Q
@@ -99,7 +101,7 @@
 
 
 
-
+[Uploading Basic-gitGithub-manip-pour-TSSR.md…]()
 
 
 
