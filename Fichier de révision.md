@@ -59,22 +59,22 @@
   * #### 3.5.2 [Mise en oeuvre.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#352-mise-en-oeuvre-1)
     * #### 3.5.2.1 [Débian 12.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3521-d%C3%A9bian-12-1)
     * #### 3.5.2.2 [Windows 22.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3522-windows-22-1)
- * #### 3.6 Le routage :
-   * #### 3.6.1 Définition et notions.
-   * #### 3.6.2 Mécaniques.
-   * #### 3.6.3 Tables de routages.
-   * #### 3.6.4 Routage dynamique
-     * #### 3.6.4.1 Protocoles dynamiques
-     * #### 3.6.4.2 Protocoles de transport
-       * #### 3.6.4.3.1 UDP
-       * #### 3.6.4.3.2 TCP(FAIRE DES ALLEZ REOTUR DANS CETTE PARTIE DU COURS)
-      * #### 3.6.4.3 Les ports(Liens du sites avec tous les ports + les principaux)
-      * #### 3.6.4.4 Mécanisme TCP de connection/dialogue
+ * #### 3.6 [Le routage :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36-le-routage--1)
+   * #### 3.6.1 [Définition et notions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#361-d%C3%A9finition-et-notions-1)
+   * #### 3.6.2 [Mécaniques.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#362-m%C3%A9caniques-1)
+   * #### 3.6.3 [Tables de routages.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#363-tables-de-routages-1)
+   * #### 3.6.4 [Routage dynamique](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#364-routage-dynamique-1)
+     * #### 3.6.4.1 [Protocoles dynamiques](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3641-protocoles-dynamiques-1)
+     * #### 3.6.4.2 [Protocoles de transport](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3642-protocoles-de-transport-1)
+       * #### 3.6.4.3.1 [UDP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36431-udp-1)
+       * #### 3.6.4.3.2 [TCP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36432-tcp)
+      * #### 3.6.4.3 [Les ports](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3643-les-portsliens-du-sites-avec-tous-les-ports--les-principaux-1)
       
-* #### 3.6.5 NAT :
+      
+* #### 3.6.5 [NAT :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#365-nat)
      
-     * #### 3.6.5.1 Basic NAT
-     * #### 3.6.5.2 NAPT
+     * #### 3.6.5.1 [Basic NAT](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3651-basic-nat-1)
+     * #### 3.6.5.2 [NAPT](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#365-napt)
 
 
 
