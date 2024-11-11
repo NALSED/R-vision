@@ -1,4 +1,5 @@
-[Basic-gitGithub-manip-pour-TSSR.md](https://github.com/user-attachments/files/17698637/Basic-gitGithub-manip-pour-TSSR.md)## **Cours TSSR 24/25**
+![j](https://github.com/user-attachments/assets/11c5c342-b7c1-44b0-a8fe-bfd417c9bb0a)
+
 
 ### Sommaire :
 #### 1) [Méthodes Agiles](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#1-m%C3%A9thodes-agiles) :
@@ -71,9 +72,9 @@
       * #### 3.6.4.4 Mécanisme TCP de connection/dialogue
       
 * #### 3.6.5 NAT :
-     * #### 3.6.5.1 Définition et notions 
-      * #### 3.6.5.2 Basic NAT
-      * #### 3.6.5.3 NAPT
+     
+     * #### 3.6.5.1 Basic NAT
+     * #### 3.6.5.2 NAPT
 
 
 
@@ -630,6 +631,8 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 
  * #### 2.3 Git-Hub
     * #### 2.3.1 Clé SSH
+![ssh git hub 1](https://github.com/user-attachments/assets/ed18b230-3595-4084-a405-42731a1b3c86)
+![ssh git hub 2](https://github.com/user-attachments/assets/76963e14-2f63-474b-9ee0-379f76066134)
 
    ![sd](https://github.com/user-attachments/assets/7287fcac-a5d0-4d43-a338-30fb3da71ecc)
 
@@ -923,29 +926,109 @@ ________________________________________________
      #####  Chaque routeur possède des informations sur son voisinage. Chaque routeur maintient une liste des réseaux connus, chacun de ces réseaux étant associé à un ou plusieurs routeurs voisins à qui le message peut être passé.
      #####  Si on veux envoyer sur une interface d'un même réseau, le paquet est directement envoyé sur l'interface physique corespondant à l'IP de destination, le routage interviens quand les machines ne sont pas sur le même réseau, en effet on encapsule donc le paquet IP dans une trame [ethernet](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#324-trame-ethernet-1), mais si la destrination ne fait pas partie du même réseau que l'hôte il fera appel à ça table de routage.
      #####
-   * #### 3.6.3 Tables de routages.
   * #### 3.6.3 Tables de routages.
    ##### -Définitions- :
    ##### Chaque noeud d'un réseau IP (routeur ou pas) dispose d'une table de routage,chaque entrée de cette table est composée (au moins) :
-  * #####  **Une destination** (adresse de réseau et masque)
-  * #####  **Saut suivant** (next hop) : l'adresse de la passerelle pour y aller (un autre noeud ou directement l'hôte) 
+   ##### 1° **Une destination** (adresse de réseau et masque)
+   #####  2° **Saut suivant** (next hop) : l'adresse de la passerelle pour y aller (un autre noeud ou directement l'hôte) 
     ##### (Note : en IPv6, on utilise les adresses lien local des routeurs/passerelles)
-  * #####  (Eventuellement on peut y trouver aussi :) L'interface associée : celle par laquelle ce noeud peut joindre lapasserelle, une métrique : une mesure de la qualité de cette route (moins = mieux), parfois d'autres choses (comme le protocole utilisé).
-##### Le routeur reçoit donc une trame, l'ethertype ( qui contetient le protocole à appliquer sur le prochain noeud) ici IP, si on était dans le cas d'un hôte classique du réseau => on jette le
-
+   #####  3° (Eventuellement on peut y trouver aussi :) L'interface associée : celle par laquelle ce noeud peut joindre lapasserelle, une métrique : une mesure de la qualité de cette route (moins = mieux), parfois d'autres choses (comme le protocole utilisé).
+##### :large_blue_diamond: Le routeur reçoit donc une trame, l'ethertype ( qui contetient le protocole à appliquer sur le prochain noeud) ici IP, si on était dans le cas d'un hôte classique du réseau => on jette le paquet
+##### Mais ce noeud est un routeur, donc il doit transmettre le paquet => Il procède à la même mécanique d'envoi de paquet IP.
+##### :large_blue_diamond: Il est posible sur de très grand réseau d'utiliser der sur-réseaux comme préfixe de routage en agglomérant, quand c'est possible, plusieurs adresses de réseau en une seule, plus les réseaux sont grands plus la table de routage est petite.
+##### Pour des réseaux de grande envergure, il est nécessaire de passer à du routage dynamique et de déployer des protocoles dédiées comme OSPF et BGP.
    * #### 3.6.4 Routage dynamique
-     * #### 3.6.4.1 Protocoles dynamiques
-     * #### 3.6.4.2 Protocoles de transport
-       * #### 3.6.4.3.1 UDP
-       * #### 3.6.4.3.2 TCP(FAIRE DES ALLEZ REOTUR DANS CETTE PARTIE DU COURS)
-      * #### 3.6.4.3 Les ports(Liens du sites avec tous les ports + les principaux)
-      * #### 3.6.4.4 Mécanisme TCP de connection/dialogue
-      
-* #### 3.6.5 NAT
-     * #### 3.6.5.1 Définition et notions 
-     * #### 3.6.5.2 Basic NAT
-     * #### 3.6.5.3 NAPT
+##### -Définitions- : 
+##### Le routage dynamique est utilisé sur de grand réseau, étant amené à des modifications constantes, les routeur communique entre eux et échange sur leurs table de routages pour s'addapter aux modifications, aux pannes ou aux coupures.
+   * #### 3.6.4.1 Protocoles dynamiques
+![wdfg](https://github.com/user-attachments/assets/3bfa004d-7e7b-4d6d-834e-e557d010c07f)
+ ##### :large_blue_diamond: RIP (Routing Information Protocol) port ⇒ UDP 520. Pour de petit réseau, limite de 15 sauts.
+##### :large_blue_diamond: EIGRP (Enhanced Interior Gateway Routing Protocol) port ⇒ 88 Protocole conçu par Cisco pour ses matériels utilisé dans les réseaux complexes.Convergence rapide, prend en charge plusieurs protocoles de couche réseau.
+##### :large_blue_diamond: OSPF (Open Shortest Path First) port ⇒ 89 Principalement utilisé dans les réseaux de tailles moyenne.
+##### :large_blue_diamond: BGP (Border Gateway Protocol) port ⇒ TCP 179 Ce protocole est utilisé pour le routage sur internet entre les différents systèmes autonomes. Il est utilisé pour l'échange d'informations de routage entre différents ISP (Internet Service Provider)
+  * #### 3.6.4.2 [Protocoles de transport](https://www.it-connect.fr/les-protocoles-tcp-et-udp-pour-les-debutants/)
+     * #### 3.6.4.3.1 UDP
+       ##### -Définitions- :
+       ##### UDP - User Datagram Protocol port ⇒ 17
+       ##### Conçu comme un protocol minimal, Permet la communication entre processus (application), il est supporté par IPv4 et IPv6. Permet d'identifier certaines erreurs de transmission, contrôle de la taille, vérification de la Checksum.UDP est notâment utilisé pour le streaming. Mais il n'assure pas la fibilité , si les contrôles échouent le datagramme est jeté par le destinataire.
+       ##### -DATAGRAMME UDP- :
+       ![edf](https://github.com/user-attachments/assets/4d895bad-2b8e-434d-891e-187a94d11aa9)
 
+       * #### 3.6.4.3.2 TCP
+        ##### -Définitions- :
+       ##### TCP - Transmission Control Protocol port ⇒ 6
+       ##### Protocole fiable, est un flux en mode connecté il établi une connexion bi-directionnelle et garantie du séquencement (ordre), les paquets sont vérrifier pour voir si il ne sont pas corompus, si c'est le cas le paquet est renvoyé, cherche à optimiser l'utilisation du réseau(congestion du réseau).
+       ##### Déroulé d'un envoi TCP :
+        ##### 1) Transmission de segments TCP : TCP découpe le PDU en segments, chaque segment est associé à un numéro de séquence par la source
+        ##### 2) À l'émission d'un segment => démarrage d'un compte à rebours pour ce numéro de séquence
+        ##### 3) Envoi d'un acquittement par le destinataire à réception
+        ##### 4) À réception de l'acquittement par la source => suppression du segment et du compte à rebours
+        ##### 5) À la fin d'un compte à rebours
+       ##### 6) OU => ré-émission du segment
+     ##### -ENTETE TCP- :
+       ![sddv](https://github.com/user-attachments/assets/898df453-1def-4df6-b5f2-67ac38afc47c)
+     ##### -SEGMENT TCP- :
+    ![sertg](https://github.com/user-attachments/assets/a1c7db57-269f-41c6-9cbb-3b93a6781700)
+  ##### Voici quelques protocoles utilisant TCP:
+  * ##### HTTP HTTPS.
+  * ##### SMTP envoyer des mail.
+  * ##### NFS transferts de donnés + UNIX.
+  * ##### SMB transfert de donnés + WIN.
+  * ##### SSH Telnet gestion à distance des équipements.
+  * ##### RDP administration via bureau à distance.
+  * ##### LDAP intéroge l'AD.
+##### Principe de connection et fin de connection
+![1](https://github.com/user-attachments/assets/edcf330a-79b6-4f37-baf3-6f1bba4d245d)
+![2](https://github.com/user-attachments/assets/528629b8-f626-4ad3-92db-c83127d76b5d)
+##### TCP n'attend pas pour émettre cela nuit trop au débit, mais IP ne garenti pas l'ordre des paquets, donc utilisation de La fenêtre TCP (champs Window) sert au destinataire à indiquer combien d'octets il est prêt à recevoir.
+#####  Réserver de la mémoire pour stocker les segments en attente.
+##### Remettre les segments dans l'ordre une fois l'ensemble reçu.
 
+ * #### 3.6.4.3 Les ports(Liens du sites avec tous les ports + les principaux)
+   ##### Un port est un identifiant de processus au sein d'une interface
+   ##### Une communication est donc caractérisée par :
+     - ##### un couple adresse IP/port de destination.
+     - ##### un couple adresse IP/port source.
+##### De la même façon qu'il ne peut pas y avoir 2 adresses identiques sur un réseau, il ne peut pas y avoir 2 ports identiques sur une même adresse
+##### Les ports sont codés sur 16 bits (de 0 à 65535)
+* #####  On distingue 3 plages [liste exaustive](https://www.frameip.com/liste-des-ports-tcp-udp/):
+##### :large_blue_diamond: 0 à 1023 : Les ports systèmes (Well Known Ports) - Serveur
+##### :large_blue_diamond: 1024 à 49151 : les ports utilisateurs (Registered Ports) - Serveur
+##### :large_blue_diamond: 49152 à 65535 : les ports dynamiques (Ephemeral Ports) - Client
+ 
+* #### 3.6.5 [NAT](https://www.it-connect.fr/le-nat-et-le-pat-pour-les-debutants/)
+ ##### -Définitions- :
+ ##### Network Address Translation
+ ##### Le NAT permettent à un routeur de modifier les paquets IP au moment de leur transmission. Ils visent à remplacer une adresse IP (source ou destination) par une autre pour substituer à une adresse valable sur le réseau interne (privée) une autre adresse valable sur un autre réseau (par exemple publique sur Internet).Historiquement, NAT était utilisé pour cacher son plan d'adressage interne. Maintenant il est massivement utiliser pour combler la pénurie d'IPv4.
+   * #### 3.6.5.1 Basic NAT
+     ##### Dans sa version la plus simple, dite Basic NAT, on configure le routeur qui fait la passerelle entre un réseau interne et un réseau externe (Internet, réseau d'une autre structure, etc…), puis on choisi un ensemble d'adresses IP valables sur le réseau externe. Sur le routeur, on associe à chacune d'elles, l'adresse d'une machine interne devant communiquer avec l'extérieur.
+     ##### La table de routage peut-être configurée à la main (NAT statique) ou remplie dynamiquement (cas général)
+   ##### Pour héberger un serveur derrière un NAT, il faut mettre en place une correspondance statique, ce genre de correspondance est souvent appelée port forwarding. Elle consiste à déclarer un port sur le routeur NAT et à lui associer une adresse interne (et éventuellement un port).
+   ##### large_red_diamond: Limite : dans le cas de plusieurs serveurs pour le même service, seul un d'entre euxpourra utiliser le port standard
+##### L'utilisation de NAT implique qu'une adresse IP est utilisée par plusieurs interfaces de
+manière transparente
+
+ ##### large_blue_diamond: Exemple :
+  ##### avec un routeur adresse publique 203.1.113.123
+* ##### La machine interne (10.0.0.1) accède à Odyssey (216.58.214.83)
+* #####  Communication HTTPS, donc port Serveur = 443 et port client dynamique (ex : 52369)
+* #####  Requête de 10.0.0.1:52369 (port) vers 216.58.214.83:443
+* #####  Le routeur note dans sa table int <- ext : 10.0.0.1:52369 <- 216.58.214.83:443
+* #####  Requête transmise par le routeur de 203.1.113.123:52369 -> 216.58.214.83:443 ==== > Odyssey (216.58.214.83) reçoit une requête de 203.1.113.123 et réponds
+* #####  Réponse de 216.58.214.83:443 -> 203.1.113.123:52369
+* #####  Le routeur reçoit cette réponse pour lui MAIS, il fait du NAT donc
+* #####  Le routeur cherche dans sa table une correspondance pour le port 52369 : 10.0.0.1
+* #####  Il transmet donc sur le réseau interne le paquet en remplaçant l'adresse dedestination (la sienne) par 10.0.0.1
+   * #### 3.6.5. NAPT
+   ##### Utilisé quand il y à moins d'adresse privé que d'adresse publiques, exemple box inernet. Ne pas considérer juste l'adresse comme identifiant mais le couple adresse IP/port (couche 4).
+  ##### Le NAPT dynamique a de nombreux inconvénients :
+- ##### La table étant remplie lors de la requête de l'intérieur vers l'extérieur
+- ##### Le client doit être derrière le NAT
+- ##### Impossible d'avoir un serveur interne
+- ##### Le paquet IP ET le protocole de niveau 4 sont modifiés
+- ##### Lourd: nécessite un recalcul des checksum
+- ##### Pas possible avec tous les protocoles de couche 4
+- ##### Incompatible avec certains protocoles (Ex : FTP actif, voir site malekal)
+- ##### Incompatible avec certains contrôle d'intégrité
 
 
