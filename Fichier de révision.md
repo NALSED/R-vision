@@ -345,9 +345,10 @@ Automatic merge failed; fix conflicts and then commit the result.
     
  ##### (Disparition des broadcasts) 
 ##### L'adresse IPv6  se compose de 8 groupes de 16 bits séparés par :
-##### :small_blue_diamond: Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac1f:8001
-##### :small_blue_diamond: Tout comme IPv4, IPv6 se compose d'un netID et d'un hostID, en fonction du CIDR.
-##### :small_blue_diamond: IPv6 comprend aussi des adresses particulières :
+##### 🔷
+Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac1f:8001
+##### 🔷Tout comme IPv4, IPv6 se compose d'un netID et d'un hostID, en fonction du CIDR.
+##### * IPv6 comprend aussi des adresses particulières :
  * #####  **::1** => Boucle locale (loopback) Equivalent à 127.0.0.1 en IPv4, utilisée pour des tests et des services locaux sur la même machine
  * ##### **::** => Adresse indéfinie, Equivalent à 0.0.0.0 en IPv4, utilisée pour signifier qu'une adresse n'est pas spécifiée.
  * ##### **ff00::/8** => Adresses multicast, utilisées pour communiquer avec plusieurs hôtes en une seule transmission, utilisées dans le routage, la découverte de voisins, etc
@@ -384,64 +385,69 @@ Automatic merge failed; fix conflicts and then commit the result.
 ##### DHCPRELEASE (Client -> Serveur) : résiliation du bail par le client
 ##### DHCPINFORM (Client -> Serveur) : demande de paramètre de configuration sans réservation d'adresse (client ayant déjà une adresse)
   * #### 3.5.2 Mise en oeuvre
-    * #### 3.5.2.1 Débian 12
-##### passer en root
-##### télécharger le packet
-	apt-get install isc-dhcp-server
-##### passer en réseau interne
-##### renomer la machine
-	nano /etc/hosts
-	srv-dhcp
-	nano /etc/hostname
-	srv-dhcp
-##### reboot
-	reboot
- ##### passer en root
-##### configurer le serveur
-	nano /etc/network/interfaces
-	adress 172.20.0.2
-	netmask 255.255.255.0
-##### commenter la ligne IPv6
-	#iface enp0s3 inet6 auto
-##### reboot interface
-	ifdown enp0s3
+>[!NOTE]
+>     * #### 3.5.2.1 Débian 12
+> ##### passer en root
+> ##### télécharger le packet
+>	apt-get install isc-dhcp-server
+> ##### passer en réseau interne
+> ##### renomer la machine
+>	nano /etc/hosts
+>	srv-dhcp
+>	nano /etc/hostname
+>	srv-dhcp
+> ##### reboot
+>	reboot
+> ##### passer en root
+> ##### configurer le serveur
+>	nano /etc/network/interfaces
+>	adress 172.20.0.2
+>	netmask 255.255.255.0
+> ##### commenter la ligne IPv6
+>	#iface enp0s3 inet6 auto
+> ##### reboot interface
+>	ifdown enp0s3
 	ifup enp0s3
-##### Configurer le serveur DHCP
-	nano /etc/default/isc-dhcp_server
-		
-		host [PC NAME] [ADRESS MAC] {
-			hardware ethernet [ADRESS MAC]
-			fixed-adress [IP] }
-##### reboot DHCP
-	systemctl resart isc-dhcp-server.service
-##### chek le statut
-	systemctl status isc-dhcp-server.service
-###### [vidéo](https://www.youtube.com/watch?v=hdaHQR-7uAM&ab_channel=AlexDavantTech)
+>##### Configurer le serveur DHCP
+>	nano /etc/default/isc-dhcp_server
+>		
+>		host [PC NAME] [ADRESS MAC] {
+>			hardware ethernet [ADRESS MAC]
+>			fixed-adress [IP] }
+>##### reboot DHCP
+>	systemctl resart isc-dhcp-server.service
+>##### chek le statut
+>	systemctl status isc-dhcp-server.service
+>###### [vidéo](https://www.youtube.com/watch?v=hdaHQR-7uAM&ab_channel=AlexDavantTech)
+________________________________________________
 * #### 3.5.2.2 Windows 22 
-
-* #### Instalation DHCP
-* ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
-  * ##### Choisissez l'option **Role-based or feature-based instalation** et poursuivez.
-  * #####   Continuez, le serveur est déjà selectioné.
-  * ##### Dans la liste cochez "DHCP server" et dans la fenétre **include management tools**.Cliquez sur **Add Features**
-  * ##### Cliquez sur **Install**
-* #### **Configuration** du serveur DHCP :
- * ##### Ouvrir **Administrativ Tools**
- * ##### Clic droit sur **IPv4**, choisir **New Scope**
- * ##### Rentrer la plage d'adresse IP et le masque de sous réseau ici : **start** 172.20.0.100 / **end** 172.20.0.200 / **length** 24 / **subnet mask** 255.255.255.0
- * ##### Dans Router rentrer un IP éloigné de la plage pour plus de visibilité là 172.20.0.254
- * ##### Faire **next** jusqu'à la page suivante : **Configure DHCP Options** : cocher **Yes, i want to configure these options now** 
- * ##### On peux ne pas remplir les Options **Router et DNS** car nous ne sortirons pas du réseau privé.
-*  #### **Machine cliens :**
-   * ##### Ouvrir Powershell : **ipconfig**, pour vérifier l'adresse ip, si elle ne corespond pas à la plage définie **ipconfig /renew**
-   * ##### Si le problème persiste, dans la fenétre de configuration du serveur DHCP, dérouler IPv4 et regarder dans **Scope [172.20.0.0]**, l'option **Activate/Desactivate** est bien sur **Activate**.
- * #### Créer une **Réservation** :
-   *  ##### Clic droit sur réservation **New Reservation...**, rentrer l'IP **172.20.0.10** de réservation, choisir **DHCP**, puis **add**.
-   *  ##### Chez le client, **ipconfig /renew**==> TADDAAAAAA!!
- 
+>[!NOTE]
+>* #### Instalation DHCP
+>* ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
+>  * ##### Choisissez l'option **Role-based or feature-based instalation** et poursuivez.
+>  * #####   Continuez, le serveur est déjà selectioné.
+>  * ##### Dans la liste cochez "DHCP server" et dans la fenétre **include management tools**.Cliquez sur **Add Features**
+>  * ##### Cliquez sur **Install**
+> * #### **Configuration** du serveur DHCP :
+> * ##### Ouvrir **Administrativ Tools**
+> * ##### Clic droit sur **IPv4**, choisir **New Scope**
+> * ##### Rentrer la plage d'adresse IP et le masque de sous réseau ici : **start** 172.20.0.100 / **end** 172.20.0.200 / **length** 24 / **subnet mask** 255.255.255.0
+> * ##### Dans Router rentrer un IP éloigné de la plage pour plus de visibilité là 172.20.0.254
+> * ##### Faire **next** jusqu'à la page suivante : **Configure DHCP Options** : cocher **Yes, i want to configure these options now** 
+> * ##### On peux ne pas remplir les Options **Router et DNS** car nous ne sortirons pas du réseau privé.
+> *  #### **Machine cliens :**
+>   * ##### Ouvrir Powershell : **ipconfig**, pour vérifier l'adresse ip, si elle ne corespond pas à la plage définie **ipconfig /renew**
+>   * ##### Si le problème persiste, dans la fenétre de configuration du serveur DHCP, dérouler IPv4 et regarder dans **Scope [172.20.0.0]**, l'option **Activate/Desactivate** est bien sur **Activate**.
+> * #### Créer une **Réservation** :
+>   *  ##### Clic droit sur réservation **New Reservation...**, rentrer l'IP **172.20.0.10** de réservation, choisir **DHCP**, puis **add**.
+>   *  ##### Chez le client, **ipconfig /renew**==> TADDAAAAAA!!
 * #### 3.6 Le routage :
-    * #### 3.6.1 Définition et notions. 
-    * #### 3.6.2 Mécaniques.
+  * #### 3.6.1 Définition et notions. 
+    ##### Le routage est in protocole d'interconection de réseau, en effet les noeuds d'un même réseau IP (logique) doivent être sur le même lien (réseau physique), des chemins sont sélectionnés dans un réseau pour acheminer les données d'un expéditeur jusqu'à un ou plusieurs destinataires.
+  * #### 3.6.2 Mécaniques.
+     #####  Chaque routeur possède des informations sur son voisinage. Chaque routeur maintient une liste des réseaux connus, chacun de ces réseaux étant associé à un ou plusieurs routeurs voisins à qui le message peut être passé.
+     #####  Si on veux envoyer sur une interface d'un même réseau, le paquet est directement envoyé sur l'interface physique corespondant à l'IP de destination, le routage interviens quand les machines ne sont pas sur le même réseau, en effet on encapsule donc le paquet IP dans une trame [ethernet]
+     #####
    * #### 3.6.3 Tables de routages.
    * #### 3.6.4 Routage dynamique
      * #### 3.6.4.1 Protocoles dynamiques
