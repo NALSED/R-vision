@@ -60,15 +60,17 @@
 ##### **.Payload ou (trame ethernet) (donnée transportée) :(trame ethernet)**: Les données sont directement transmises au niveau réseau identifié par l'Ethertype.Longeur mini/max : 46 octets/1500 octets 
 ##### **.Plan d'adressage:** lors de la création d'un réseau d’entreprise IP, ce réseau interconnectant différents sites et réseaux on réalise un plan d’adressage. Cette opération a pour but de définir pour chaque réseau physique (LAN et WAN) une adresse de réseau IP. Pour chaque machine de chacun de ces réseaux.
 ##### **.Protocoles**:  
-   * ##### **.ARP :** L’Address Resolution Protocol (ARP, protocole de résolution d’adresse) est un protocole utilisé pour associer l'adresse de protocole de couche réseau (typiquement une adresse IPv4) d'un hôte distant, à son adresse de protocole de couche de liaison (typiquement une adresse MAC). Il se situe à l’interface entre la couche réseau (couche 3 du modèle OSI) et la couche de liaison (couche 2 du modèle OSI).
-   * ##### **CSMA/CD** :(Carrier Sense Multiple Access with Collision Detection) cette méthode permet à une station d'écouter le support physique de liaison (câble ou fibre) pour déterminer si une autre station transmet une trame de données (niveau déterminé de tension électrique ou de lumière). Si tel n'est pas le cas (donc s'il n'y a pas eu de signal), elle suppose qu'elle peut émettre
-  
-  * ##### **.ICMP :** Internet Control Message Protocol (ICMP, Protocole de message de contrôle sur Internet) est l’un des protocoles fondamentaux constituant la suite des protocoles Internet. C'est un protocole de couche réseau (couche no 3 du modèle OSI), au même niveau que le protocole Internet (IP). Le protocole IP ne gérant que le transport des paquets et ne permettant pas l'envoi de messages d'erreur, on lui associe ICMP pour contrôler les erreurs de transmission
-
-   * #####  **HTTP** (Hypertext Transfer Protocol) port 80 ⇒ Protocole de communication du web
-   * ##### **FTP** (File Transfer Protocol) port 21 ⇒ Définition des envois de fichiers sur un réseau.
-   * ##### **PDU** (Protocol Data Unit) ⇒  est l'unité de mesure des informations échangées dans un réseau informatique. 
-   * #####  **SMTP** (Simple Mail Transfer Protocol) port 25 ⇒ Sert à envoyer les e-mails.
+>[!IMPORTANT]
+>   * ##### **.ARP :** L’Address Resolution Protocol (ARP, protocole de résolution d’adresse) est un protocole utilisé pour associer l'adresse de protocole de couche réseau (typiquement une adresse IPv4) d'un hôte distant, à son adresse de protocole de couche de liaison (typiquement une adresse MAC). Il se situe à >l’interface entre la couche réseau (couche 3 du modèle OSI) et la couche de liaison (couche 2 du modèle OSI).
+>   * ##### **CSMA/CD** :(Carrier Sense Multiple Access with Collision Detection) cette méthode permet à une station d'écouter le support physique de liaison (câble ou fibre) pour déterminer si une autre station transmet une trame de données (niveau déterminé de tension électrique ou de lumière). Si tel n'est pas le >cas (donc s'il n'y a pas eu de signal), elle suppose qu'elle peut émettre
+> 
+>  * ##### **.ICMP :** Internet Control Message Protocol (ICMP, Protocole de message de contrôle sur Internet) est l’un des protocoles fondamentaux constituant la suite des protocoles Internet. C'est un protocole de couche réseau (couche no 3 du modèle OSI), au même niveau que le protocole Internet (IP). Le >protocole IP ne gérant que le transport des paquets et ne permettant pas l'envoi de messages d'erreur, on lui associe ICMP pour contrôler les erreurs de transmission
+>
+ >  * #####  **HTTP** (Hypertext Transfer Protocol) port 80 ⇒ Protocole de communication du web
+ >  * ##### **FTP** (File Transfer Protocol) port 21 ⇒ Définition des envois de fichiers sur un réseau.
+ >  * ##### **NDP** (Neighbor Discovery Protocol) est un protocole utilisé par IPv6. Il opère en couche 3 et est responsable de la découverte des autres hôtes sur le même lien, de la détermination de leur adresse et de l'identification des routeurs présents.
+ >  * ##### **PDU** (Protocol Data Unit) ⇒  est l'unité de mesure des informations échangées dans un réseau informatique. 
+ >  * #####  **SMTP** (Simple Mail Transfer Protocol) port 25 ⇒ Sert à envoyer les e-mails.
 ### Q
 ### R
 ##### **.Répéteur :** Equipement simple permettant d'amplifier un signal(couche 1)
