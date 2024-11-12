@@ -914,7 +914,7 @@ ________________________________________________
 >   * ##### Ouvrir Powershell : **ipconfig**, pour vérifier l'adresse ip, si elle ne corespond pas à la plage définie **ipconfig /renew**
 >   * ##### Si le problème persiste, dans la fenétre de configuration du serveur DHCP, dérouler IPv4 et regarder dans **Scope [172.20.0.0]**, l'option **Activate/Desactivate** est bien sur **Activate**.
 > * #### Créer une **Réservation** :
->   *  ##### Clic droit sur réservation **New Reservation...**, rentrer l'IP **172.20.0.10** de réservation, choisir **DHCP**, puis **add**.
+>   *  ##### Clic droit sur réservation **New Reservation...**, rentrer l'IP **172.20.0.10** de réservation, le nom du clients et l'adresse MAC (du clients) choisir **DHCP**, puis **add**.
 >   *  ##### Chez le client, **ipconfig /renew**==> TADDAAAAAA!!
 ![Le routage](https://github.com/user-attachments/assets/1fa23eda-1740-4a3a-8743-ed35ff72fedf)
 
