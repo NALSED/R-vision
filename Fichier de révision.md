@@ -1277,10 +1277,18 @@ Tout d'abord il faut copier le fichier "*db.127*" vers "*reverse.wilders.lan*"
 
 
 * #### 4.2 PROXMOX
+   
+   #### Connection à PROXMOX https://@IP:8006/
+   
    * #### 4.2.1 Ajout/Gestion disque
+   ##### :arrow_forward: 
+   
+   
    * #### 4.2.2 Vm
      * #### 4.2.2.1 Clones
+
      * #### 4.2.2.2 Template
+
      * #### 4.2.2.3 Snapshot
   * #### 4.3 SSH
 #### DEMO SSH AVEC IDENTIFICATION AUTO
@@ -1469,9 +1477,42 @@ ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
 - On se connecte en ssh et normalement pas de MDP:
 `ssh client@ip`
 
-
-
-
 * #### 5) Cisco Packet Tracer
   * #### 5.1 Routage Commande
+
+#### interface GigabitEthernet0/*.................Accède au mode de configuration de l'interface.
+#### ip address...................................Définit l'adresse IPv4 et son masque de sous-réseau pour l'interface.
+#### ipv6 address.................................Définit l'adresse IPv6 et son préfixe pour l'interface.
+#### no shutdown..................................Active l'interface.
+#### exit.........................................Quitte le mode de configuration de l'interface pour retourner au mode de configuration terminal.
+#### ipv6 unicast-routing.........................Active le routage de IPv6.
+#### do show ipv6 interface brief.................Voir la config' ipv6
+
+
+### Configurer un router CLI :
+
+#### Le nom :
+* #### Router> enable
+* #### Router# configure terminal
+* #### Router(config)# hostname R0
+* #### R0(config)# 
+
+
+#### Les IP :
+* #### R0> enable
+* #### R0# configure terminal
+* #### R0(config)# interface GigabitEthernet0/1
+* #### R0(config-if)# ip address 192.168.1.1 255.255.255.0
+* #### R0(config-if)# ipv6 address 2001:db8:f3c1:1::1/64
+* #### R0(config-if)# no shutdown
+* #### R0(config-if)# exit
+* #### R0(config)# interface GigabitEthernet0/1
+* #### R0(config-if)# ip address 192.168.2.1 255.255.255.0
+* #### R0(config-if)# ipv6 address 2001:db8:f3c1:2::1/64
+* #### R0(config-if)# no shutdown
+* #### R0(config-if)# exit
+* #### R0(config)# ipv6 unicast-routin
+
+
+
 
