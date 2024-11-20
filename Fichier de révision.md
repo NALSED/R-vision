@@ -72,16 +72,28 @@
       
       
 * #### 3.6.5 [NAT :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#365-nat)
-     
      * #### 3.6.5.1 [Basic NAT](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3651-basic-nat-1)
      * #### 3.6.5.2 [NAPT](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#365-napt)
 
 
-
-
-
-
-
+* #### 3.7 Active Directory
+  * #### 3.7.1 Créer un ADDS
+  * #### 3.7.2 GPO
+  * #### 3.7.3 Gestion client
+* #### 4) Serveur
+**DEPLACER DHCP**
+  * #### 4.1 DNS
+    * #### 4.1.1 Windows
+    * #### 4.1.2 Linux
+  * #### 4.2 PROXMOX
+   * #### 4.2.1 Ajout/Gestion disque
+   * #### 4.2.2 Vm
+     * #### 4.2.2.1 Clones
+     * #### 4.2.2.2 Template
+     * #### 4.2.2.3 Snapshot
+  * #### 4.3  
+* #### 5) Cisco Packet Tracer
+  * #### 5.1 Routage Commande
 
 
 #### 1) Méthodes Agiles 
@@ -1030,5 +1042,436 @@ manière transparente
 - ##### Pas possible avec tous les protocoles de couche 4
 - ##### Incompatible avec certains protocoles (Ex : FTP actif, voir site malekal)
 - ##### Incompatible avec certains contrôle d'intégrité
+* #### 3.7 Active Directory
+  * #### 3.7.1 Créer un ADDS
+### Mise en place d'un ADDS
 
+1) ##### **INSTALATION DU SERVEUR ADDS**
+* ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
+  * ##### Choisissez l'option **Role-based or feature-based instalation** et poursuivez.
+  * ##### Choisir Active Directory Domain Services
+  * ##### Continuer l'installation, puis cliquer  sur **Add Features**
+*********************************************************************************************************
+2) ##### **CONFIGURATION DU SERVEUR ADDS**
+   * ##### Procéder à l'installation, à la fin cliquer sur **Promote this server to a domain controller**
+![adds1](https://github.com/user-attachments/assets/bc78a096-f64c-4ee1-bed9-d854ebe4b2f9)
+ * ##### cocher Add new forest et Root domain name
+![adds 2](https://github.com/user-attachments/assets/264e92a0-3881-4c32-b772-0fa2c0cbc31c)
+* ##### renseigner le niveau de windows suporté **Forest functional level** et dans **Domain functional level**
+* ##### entrer des **Password**  
+* ##### Ne pas cocher Create DNS delegation
+* ##### Renseigner **The NetBIOS domain name**
+* ##### Laisser par défaut : "Database folder" Log files folder" "SYSVOL folder".
+* ##### Un récapitulatif résume la configuration, faire next.
+* ##### après une vérification le résultat :
+ ![adds 4](https://github.com/user-attachments/assets/48233b21-c883-4eeb-b95a-8b5e209e27ec)
+ * ##### **Install**
+ * ##### L'opération peux durer et un redémarage est nécéssaire.
+ *  #### Au redémmarage la **connection** se fait avec **DOMAINE** créer précédement et via le **Password** de A dministrator
+![adds5](https://github.com/user-attachments/assets/1e75b322-17d4-4822-a698-2cbf8d84b234)
+
+
+3) ##### création d'un Domain
+* #####  Dans tool choisir Active directory Users and Computers
+* ![adds 6](https://github.com/user-attachments/assets/d79a9043-5a3f-4cc4-857c-22090f87a46f)
+* ##### Dans domain.local = > New => Organisations Unit
+  ![adds 7](https://github.com/user-attachments/assets/06c7a72c-83dc-401a-80da-4213132ed2e8)
+* ##### Donner un nom à ce domain puis créer un nouvel **User**
+![adds8](https://github.com/user-attachments/assets/7dae6664-d50a-4b8f-b1df-66b5b23f82be)
+* ##### Le renseigner 
+![adds 9](https://github.com/user-attachments/assets/0378aca1-178e-426b-8f18-6f65bd5dc731)
+
+  * #### 3.7.2 GPO
+  #### :arrow_forward: GPO Général
+ ##### Se rendre sur cette page : 
+![vm 1](https://github.com/user-attachments/assets/bef961d1-2071-4962-8134-48523ada8f20)
+##### :arrow_up: => Group Policy Management.
+##### Sur la page Group Policy Management : 
+![vm 1](https://github.com/user-attachments/assets/7bc1754a-5761-4ce7-aa4f-3f227f49edf6)
+##### Dérouler Forest => Domains => domain.local => Domain controllers Policy => clic droit => Default Domain Controllers Policy => Edit
+![vm 1](https://github.com/user-attachments/assets/29d472fa-6fa3-4007-94fb-395c71a7a008)
+##### Dans cette fenêtre toutes les régle User et Computer son réalisable :
+![vm 1](https://github.com/user-attachments/assets/59942eaa-1e84-44f2-b43e-656c6b4e5c71)
+#### :arrow_forward: exemple edition de GPO
+##### Restriction d'un groupe d'utilisateur
+##### Dans "Group Policy Management" => dérouler jusqu'au groupe souhaitez => Wilder_student => clic droit => Première option
+![vm 1](https://github.com/user-attachments/assets/b2bdc3f9-2b41-4eba-b8c7-b79858f73818)
+##### Donner un nom à ce nouveau GPO :arrow_up:
+##### Dans wilder_students on vois maintenant le nouveau GPO à droite
+
+![vm 1](https://github.com/user-attachments/assets/65fe4691-7d9b-49d9-810c-e73e5866eca5)
+##### Editer
+![vm 1](https://github.com/user-attachments/assets/f0d96297-e79e-4617-9492-8f2f5e2db38d)
+##### Dérouler le menu corespondant pour trouver la politique de paneau de configuration :
+##### Ici User Configuration => Policies => Administrative Templates => Control Panel => Toutes les régles relatives au Control Panel.
+![vm 1](https://github.com/user-attachments/assets/eab7e2ff-7310-4ff9-93a5-c7bb008693fd)
+##### Mettre disabled puis ok
+![vm 1](https://github.com/user-attachments/assets/a837248b-1331-482c-a9db-7d42f6182997)
+##### Résultat:
+![vm 1](https://github.com/user-attachments/assets/f3145f00-ddc3-49ff-bd53-a51b993a027d)
+##### Sur la machine client:
+   * ##### Sur Powershell en Admistrator exécuter la commande : gpupdate /force
+   * ##### faire windows+R => Ecrire : Control.exe
+##### Résultat machine client :
+![vm 1](https://github.com/user-attachments/assets/5accd1aa-8048-4c96-9526-538866c74e59)
+* #### 3.7.3 Gestion client
+
+#### :bangbang: Prérequis machine sur le même réseau et seveur DNS renseigner sur le/les client(s), les Différent cliens renommé avec des nom diférent :bangbang:
+
+##### :arrow_forward: AD GPO sur le clients:
+##### clic sur "View" :arrow_down:
+
+![VM 1](https://github.com/user-attachments/assets/d37402f9-e588-4d37-abfe-8f7820416ac4)
+##### Changer "quick access" en This PC et décocher les deux options en bas
+![VM 1](https://github.com/user-attachments/assets/f6eebabf-6f98-4d6b-8d75-7e49d90e875d)
+##### Résultat attendu
+![VM 1](https://github.com/user-attachments/assets/3d302cd2-d1d3-4156-aea2-522243acafe6)
+##### :arrow_up: Clic droit dans le blanc, en bas à côté de Local Disk(C:) => "Properties"
+##### Puis clic sur "Advanced system settings"(bleu) => renseigner login et password de l'AD => "Change..."(rouge)
+![VM 1](https://github.com/user-attachments/assets/1999e37d-e398-498e-b2df-2a727b7ef75a)
+##### Choisir la partie "Domain" et renseigner le domaine créer dans l'AD.
+![VM 1](https://github.com/user-attachments/assets/14627ca2-8e8b-4642-bd23-7cc1b99e65ce)
+##### Le pc client va reboot, et depuis l'AD on aura la main sur toutes les configuration de ce PC depuis GPO de l'AD.
+
+* #### 4) Serveur
+**DEPLACER DHCP**
+  * #### 4.1 DNS
+    * #### 4.1.1 Windows
+##### **Le serveur est configuré avec une IP fixe de 172.16.10.10 et le client 172.16.10.20.**
+
+##### 1 Créer un nouveau services DNS avec "Manage==> Add roles and Features."
+
+##### 2 dans DNS manager configurer le service DNS:
+ ##### * Clic droit sur les champs dans "Forward Lookup Zones"=> New zone...=> Donner le nom de la zone => Tout garder par defaut.
+ ##### * Clic droit sur les champs dans "Reverse Lookup Zones"=> New zone...=> Donner le nom de la zone => Tout garder par defaut.
+
+##### 3 
+ ##### sur la nouvelle zone dans "Forward Lookup Zones" clic droit sur la zone=> "New Host (A or AAAA) :
+  #####	* créer deux "host" Renseigner les champs => **Name et IP Adress**=> 1 **user** avec l'adresse IP du client et un **svr** avec l'adresse IP du serveur.
+  ##### * vérifier dans "Reverse Lookup Zones" que les **PTR** des deux "host" sont présents.
+
+##### 4 Créer un  alias "CNAME" => Clic droit sur "Forward Lookup Zone" => New Alias CNAME
+ ##### * "Renseigner Alias Name" et "Fully qualified domain name (FQDN) for target host" => Browse
+ ##### * dans "Browse" rechercher sont host A et valider.
+
+##### 5 Renseigner dans les propriétés IPv4 l'adresse IP du serveur DNS sur les deux machine=>Prefered DNS server 172.16.10.10
+
+##### 6 Test nslookup et ping avec le nom de domain( sur le client et le serveur)=> présent dans=>wilder.lan=>srv ou user=>Properties=>user.wilder.lan ou srv.wilder.lan
+
+* #### 4.1.2 Linux
+## :trident: Labo DNS sous Bind9
+
+### :one: Dans ce tuto nous allons mettre en place un labo composé de :  
+- un serveur DNS sous **Debian 12**  
+- un client sous **Debian 12**  
+- L'installation et la configuration du package **Bind9**
+> Les adresses IP, CIDR, nom de carte réseau et nom de domaine/sous-domaine sont à modifier suivant votre application.
+
+### :two: Configuration IP des deux machines
+#### Serveur DNS sous Debian 12
+##### :pencil2: Modification du fichier "*interfaces*"
+- Nom de la carte réseau `enp0s3`  
+- Etat de la carte réseau `static`  
+- Adresse IP du serveur DNS `10.0.0.5`  
+- Adresse IP de la passerelle `10.0.0.1`  
+- CIDR `/24`
+
+![1_interfaces](https://github.com/user-attachments/assets/394ed49c-1d95-441e-8faa-8aa1acb4d77d)
+
+#### Client sous Debian 12
+##### :pencil2: Modification du fichier "*interfaces*"
+- Nom de la carte réseau `enpos3`  
+- Etat de la carte réseau `static`  
+- Adresse IP du client `10.0.0.20`  
+- Adresse IP de la passerelle `10.0.0.1`  
+- CIDR `/24`
+
+![1 1_interfaces](https://github.com/user-attachments/assets/63eed0df-0131-4896-bdf8-5976c81997fa)
+
+##### :pencil2: Modification du fichier "*resolv.conf*"
+- Domaine de recherche `wilders.lan`  
+- Adresse IP du DNS `10.0.0.5`
+
+![1 2_resolv conf](https://github.com/user-attachments/assets/44700d32-d211-493e-a337-53966d2cc2d5)
+
+### :three: Installation du package DNS
+Sur votre serveur DNS mettre a jour le système et installer le package **Bind9**  
+- `sudo apt update && sudo apt upgrade`  
+- `sudo apt install bind9 bind9-doc`  
+
+### :four: Editions des fichiers de configurations
+:warning: Attention à la syntaxe, les fichiers de configs sont sensibles :warning:  
+#### :pencil2: Modification du fichier "*/etc/bind/named.conf.options*"
+- Réseau `10.0.0.0/24`
+- Autorisation de requête DNS `localhost` ; `internal-network`  
+- Autorisation de transfert DNS `localhost`  
+- Redirection DNS `8.8.8.8`  
+- Autorisation de requête récursive `yes`
+
+![2_named conf options](https://github.com/user-attachments/assets/663b2eab-9110-4627-8593-4f23a5a52e97)
+
+#### :pencil2: Modification du fichier "*/etc/bind/named.conf.local*"
+- Zone directe `wilders.lan`  
+- Zone inverse `0.0.10.in-addr.arpa`  
+- Type `master`  
+- Fichier directe `/etc/bind/forward.wilders.lan`  
+- Fichier inverse `/etc/bind/reverse.wilders.lan`  
+- Autorisation de mise à jour `none`
+> A ce stade les fichiers de configurations "*forward.wilders.lan*" et "*reverse.wilders.lan*" n'existent pas encore.  
+
+![3_named conf local](https://github.com/user-attachments/assets/48e11add-6ab9-488e-bd40-e96031fcda87)
+
+#### :pencil2: Création du fichier "*forward.wilders.lan*"
+Tout d'abord il faut copier le fichier "*db.local*" vers "*forward.wilders.lan*"  
+- `cp /etc/bind/db.local /etc/bind/forward.wilders.lan`  
+- Déclaration des informations serveur DNS `primary.wilders.lan` ; `10.0.0.5`  
+- Enregistrement "A" de `www` en `10.0.0.20`  
+- Enregistrement "CNAME" du sous-domaine `www.wilders.lan`  
+
+![4_forward wilders lan](https://github.com/user-attachments/assets/fd766c58-df93-4926-a2b5-bdf62f632b5c)
+
+#### :pencil2: Création du fichier "*reverse.wilders.lan*"
+Tout d'abord il faut copier le fichier "*db.127*" vers "*reverse.wilders.lan*"  
+- `cp /etc/bind/db.127 /etc/bind/reverse.wilders.lan`  
+- Déclaration des informations serveur DNS `primary.wilders.lan` ; `10.0.0.5`  
+- Enregistrement inverse `5` du sous-domaine `primary.wilders.lan`  
+- Enregistrement inverse `20` du sous-domaine `www.wilders.lan`
+
+![5_reverse wilders lan](https://github.com/user-attachments/assets/2289a0ba-1bd4-431c-8c86-26267527fa82)
+
+#### :pencil2: Modification du fichier "*/etc/default/named*"
+- Options `-4`  
+
+![6_named](https://github.com/user-attachments/assets/948e4e9a-a05b-47a3-8656-f1f2c9578ab3)
+
+### :five: Lancement du service "*named*"
+- `sudo systemctl start named`
+- `sudo systemctl enable named`
+- `sudo systemctl status named`
+
+![10_systemctl_status_named](https://github.com/user-attachments/assets/08de342d-4b84-40b6-9742-77749c8df673)
+
+### :hammer: Débogage
+:sos: Contrôler vos logs à tout moment pour poser un diagnostique `journalctl`  
+- Ping depuis serveur vers client `ping`
+- Vérification de la syntaxe du fichier "*named.conf.local*" avec `named-checkconf`
+- Vérification de la syntaxe des fichiers "*forward*" et "*reverse*" avec `named-checkzone`
+- Ouverture du port 53 si parefeu actif `sudo ufw allow 53`  
+
+### :negative_squared_cross_mark: Quelques tests depuis la machine client
+- `dig primary.wilders.lan`  
+![7_dig_primary wilders lan](https://github.com/user-attachments/assets/caf4ba41-6ab4-455a-844a-933139197d4d)
+
+- `dig -x 10.0.0.5`  
+![8_dig-x_10 0 0 5](https://github.com/user-attachments/assets/4f660e41-0b64-4f9e-b471-89b78d9f5159)
+
+- `nslookup www.wilders.lan`   
+![9_nslookup_www wilders lan](https://github.com/user-attachments/assets/3a9d842c-f46f-4669-9f73-3ec14f535395)
+
+
+:information_source: Plus d'infos : https://bind9.readthedocs.io/en/v9.18.31/index.html
+  
+
+
+
+
+
+* #### 4.2 PROXMOX
+   * #### 4.2.1 Ajout/Gestion disque
+   * #### 4.2.2 Vm
+     * #### 4.2.2.1 Clones
+     * #### 4.2.2.2 Template
+     * #### 4.2.2.3 Snapshot
+  * #### 4.3 SSH
+#### DEMO SSH AVEC IDENTIFICATION AUTO
+## UBUNTU -> UBUNTU
+
+
+ON EXECUTE TERMINAL SUR LES DEUX MACHINES
+
+- On vérifie qu'on a openssh serveur sur le client:
+`sshd -V`                                  (*Pour vérifier si installé, si pas installer:*)
+
+`sudo apt install openssh-server`
+
+`sshd -V`								        (*Pour vérifier*)
+
+`systemctl status ssh`							(*Si pas activé:*)
+
+`systemctl enable ssh`							(*Rend actif au démarrage*)
+
+`systemctl status ssh`
+
+`systemctl status sshd`							(*Si tout est bon tout est vert et enable*)
+
+
+- On met sur le même réseaux ip (VM en pont) et on redémarre le service 
+`sudo systemctl restart Networking (ou NetworkManager)`
+
+`ip a`									        (*Pour récupérer IP*)
+
+`ping (adresse ip)`							    (*On vérifie si la communication est ok*)
+
+
+- On se connecte depuis le serveur pour vérifier que tout est ok:
+`ssh client@ip`							    (*On dit oui et on tape le mdp*)
+
+`exit`
+
+
+- On créé une clé ssh:
+`ssh-keygen -t ecdsa`
+
+`yes`
+
+`passphrase pas obligé` 
+
+`ls -a`								        (*Pour vérifier le fichier .ssh =>lieu de stockage de la clé ssh*)
+
+- On déploie la clé ssh publique depuis le serveur vers le client:
+`ssh-copy-id -i /home/user/.ssh/id_ecdsa.pub client@ip`
+
+`on rentre le mdp` 							      (*Si tout est ok on se connecte*)
+
+
+- On vérifie que la clé correspond sur les machines:
+`cat /home/wcs/.ssh/id_ecdsa.pub`					(*Sur le serveur*)
+
+`cat .ssh/auhorized-keys` 						    (*Sur le client*)
+
+
+- On se connecte:
+`ssh client@ip`							        (*SI tout est ok on entre pas de MDP*)
+
+---
+## WINDOWS -> WINDOWS
+
+
+ON EXECUTE POWERSHELL EN ADMIN SUR LES DEUX MACHINES =`toujours un mdp sur le client pour ssh ok sur windows
+
+
+- On vérifie les services clients: 
+
+`get-service ssh-agent`
+
+
+- On active la fonctionnalité client-ssh sur nos machines:
+
+=>système =>fonctionnalités facultatives =`on vérifie client ssh
+
+
+- On vérifie la fonctionnalité serveur-ssh sur le client
+
+=>système.... =>ajouter une fonctionnalité =`serveur OpenSSH
+
+- On vérifie le service sur le client avec
+
+`get-service sshd`						(*Si pas activé:*)
+
+`get-service sshd | Set-Service -StartupType automatic`			(*Puis on démarre:*)
+
+`Restart-Service sshd`							(*On vérifie:*)
+
+`get-service sshd`							(*Si tout est ok running*)
+
+
+- On met sur le même réseaux ip (VM en pont) 
+`ipconfig`								(*On récupère l'IP du client*)
+
+
+- On test la connection SSH depuis le serveur:
+`ssh client@ip powershell`					(*Si tout est bon on entre le MDP =>on précise PowerShell*)
+
+`exit`
+
+-sur le serveur, on créé la clef SSH:
+`ssh-keygen -t ecdsa`							(*On va vérifier ou est la clé et si tout est ok:*)
+
+`Set-Location c:\Users\client\.ssh\`
+
+`get ChildItem`							(*On vérifie la clé*)
+
+
+- On déploie la clé ssh publique depuis le serveur vers le client:
+`On va la copier directement dans le fichier source:`
+
+`get-content -path .\.ssh\id_ecdsa.pub	`				(*On copie*)
+
+`ssh client@ip	`						(*On se connecte en ssh au client*)
+
+`add-content -path .ssh\authorized_keys -value "la clé"`		(*On va vérifier dans le fichier du client*)
+
+
+- On va dans programme data sur le client:
+
+`C:\ProgramData\ssh\sshd_config`               			(*élément masqué dans affichage classique*)
+
+`On commente la ligne MATCH group administrator`			(*On save et on redémarre le service:*)
+
+`Restart-Service sshd`
+
+
+- On se connecte en ssh et normalement pas de MDP:
+`ssh client@ip`
+
+---
+## UBUNTU -> WINDOWS
+
+
+ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
+=>Même vérification pour Openssh que précédemment
+
+
+- On vérifie si on peut se connecter en ssh 
+`ssh client@ip powershell`						(*Si tout est ok on quitte*)
+
+`exit`
+
+
+- On déploie la clé depuis ubuntu vers windows
+`cat .ssh/idecdsa.pub`							(*On copie*)
+`ssh client@ip`								(*On se connecte en ssh au client*)
+
+`add-content -path .ssh\authorized_keys -value "la clé"`		(*On colle*)
+
+
+- On va dans programme data sur le client:
+`C:\ProgramData\ssh\sshd_config`					(*Elément masqué dans affichage classique*)
+
+`On commente la ligne MATCH group administrator`			(*On save et on redémarre le service:*)
+
+`Restart-Service sshd`
+
+
+- On se connecte en ssh et normalement pas de MDP:
+`ssh client@ip`
+
+---
+## WINDOWS -> UBUNTU
+
+
+ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
+=>Même vérification pour Openssh que précédemment
+
+
+- On vérifie si on peut se connecter en ssh 
+`ssh client@ip` 							(*Si tout est ok on quitte*)
+`exit`
+
+
+- On déploie la clé depuis Windows vers Ubuntu
+`get-content -path .\.ssh\id_ecdsa.pub`				(*On copie*)
+`ssh client@ip`								(*On se connecte en ssh au client*)
+
+`nano .ssh/authorized_keys	`					(*On colle*)
+
+
+- On se connecte en ssh et normalement pas de MDP:
+`ssh client@ip`
+
+
+
+
+* #### 5) Cisco Packet Tracer
+  * #### 5.1 Routage Commande
 
