@@ -82,10 +82,11 @@
   * #### 3.7.3 Gestion client
 * ## 4) Serveur
 **DEPLACER DHCP**
-  * #### 4.1 DNS
-    * #### 4.1.1 Windows
-    * #### 4.1.2 Linux
-  * #### 4.2 PROXMOX
+  * ## 4.1 DNS
+    * #### 4.1.1 Fonctionnements
+    * #### 4.1.2 Windows
+    * #### 4.1.3 Linux
+  * ## 4.2 PROXMOX
    * #### 4.2.1 Ajout/Gestion disque
    * #### 4.2.2 Vm
      * #### 4.2.2.1 Clones
@@ -931,7 +932,7 @@ ________________________________________________
 ![Le routage](https://github.com/user-attachments/assets/1fa23eda-1740-4a3a-8743-ed35ff72fedf)
 
 
-* #### 3.6 Le routage :
+* ### 3.6 Le routage :
   * #### 3.6.1 Définition et notions. 
     ##### Le routage est in protocole d'interconection de réseau, en effet les noeuds d'un même réseau IP (logique) doivent être sur le même lien (réseau physique), des chemins sont sélectionnés dans un réseau pour acheminer les données d'un expéditeur jusqu'à un ou plusieurs destinataires.
   * #### 3.6.2 Mécaniques.
@@ -1133,10 +1134,60 @@ manière transparente
 ![VM 1](https://github.com/user-attachments/assets/14627ca2-8e8b-4642-bd23-7cc1b99e65ce)
 ##### Le pc client va reboot, et depuis l'AD on aura la main sur toutes les configuration de ce PC depuis GPO de l'AD.
 
-* #### 4) Serveur
+* ### 4) Serveur
 **DEPLACER DHCP**
-  * #### 4.1 DNS
-    * #### 4.1.1 Windows
+  * ### 4.1 DNS
+* #### 4.1.1 Définitions et fonctionement
+ ##### Base de donnée répartie et décentralisée, permettant la corespondance IP => Domain ==> Internet, AD
+ ##### Ce protocole fonctionne en arborescence : :arrow_heading_down:
+![vm](https://github.com/user-attachments/assets/bde287af-cf89-4b15-b972-07224e85ad4b)
+#### DNS se décompose 
+##### :one: Racine appelée point .
+##### 2️⃣: TLD composés de deux lettres identifiant un pays ou un territoire indépendant.
+##### 3️⃣: SLD nom de domaine
+##### 4️⃣: Hôte
+##### :five: FQDN (Fully Qualified Domain Name)
+##### Fontionement d'un DNS 
+![Enregistrement 2024-11-21 084923](https://github.com/user-attachments/assets/c6568452-e3b0-48f5-9d98-31bb537918d6)
+* #### 4.1.2 :closed_book: DNS Récurcif / :blue_book: DNS faisant autorité
+
+ ##### :closed_book: DNS Récurcif
+ ##### :large_blue_diamond: Le terme « récursif » est à une procédure pouvant se répéter indéfiniment.
+ ##### :large_blue_diamond: Tous les appareils/systèmes qui accèdent à Internet utilisent un DNS récursif. Lorsque sur l'on réalise une recherche sur internet, notre réquête est envoyée à un résolveur récurcif.
+ ##### :large_blue_diamond: Processus :
+##### :one: Lorsqu’une demande est reçue par un résolveur récursif, celui-ci tente d’abord d’y répondre en utilisant les informations contenues dans son cache. 
+##### :two: Si aucune information n’est disponible dans le cache, le résolveur contacte un serveur racine, qui le renvoie vers un serveur TLD (Top Level Domain). 
+##### :three: Le résolveur est ensuite renvoyé du TLD vers un serveur de noms faisant autorité, qui fournit la réponse finale à la demande initiale. Ce processus se répète autant de fois que nécessaire jusqu’à l’obtention d’une réponse finale.
+ ##### :blue_book: DNS faisant autorité
+##### :large_blue_diamond: Les serveurs DNS faisant autorité détiennent les enregistrements faisant autorité pour des domaines spécifiques, agissant comme points de référence pour les adresses IP et autres données DNS.Ils sont chargés de fournir des réponses aux serveurs DNS récursifs concernant l'emplacement des sites web.
+
+##### :no_entry_sign: -Différences- :no_entry_sign: :
+||DNS Récurcif|DNS Autoritaire|
+|:-:|:-:|:-:|
+ |||
+ |||
+ ||||
+ #### 4.1.3 Serveur Racines et Résolveurs
+    
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     * #### 4.1. Windows
 ##### **Le serveur est configuré avec une IP fixe de 172.16.10.10 et le client 172.16.10.20.**
 
 ##### 1 Créer un nouveau services DNS avec "Manage==> Add roles and Features."
@@ -1158,7 +1209,7 @@ manière transparente
 
 ##### 6 Test nslookup et ping avec le nom de domain( sur le client et le serveur)=> présent dans=>wilder.lan=>srv ou user=>Properties=>user.wilder.lan ou srv.wilder.lan
 
-* #### 4.1.2 Linux
+* #### 4.1. Linux
 ## :trident: Labo DNS sous Bind9
 
 ### :one: Dans ce tuto nous allons mettre en place un labo composé de :  
