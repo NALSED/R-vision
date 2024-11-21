@@ -1,8 +1,8 @@
 ![j](https://github.com/user-attachments/assets/11c5c342-b7c1-44b0-a8fe-bfd417c9bb0a)
 
 
-### Sommaire :
-#### 1) [Méthodes Agiles](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#1-m%C3%A9thodes-agiles) :
+# Sommaire :
+## 1) [Méthodes Agiles](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#1-m%C3%A9thodes-agiles) :
  * #### 1.1 Définition :
  * #### 1.2 Etapes et Compositions : 
    * #### 1.2.1  Sprint Backlog.
@@ -10,7 +10,7 @@
    * #### 1.2.3 Daily scrum.
    * #### 1.2.4 Sprint review.
  * #### 1.3 Rôles et Définitions.
- #### 2) [Git/Git-Hub](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#2-gitgit-hub--1) : 
+ ## 2) [Git/Git-Hub](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#2-gitgit-hub--1) : 
    * #### 2.1 Git :
      * #### 2.1.1 Dépot Distant.
      * #### 2.1.2 Branche et Flow. 
@@ -21,7 +21,7 @@
      * #### 2.3.1 Clé SSH.
 
 
-#### 3) [Réseau](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3-r%C3%A9seau--1) :
+## 3) [Réseau](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3-r%C3%A9seau--1) :
  * #### 3.1 [Principes des réseaux](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3-r%C3%A9seau--1) :  
     * #### 3.1.1 [Introduction](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#311-introduction-1).
     * #### 3.1.2 [protocole réseau.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#312-protocole-r%C3%A9seau-1)
@@ -29,7 +29,7 @@
     * #### 3.1.4 [Modèle OSI.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#314-mod%C3%A8le-osi-1)
     * #### 3.1.5 [Modèle TCP\IP.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#315-mod%C3%A8le-tcpip-1)
     * #### 3.1.6 [Matériel d'interconnection.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#316-mat%C3%A9riel-dinterconnection-1)
-* #### 3.2 [Ethernet](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#32-ethernet-) 
+* ### 3.2 [Ethernet](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#32-ethernet-) 
    * #### 3.2.1 [Normes et Architecture.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#321-normes-et-architecture-1)
    * #### 3.2.2 [Cablage et équipement.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#322-cablage-et-%C3%A9quipement-1)
      * #### 3.2.2.1 [La commutation.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3221-la-commutation-1)
@@ -37,7 +37,7 @@
    * #### 3.2.4 [Trame ethernet.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#324-trame-ethernet-1)
    * #### 3.2.5 [Protocole CSMA/CD.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#325-protocole-csmacd-1)
    * #### 3.2.6 [Les VLAN.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#326-les-vlan-1)
-* #### 3.3 [IPv4](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#31-principes-des-r%C3%A9seaux-).
+* ### 3.3 [IPv4](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#31-principes-des-r%C3%A9seaux-).
    * #### 3.3.1 [Protocole et Définitions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#331-protocole-et-d%C3%A9finitions-1)
    * #### 3.3.2 [Les Adresses.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#332-les-adresses-1)
      * #### 3.3.2.1 [Définitions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3321-d%C3%A9finitions-1)
@@ -48,18 +48,18 @@
   * #### 3.3.3 [Configurations du réseau :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#333-configurations-du-r%C3%A9seau--1)
   * #### 3.3.4 [Les paquets :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
   * #### 3.3.5 [Les Protocoles connexes :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
-* #### 3.4 [IPv6 :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#34-ipv6) 
+* ### 3.4 [IPv6 :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#34-ipv6) 
   * #### 3.4.1 [Objectifs.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#341-objectifs-1)
   * #### 3.4.2 [Définition + Notions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#342-d%C3%A9finition--notions-1)
   * #### 3.4.3 [Autoconfiguration.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#343-autoconfiguration-1)
   * #### 3.4.4 [Entêtes.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#344-ent%C3%AAtes-1)
   * #### 3.4.5 [Protocoles associés.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#345-protocoles-associ%C3%A9s-1)
-* #### 3.5 [DHCP :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#35-dhcp)
+* ### 3.5 [DHCP :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#35-dhcp)
   * #### 3.5.1 [Principes.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#351-principes-1)
   * #### 3.5.2 [Mise en oeuvre.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#352-mise-en-oeuvre-1)
     * #### 3.5.2.1 [Débian 12.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3521-d%C3%A9bian-12-1)
     * #### 3.5.2.2 [Windows 22.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3522-windows-22-1)
- * #### 3.6 [Le routage :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36-le-routage--1)
+ * ### 3.6 [Le routage :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36-le-routage--1)
    * #### 3.6.1 [Définition et notions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#361-d%C3%A9finition-et-notions-1)
    * #### 3.6.2 [Mécaniques.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#362-m%C3%A9caniques-1)
    * #### 3.6.3 [Tables de routages.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#363-tables-de-routages-1)
@@ -76,11 +76,11 @@
      * #### 3.6.5.2 [NAPT](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#365-napt)
 
 
-* #### 3.7 Active Directory
+* ### 3.7 Active Directory
   * #### 3.7.1 Créer un ADDS
   * #### 3.7.2 GPO
   * #### 3.7.3 Gestion client
-* #### 4) Serveur
+* ## 4) Serveur
 **DEPLACER DHCP**
   * #### 4.1 DNS
     * #### 4.1.1 Windows
@@ -92,7 +92,7 @@
      * #### 4.2.2.2 Template
      * #### 4.2.2.3 Snapshot
   * #### 4.3  
-* #### 5) Cisco Packet Tracer
+* ## 5) Cisco Packet Tracer
   * #### 5.1 Routage Commande
 
 
