@@ -1115,9 +1115,6 @@ manière transparente
 #### ARBORESCENCE ACTIVE DIRECTORY
 ![AD1](https://github.com/user-attachments/assets/9835fa2a-f81e-4e23-b3ae-65cd17514f83)
 
-
- 
- 
  * #### 3.7.3 Composants
 ---  
  ##### :large_blue_diamond: DC (Domain Controler) : serveur sur lequel on effectue les opérations sont promus au rôle de DC du domaine créé, sera sollicité par les clients pour répondre aux demandes d’authentification à destination de ce domaine. 
@@ -1129,8 +1126,30 @@ manière transparente
 ![AD1](https://github.com/user-attachments/assets/895f5770-1324-4239-973b-9130d66abafe)
  * #### 3.7.4 Protocoles
 ---  
+##### :one: `DNS` : Service obligatoire pour l'utilisation de l'AD, résolution des nom ET résolution des services.(voir 4.1)
+##### 2️⃣: `SNTP` : synchronisation des horloges des systèmes, impératif pour le protocole d’authentification de Windows (Kerberos),
+##### 3️⃣: `LDAP` : Créations de service d'annuaire (voir 3.7.1) 
+##### 4️⃣: `LDIF` fichiers textes permettant d’interagir avec l’AD, Importation/exportation et modifs' de l'AD.
+##### :five: `Kerberos` Protocole d’authentification central par défaut
+##### 6️⃣: `X509` Moyen d'autentifications supplémentaire
+##### 7️⃣: `NTFS` Gestion des droits, des contrôles d’accès et permissions par les groupes AD
   * #### 3.7.5(Fontionalitées)
 ---   
+##### :large_blue_diamond: `Le niveau fonctionnel` correspond à la version de l’OS serveur depuis lequel on crée le domaine.(Si plusieur DC avec niveau fontionnel différent, c'est le plus ancien qui prévaut.
+##### :large_blue_diamond: ` Le schéma` contient des définitions formelles de chaque classe d’objets qui peuvent être créées dans une forêt Active Directory. 
+##### :large_blue_diamond: `La réplication` processus pour maintenir la cohérence et la mise à jour des informations à travers les différents `CD`, via le protocole RPC over IP.
+![ad 1](https://github.com/user-attachments/assets/42c671a0-ce58-490f-8052-f161060a1a0b)
+##### :large_blue_diamond: `KCC` (Knowledge Consistency Checker) est un composant qui génère et gère automatiquement la topologie de réplication intrasite et intersite
+![AD 1](https://github.com/user-attachments/assets/99f58f65-d250-4f97-ae77-8849f7d7a28d)
+####  :warning: Intervalle de réplication (par defaut) inter-site de 180 min/intra-site de 5 min.Un petit intervalle réduit la latence, mais augmente la quantité de trafic réseau. Pour tenir à jour les partitions d’annuaire de domaine, une faible latence est recommandée.:warning:
+##### :large_blue_diamond: `FSMO`
+
+  
+  
+  
+  
+  
+  
   * #### 3.7.6 Objets
 ---  
   * #### 3.7.7 Bonne Pratiques
