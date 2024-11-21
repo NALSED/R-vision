@@ -1162,32 +1162,22 @@ manière transparente
 ##### :large_blue_diamond: Les serveurs DNS faisant autorité détiennent les enregistrements faisant autorité pour des domaines spécifiques, agissant comme points de référence pour les adresses IP et autres données DNS.Ils sont chargés de fournir des réponses aux serveurs DNS récursifs concernant l'emplacement des sites web.
 
 ##### :no_entry_sign: -Différences- :no_entry_sign: :
-||DNS Récurcif|DNS Autoritaire|
+||:closed_book: DNS Récurcif|:blue_book: DNS Autoritaire|
 |:-:|:-:|:-:|
- |||
- |||
- ||||
+ |Fonctionnalitées|chargés de résoudre les requêtes des utilisateurs en récupérant de manière récursive des informations auprès des serveurs DNS faisant autorité.|stockent et fournissent les enregistrements DNS officiels pour des noms de domaine spécifiques.|
+ |Interaction utilisateur|interagissent directement|n'interagissent pas directement|
+ |Requêtes DNS|traitent les requêtes DNS itératives, en recherchant continuellement des informations auprès d'autres serveurs |traitent les requêtes DNS faisant autorité, en fournissant l'adresse IP correcte|
+ |Mise en cache| mettent en cache les données DNS pour accélérer les requêtes futures et de réduire la charge des serveurs faisant autorité|pas de données en cache puisqu'ils détiennent les informations DNS les plus récentes et les plus précises pour les domaines qui leur sont attribués.|
+ |Responsabilité| résolution DNS pour les utilisateurs finaux|hargés de fournir les enregistrements DNS officiels et de répondre aux requêtes des serveurs récursifs|
+ 
  #### 4.1.3 Serveur Racines et Résolveurs
-    
+   ##### :red_circle: Hyérarchie :
+   ##### :one: Serveurs faisant autorité : contenant les informations pour une (ou plusieurs) zone(s), plusieurs serveurs sur une zones pour éviter les pannes.
+   ##### 2️⃣ Serveurs Racines : Ils gèrent une zone contenant les TLD et sont censés être connus par tous les résolveurs
+   ##### 3️⃣ Résolveurs publiques accéssibles à tous, intéroge les Srv autoritaire comme vu dans la section précédente.  
+   ##### 4️⃣ Stub résolver (DNS Local) non récurcif, gére un cache, connais l'adresse d'au moins un résolveur récursif.En générale intégrer à un systéme d'exploitation.
      
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     * #### 4.1. Windows
+ * #### 4.1. Windows
 ##### **Le serveur est configuré avec une IP fixe de 172.16.10.10 et le client 172.16.10.20.**
 
 ##### 1 Créer un nouveau services DNS avec "Manage==> Add roles and Features."
