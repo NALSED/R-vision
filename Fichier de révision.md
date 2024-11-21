@@ -77,22 +77,32 @@
 
 
 * ### 3.7 Active Directory
-  * #### 3.7.1 Créer un ADDS
-  * #### 3.7.2 GPO
-  * #### 3.7.3 Gestion client
+  * #### 3.7.1 Définitions/Protocole LDAP/rôle AD
+  * #### 3.7.2 Arborécence
+  * #### 3.7.3 Composants
+  * #### 3.7.4 Protocoles
+  * #### 3.7.5(Fontionalitées)
+  * #### 3.7.6 Objets
+  * #### 3.7.7 Bonne Pratiques
+  * #### 3.7.8 Créer un ADDS
+     * #### 3.7.8.2 GPO
+     * #### 3.7.8.3 Gestion client
 * ## 4) Serveur
 **DEPLACER DHCP**
   * ## 4.1 DNS
-    * #### 4.1.1 Fonctionnements
-    * #### 4.1.2 Windows
-    * #### 4.1.3 Linux
+    * #### 4.1.1 Deffinitions et Fonctionnements
+    * #### 4.1.2 DNS récurcifs/DNS faisant autorités
+    * #### 4.1.3 Serveurs racines et résolveurs
+    * #### 4.1.4 Windows
+    * #### 4.1.5 Linux
   * ## 4.2 PROXMOX
    * #### 4.2.1 Ajout/Gestion disque
    * #### 4.2.2 Vm
      * #### 4.2.2.1 Clones
      * #### 4.2.2.2 Template
      * #### 4.2.2.3 Snapshot
-  * #### 4.3  
+  * #### 4.3  SSH
+  *  #### 4.4 DHCP
 * ## 5) Cisco Packet Tracer
   * #### 5.1 Routage Commande
 
@@ -1043,10 +1053,80 @@ manière transparente
 - ##### Pas possible avec tous les protocoles de couche 4
 - ##### Incompatible avec certains protocoles (Ex : FTP actif, voir site malekal)
 - ##### Incompatible avec certains contrôle d'intégrité
-* #### 3.7 Active Directory
-  * #### 3.7.1 Créer un ADDS
-### Mise en place d'un ADDS
 
+
+
+
+* ### 3.7 Active Directory
+---
+   * #### 3.7.1 Définitions/Protocole LDAP/rôle AD
+---
+##### :arrow_forward: L'AD est :arrow_heading_down:
+##### :large_blue_diamond: Un système qui intègre un stockage et les services pour mettre en relation les utilisateurs et les ressources réseau.Contient des objets (utilisateurs, ordinateurs, services, …).
+##### :large_blue_diamond: Est administrable en GUI ou en CLI.
+##### :large_blue_diamond: Utilise LDAP pour accéder à l’annuaire
+
+##### :arrow_forward: LADP est un protocole standardisé et ouvert pour accéder et gérer les services d'annuaire, de rechercher et de manipuler des données dans l'annuaire AD de manière structurée, tout en offrant une grande compatibilités avec de nombreux services, applications, OS.
+
+##### :arrow_forward: Rôle AD :
+
+##### :small_blue_diamond: AD DS (Active Directory Domain Service) Mise en œuvre d’un domaine et d’un annuaire Active Directory, gestion utilisateurs, ordinateurs, groupes, ouverture de session, contrôle d’accès aux ressources...
+##### :small_blue_diamond: AD CS (Active Directory Certificate Service) :arrow_right: Gestion et création des clés ainsi que des certificats
+##### :small_blue_diamond:AD FS (Active Directory Federation Services) :arrow_right: depuis Serv.2008 Via un portail gestion d’un SSO (Single Sign-On) pour les applications
+##### :small_blue_diamond:AD RMS (Active Directory Rights Management Services) :arrow_right: depuis Serv.2008 R2 Gestion des autorisations fine sur les fichiers (uniquement sur applications compatibles, comme Office)
+##### :small_blue_diamond:AD LDS (Active Directory Lightweight Directory Services)  :arrow_right: Service d’annuaire light, pas de domaine (pas de contrôle d’accès).
+
+
+
+  * #### 3.7.2 Arborécence
+--- 
+  ##### :warning: Certains points de cette partie seront traités plus longuement par la suite:warning:
+  ##### Cette arborescence AD représente une structure logique indépendante du site, dans une AD tout est Objet.
+  ##### :large_blue_diamond: Les Objets AD  les éléments de base de la BDD AD et représentent les ressources physiques, logiques et les services au sein d'un environnement réseau.
+  ##### Recherche D'objet :arrow_heading_down:
+![AD2](https://github.com/user-attachments/assets/e171fea3-35af-46c8-af30-2ccadc90d44e)
+##### :large_blue_diamond: Unité d’Organisation : ou OU (Organizational Unit) niveau le plus bas de la structure hiérarchique AD. Les OUs sont des “boites” dans lesquels les objets tels que les utilisateurs, les groupes et les ordinateurs sont organisés.
+![AD2](https://github.com/user-attachments/assets/0759c218-c8a7-44e7-976e-214ed9efa662)
+:small_blue_diamond: permettent Une gestion et une délégation administratives fines, d'organiser de façon logique les objets de l’annuaire, facilite la délégation de pouvoir selon l’organisation des objets et de contrôler l’environnement des utilisateurs et des ordinateurs grâce à l’application de stratégie de groupe, ou GPO (Group Policy Object).
+ ##### Recherche OU :arrow_heading_down:
+![AD2](https://github.com/user-attachments/assets/6addf165-d19f-4d0b-93a4-1099768df227)
+
+
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  * #### 3.7.3 Composants
+---  
+  * #### 3.7.4 Protocoles
+---  
+  * #### 3.7.5(Fontionalitées)
+---   
+  * #### 3.7.6 Objets
+---  
+  * #### 3.7.7 Bonne Pratiques
+---  
+  * #### 3.7.8 Créer un ADDS
+ --- 
+     * #### 3.7.8.2 GPO
+  ---   
+     * #### 3.7.8.3 Gestion client
+---
 1) ##### **INSTALATION DU SERVEUR ADDS**
 * ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
   * ##### Choisissez l'option **Role-based or feature-based instalation** et poursuivez.
@@ -1082,7 +1162,7 @@ manière transparente
 * ##### Le renseigner 
 ![adds 9](https://github.com/user-attachments/assets/0378aca1-178e-426b-8f18-6f65bd5dc731)
 
-  * #### 3.7.2 GPO
+ * #### 3.7.8.2 GPO
   #### :arrow_forward: GPO Général
  ##### Se rendre sur cette page : 
 ![vm 1](https://github.com/user-attachments/assets/bef961d1-2071-4962-8134-48523ada8f20)
@@ -1115,7 +1195,7 @@ manière transparente
    * ##### faire windows+R => Ecrire : Control.exe
 ##### Résultat machine client :
 ![vm 1](https://github.com/user-attachments/assets/5accd1aa-8048-4c96-9526-538866c74e59)
-* #### 3.7.3 Gestion client
+* #### 3.7.8.3 Gestion client
 
 #### :bangbang: Prérequis machine sur le même réseau et seveur DNS renseigner sur le/les client(s), les Différent cliens renommé avec des nom diférent :bangbang:
 
@@ -1170,14 +1250,14 @@ manière transparente
  |Mise en cache| mettent en cache les données DNS pour accélérer les requêtes futures et de réduire la charge des serveurs faisant autorité|pas de données en cache puisqu'ils détiennent les informations DNS les plus récentes et les plus précises pour les domaines qui leur sont attribués.|
  |Responsabilité| résolution DNS pour les utilisateurs finaux|hargés de fournir les enregistrements DNS officiels et de répondre aux requêtes des serveurs récursifs|
  
- #### 4.1.3 Serveur Racines et Résolveurs
+ #### 4.1.3 Serveurs Racines et Résolveurs
    ##### :red_circle: Hyérarchie :
    ##### :one: Serveurs faisant autorité : contenant les informations pour une (ou plusieurs) zone(s), plusieurs serveurs sur une zones pour éviter les pannes.
    ##### 2️⃣ Serveurs Racines : Ils gèrent une zone contenant les TLD et sont censés être connus par tous les résolveurs
    ##### 3️⃣ Résolveurs publiques accéssibles à tous, intéroge les Srv autoritaire comme vu dans la section précédente.  
    ##### 4️⃣ Stub résolver (DNS Local) non récurcif, gére un cache, connais l'adresse d'au moins un résolveur récursif.En générale intégrer à un systéme d'exploitation.
      
- * #### 4.1. Windows
+ * #### 4.1.4 Windows
 ##### **Le serveur est configuré avec une IP fixe de 172.16.10.10 et le client 172.16.10.20.**
 
 ##### 1 Créer un nouveau services DNS avec "Manage==> Add roles and Features."
@@ -1199,7 +1279,7 @@ manière transparente
 
 ##### 6 Test nslookup et ping avec le nom de domain( sur le client et le serveur)=> présent dans=>wilder.lan=>srv ou user=>Properties=>user.wilder.lan ou srv.wilder.lan
 
-* #### 4.1. Linux
+* #### 4.1.5 Linux
 ## :trident: Labo DNS sous Bind9
 
 ### :one: Dans ce tuto nous allons mettre en place un labo composé de :  
