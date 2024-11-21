@@ -1142,7 +1142,12 @@ manière transparente
 ##### :large_blue_diamond: `KCC` (Knowledge Consistency Checker) est un composant qui génère et gère automatiquement la topologie de réplication intrasite et intersite
 ![AD 1](https://github.com/user-attachments/assets/99f58f65-d250-4f97-ae77-8849f7d7a28d)
 ####  :warning: Intervalle de réplication (par defaut) inter-site de 180 min/intra-site de 5 min.Un petit intervalle réduit la latence, mais augmente la quantité de trafic réseau. Pour tenir à jour les partitions d’annuaire de domaine, une faible latence est recommandée.:warning:
-##### :large_blue_diamond: `FSMO`
+##### :large_blue_diamond: `FSMO` (Flexible Single Master Operation), Dans un AD avec plusieurs DC (disposent d’un accès en écriture sur l’annuaire), les données sensible sont donc gére par FSMO, pour eviter que tout les DC puissent modifier l'AD. 
+##### :one:
+##### 2️⃣:
+##### 3️⃣:
+##### 4️⃣:
+##### 5️⃣:
 
   
   
