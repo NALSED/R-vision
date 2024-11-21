@@ -1070,50 +1070,64 @@ manière transparente
 
 ##### :arrow_forward: Rôle AD :
 
-##### :small_blue_diamond: AD DS (Active Directory Domain Service) Mise en œuvre d’un domaine et d’un annuaire Active Directory, gestion utilisateurs, ordinateurs, groupes, ouverture de session, contrôle d’accès aux ressources...
-##### :small_blue_diamond: AD CS (Active Directory Certificate Service) :arrow_right: Gestion et création des clés ainsi que des certificats
-##### :small_blue_diamond:AD FS (Active Directory Federation Services) :arrow_right: depuis Serv.2008 Via un portail gestion d’un SSO (Single Sign-On) pour les applications
-##### :small_blue_diamond:AD RMS (Active Directory Rights Management Services) :arrow_right: depuis Serv.2008 R2 Gestion des autorisations fine sur les fichiers (uniquement sur applications compatibles, comme Office)
-##### :small_blue_diamond:AD LDS (Active Directory Lightweight Directory Services)  :arrow_right: Service d’annuaire light, pas de domaine (pas de contrôle d’accès).
-
-
-
+##### :small_blue_diamond: `AD DS` (Active Directory Domain Service) Mise en œuvre d’un domaine et d’un annuaire Active Directory, gestion utilisateurs, ordinateurs, groupes, ouverture de session, contrôle d’accès aux ressources...
+##### :small_blue_diamond: `AD CS` (Active Directory Certificate Service) :arrow_right: Gestion et création des clés ainsi que des certificats
+##### :small_blue_diamond: `AD FS` (Active Directory Federation Services) :arrow_right: depuis Serv.2008 Via un portail gestion d’un SSO (Single Sign-On) pour les applications
+##### :small_blue_diamond: `AD RMS` (Active Directory Rights Management Services) :arrow_right: depuis Serv.2008 R2 Gestion des autorisations fine sur les fichiers (uniquement sur applications compatibles, comme Office)
+##### :small_blue_diamond `:AD LDS` (Active Directory Lightweight Directory Services)  :arrow_right: Service d’annuaire light, pas de domaine (pas de contrôle d’accès).
   * #### 3.7.2 Arborécence
 --- 
   ##### :warning: Certains points de cette partie seront traités plus longuement par la suite:warning:
   ##### Cette arborescence AD représente une structure logique indépendante du site, dans une AD tout est Objet.
   ##### :large_blue_diamond: Les Objets AD  les éléments de base de la BDD AD et représentent les ressources physiques, logiques et les services au sein d'un environnement réseau.
-  ##### Recherche D'objet :arrow_heading_down:
+  ##### :mag: Recherche D'objet :arrow_heading_down:
 ![AD2](https://github.com/user-attachments/assets/e171fea3-35af-46c8-af30-2ccadc90d44e)
+
 ##### :large_blue_diamond: Unité d’Organisation : ou OU (Organizational Unit) niveau le plus bas de la structure hiérarchique AD. Les OUs sont des “boites” dans lesquels les objets tels que les utilisateurs, les groupes et les ordinateurs sont organisés.
 ![AD2](https://github.com/user-attachments/assets/0759c218-c8a7-44e7-976e-214ed9efa662)
-:small_blue_diamond: permettent Une gestion et une délégation administratives fines, d'organiser de façon logique les objets de l’annuaire, facilite la délégation de pouvoir selon l’organisation des objets et de contrôler l’environnement des utilisateurs et des ordinateurs grâce à l’application de stratégie de groupe, ou GPO (Group Policy Object).
- ##### Recherche OU :arrow_heading_down:
+
+##### :small_blue_diamond: permettent Une gestion et une délégation administratives fines, d'organiser de façon logique les objets de l’annuaire, facilite la délégation de pouvoir selon l’organisation des objets et de contrôler l’environnement des utilisateurs et des ordinateurs grâce à l’application de stratégie de groupe, ou GPO (Group Policy Object).
+ ##### :mag: Recherche OU :arrow_heading_down:
 ![AD2](https://github.com/user-attachments/assets/6addf165-d19f-4d0b-93a4-1099768df227)
+##### :large_blue_diamond: un Domaine est une unité administrative et de sécurité dans un environnement, représente un groupe de ressources réseau et d'utilisateurs qui sont gérés comme une seule entité.
+##### :scroll: Fonctionalités
+##### :small_blue_diamond: `Contrôle Centralisé :`
+##### Gestion centralisée des politiques de sécurité, des comptes d'utilisateurs, des comptes d'ordinateurs, permet une administration et une gestion simplifiées.
+##### :small_blue_diamond:`Périmètre de Sécurité :`
+##### A l’intérieur, les politiques et les contrôles d'accès peuvent être appliqués de manière cohérente, toutes les ressources du domaine sont soumise à ces politiques.
+##### :small_blue_diamond:`Partage de Ressources :`
+##### Les utilisateurs d'un même domaine peuvent partager des ressources (fichiers, imprimantes, applications, …) avec des contrôles d'accès gérés centralisés.
+##### :small_blue_diamond:`Authentification et Autorisation :` authentification des utilisateurs et des ordinateurs dans le domaine, contrôle leur accès aux ressources du réseau basé sur les politiques de sécurité définies.
+##### :small_blue_diamond:`Réplication des Données :` Informations du domaine sont répliquées entre les contrôleurs de domaine pour assurer la cohérence et la disponibilité des données de l'annuaire dans tout le domaine.
+##### :small_blue_diamond:`Structure Hiérarchique :` Peut faire partie d'une structure plus large appelée forêt AD, qui est une collection de plusieurs domaines.
+##### :mag: Recherche D'objet :arrow_heading_down:
+![AD1](https://github.com/user-attachments/assets/a765466b-572f-48e0-8c18-19a8ef7c1ca5)
+
+##### :large_blue_diamond: `Trees` : Arborescence de domaines, constitué de plusieurs domaines qui partagent un schéma et une configuration communs, formant un espace de noms contigu, ils sont liés par des relations d’approbation.
+##### :large_blue_diamond: `Forests` : Structure hiérarchique de plusieurs domaines indépendants.
+##### :small_blue_diamond: Tous les arbres partagent un schéma d’annuaire commun
+##### :arrow_lower_right: Tous les domaines :
+##### :small_blue_diamond: Partagent un « Catalogue Global » commun
+##### :small_blue_diamond: Fonctionnent de façon indépendante
+##### :small_blue_diamond: Ont des relations possibles entre-eux
+##### :mag: Recherche forest :arrow_heading_down:
+![AD2](https://github.com/user-attachments/assets/9f8f2418-9a5e-4621-8cc6-fc3e9d22d960)
+#### ARBORESCENCE ACTIVE DIRECTORY
+![AD1](https://github.com/user-attachments/assets/9835fa2a-f81e-4e23-b3ae-65cd17514f83)
 
 
-   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  * #### 3.7.3 Composants
+ 
+ 
+ * #### 3.7.3 Composants
 ---  
-  * #### 3.7.4 Protocoles
+ ##### :large_blue_diamond: DC (Domain Controler) : serveur sur lequel on effectue les opérations sont promus au rôle de DC du domaine créé, sera sollicité par les clients pour répondre aux demandes d’authentification à destination de ce domaine. 
+ ##### :large_blue_diamond: RODC (Read Only Domain Controller) Serveur ayant le rôle de DC, utilisé pour les sites distants, possède des droits de lecture seule.
+ ##### :small_blue_diamond: Améliorations d'équilibrage de la charge et continuité du service :
+##### :small_blue_diamond: Le serveur AD du site local transmettra les modifications de l’AD au RODC du site distant
+##### :small_blue_diamond: Transmission également des modifications du DNS afin que les utilisateurs du site distant disposent toujours d'un service de résolution de nom en local pour accéder à Internet en cas de coupure de la liaison internet
+##### :mag: Recherche forest :arrow_heading_down:
+![AD1](https://github.com/user-attachments/assets/895f5770-1324-4239-973b-9130d66abafe)
+ * #### 3.7.4 Protocoles
 ---  
   * #### 3.7.5(Fontionalitées)
 ---   
