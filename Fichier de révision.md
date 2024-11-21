@@ -1143,20 +1143,40 @@ manière transparente
 ![AD 1](https://github.com/user-attachments/assets/99f58f65-d250-4f97-ae77-8849f7d7a28d)
 ####  :warning: Intervalle de réplication (par defaut) inter-site de 180 min/intra-site de 5 min.Un petit intervalle réduit la latence, mais augmente la quantité de trafic réseau. Pour tenir à jour les partitions d’annuaire de domaine, une faible latence est recommandée.:warning:
 ##### :large_blue_diamond: `FSMO` (Flexible Single Master Operation), Dans un AD avec plusieurs DC (disposent d’un accès en écriture sur l’annuaire), les données sensible sont donc gére par FSMO, pour eviter que tout les DC puissent modifier l'AD. 
-##### :one:
-##### 2️⃣:
-##### 3️⃣:
-##### 4️⃣:
-##### 5️⃣:
+##### :one: `Schema master` 1 seul par forêt (obligatoire), Gère les MAJ du schéma
+##### 2️⃣: `domain naming master` 1 seul par forêt Gère les noms de domaines, peut les supprimer, les ajouter, 
+##### 3️⃣: `RID master`1 seul par domaine Gère les attributions de SID ( identifiant de sécurité unique, stocké dans l'attribut "objectSid", si un objet est renommez, l'AD sera toujours en mesure de l'identifier, car le SID reste le même pendant toute la vie d'un objet.)
+##### 4️⃣: `infrastructure master` 1 seul par domaine Gère les relations des objets entre domaine
+##### 5️⃣: `PDC emulator`  seul par domaine (primordial) Gère la synchronisation du temps, processus de verrouillage de comptes
+##### :+1: Bonne pratique:
+##### :small_blue_diamond: Ne pas avoir qu’un seul DC avec tous les rôles FSMO.(Par défaut le premier DC d’une nouvelle forêt cumule les cinq rôles.)
+#
+#### :small_blue_diamond: Idéalement : 5 DC avec un rôle installé sur chacun
+* #### 3.7.6 Objets
+---  
+![ad1](https://github.com/user-attachments/assets/e118faeb-159d-4139-83c9-380346d20e1d)
+
+##### :large_blue_diamond:[Les attributs](https://learn.microsoft.com/fr-fr/windows/win32/adschema/attributes-all) définissent les caractéristiques/constituant de l'objet.
+##### :mag: Recherche d'attributs :arrow_heading_down:
+![ad1](https://github.com/user-attachments/assets/d91ec276-4c0f-4ee8-a097-7dfe8ea1fd4c)
+
+##### :large_blue_diamond:les id uniques
+:one: GUID (Globally Unique Identifier)
+* ##### Unique au sein d’une forêt
+* ##### Attribué à un objet à la création (ne change jamais)
+* ##### Longueur codé sur 128 bits
+* ##### Attribut : ObjectGUID
+* ##### Composé de Nombres aléatoires (122 bits), Nombres fixes (6 bits)
+
+2️⃣: Le SID (Security Identifier) 
+* #####
+* #####
+* #####
+* #####
+* #####
+##### :large_blue_diamond:le DN
 
   
-  
-  
-  
-  
-  
-  * #### 3.7.6 Objets
----  
   * #### 3.7.7 Bonne Pratiques
 ---  
   * #### 3.7.8 Créer un ADDS
