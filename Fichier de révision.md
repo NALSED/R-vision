@@ -1426,6 +1426,41 @@ Tout d'abord il faut copier le fichier "*db.127*" vers "*reverse.wilders.lan*"
 
      * #### 4.2.2.3 Snapshot
   * #### 4.3 SSH
+ * ### 3.4.1 Instalation
+      * ## Ubuntu
+      * #### Installer ssh server :
+![VM 1](https://github.com/user-attachments/assets/f4a662b1-7c56-4857-8912-6638bbd139d6)
+    * #### Check ssh et sshd
+ ![ssh clients ubuntu](https://github.com/user-attachments/assets/e091e228-089c-4bb4-961c-fa1d313b49c8)
+ ![sshd](https://github.com/user-attachments/assets/ad7a7387-a80c-4a04-a51b-6aa16b40a97b)
+ * ## Débian
+  * #### Installer ssh server :
+  ![VM 1](https://github.com/user-attachments/assets/f8379a09-a83f-4890-9ec7-42d42bba2f39)
+   * #### Check ssh et sshd
+   ![ssh debian](https://github.com/user-attachments/assets/50e777c1-ee91-492a-802c-f0ad6a5fc013)
+
+   
+* ## Windows 10 et Windows 2022 (même procédure)
+#### Dans Windows setting
+![vm 1](https://github.com/user-attachments/assets/fcb0d23a-1415-41c7-a79f-a28ea25a9959)
+#### Optional features
+![vm1](https://github.com/user-attachments/assets/2f55ae2c-b5e4-4a2e-9dbe-3b01637f47eb)
+#### Editer les régles au démarage :
+![vm 2](https://github.com/user-attachments/assets/acb80868-0b54-44a6-be29-9362c269993e)
+![vm 1](https://github.com/user-attachments/assets/7d1d38a9-59c1-4013-bdaa-f4d0c8c7ed20)
+#### Rechercher Open ssh server
+![vm1](https://github.com/user-attachments/assets/92066d5b-43af-42be-ba20-7bc04d97493b)
+#### Le démarrer
+![vm 1](https://github.com/user-attachments/assets/8592b937-3da3-4c8c-9d88-dba56bca8278)
+#### L'activer au démarage => dans le même menu => Properties
+#### Selectionner => Atomatic (Delayed Start)
+![vm 1](https://github.com/user-attachments/assets/820ad474-e52d-46f1-841e-831102c639a8)
+
+
+
+
+
+
 #### DEMO SSH AVEC IDENTIFICATION AUTO
 ## UBUNTU -> UBUNTU
 
