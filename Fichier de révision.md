@@ -1,7 +1,11 @@
 ![j](https://github.com/user-attachments/assets/11c5c342-b7c1-44b0-a8fe-bfd417c9bb0a)
 
+---
+---
+---
 
 # Sommaire :
+---
 ## 1) [Méthodes Agiles](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#1-m%C3%A9thodes-agiles) :
  * #### 1.1 Définition :
  * #### 1.2 Etapes et Compositions : 
@@ -102,25 +106,38 @@
   * #### 5.1 [Routage Commande](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#51-routage-commande-1)
 
 
-#### 1) Méthodes Agiles 
+### 1) Méthodes Agiles 
+ ---
+ ---
  * ####  1.1 Définitions
+---
    ##### Création de **cycles répétitif**, ayant pour buts la **réalisations de projets complexes,** en intégrant un procédé **incrémentale**, des différentre étape de la réalisation, des solutions techniques, et des livrables. 
  * #### 1.2 Etapes et Compositions
+---
    * #### 1.2.1 Le Product Backlog:
+---
    #####  Il existe pendant **toute la durée du projet** et contient une **liste** de tout les éléments nécessaires à l'amélioration du produit.Ces éléments sont classés par ordre de priorité pour le client,ils évolue quotidiennement. Géré par le **Product Owner**
    * #### 1.2.2  Sprint Backlog
+---
    ##### Est un  **plan du sprint**, il construit le sprint **planning**, il contient les objectifs du sprint, la liste des éléments du product backlog choisi plan opérationnel pour réussir à finir cette liste pendant le sprint (planning détail technique).(Utilisation du **Definition of Done** niveau de qualité attendu).
 
    * #### 1.2.3 Sprint planning
+---
    ##### Planning du sprint, **Objectifs**, **points techniques**, Comment ces détails vont être réalisés.   
    * #### 1.2.4 Daily scrum
+---
    ##### **Réunions courtes**, Inspecter l'avancement et adapter le plan si besoin,Identifier les problèmes / Proposer des solutions, même heure, même lieu tous les jours.
    * #### 1.2.5 Sprint review
+   ---
    **Réunion pour examiner le résultat du sprint**, décider des adaptations nécessaires, ajustement du product backlog 
    * #### 1.3 Rôles et Définitions
+ ---
  #####  Un **Scrum master :** facilite l'application de la méthode Scrum, un **Product Owner :** porteur de la vision de la valeur du produit,Des développeurs : équipe pluridisciplinaire en charge de la réalisation du produit.
 #### 2) Git/Git-Hub : 
+---
+---
    * #### 2.1 Git
+---
      * #### 2.1.1 Dépot Distant
      ##### ((penser à passer en "main" pour pouvoir faire certaine action ( rendre la destination C:, safe aux yeux de git):)) 
     git config --global --add safe.directory C:/
@@ -142,6 +159,7 @@
  8) ##### lande@Admin MINGW64 /c/my-awesome-project (main) git push origin main
 
  * #### 2.1.2 Branche et Flow 
+ ---
    intro: 	après création de différentes branches, on peux visionner l'avancement via Insights puis 	Network en bas à Gauche.
 
 
@@ -152,6 +170,7 @@
 3) ##### lande@Admin MINGW64 ~/git/website-flow (main) git checkout [OTHERBRANCH]
 4) ##### Modification via le tuto précédent et push sur GitHub
    * ##### 2.1.3 Conflit Merge
+---
   ###### Quand un conflit apparait entre un dépôt distant et un dépôt local:(( après git pull))
      git pull origin main
 ##### ((MESSAGE ERREUR)) Le conflits se sont inscrit dans le dossier README
@@ -186,9 +205,10 @@ Automatic merge failed; fix conflicts and then commit the result.
 4) ##### lande@Admin MINGW64 ~/git/A (main) git push origin main ((C'EST BUENOS!!))
 
 * #### 2.1.4 Clé SSH.
+---
 ##### Utiliser gh_2.57.0_windows_amd64 avec le tuto pour créer un clé SSH entre GitHub et Git
 * #### 2.2 Full git francois!
- 
+--- 
 # SOMMAIRE : 
 
 - [Remarques générales/précautions](#remarques-généralesprécautions)
@@ -648,15 +668,22 @@ git pull origin main
 g Basic-gitGithub-manip-pour-TSSR.md…]()
 
  * #### 2.3 Git-Hub
+---
+---
     * #### 2.3.1 Clé SSH
+---
 ![ssh git hub 1](https://github.com/user-attachments/assets/ed18b230-3595-4084-a405-42731a1b3c86)
 ![ssh git hub 2](https://github.com/user-attachments/assets/76963e14-2f63-474b-9ee0-379f76066134)
 
    ![sd](https://github.com/user-attachments/assets/7287fcac-a5d0-4d43-a338-30fb3da71ecc)
 
 #### 3) Réseau :
+---
+---
  * #### 3.1 Principes des réseaux :  
-    * #### 3.1.1 Introduction.
+---
+   * #### 3.1.1 Introduction.
+--- 
  ###### Un **réseau** est un **ensemble d’éléments reliés** les uns aux autres et entre lesquels** circulent des informations**
 ###### Il est constitué :
 ###### - De **supports physiques** (câbles) - médium
@@ -671,56 +698,63 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 #####  Pour transporter l'information, découpage de l'information, et du réseau via le principe de datagramme et le routage.
 
  * #### 3.1.2 protocole réseau.
+---
      ##### Définitions: Un protocole réseau est mis œuvre sur un réseau informatique ou un réseau de télécommunication. Ensemble des règles que doivent suivre tous les équipements pour pouvoir communiquer.L'idée est qu'un premier service soit appuyé sur un autre lui même appuyé sur un autre, lé découpage de problémes complexs facilite leurs resolutions.
    
   * #### 3.1.3 Modéle en couche.
-    ##### Pour pallier au différents probléme lié au transport d'information et de donnée, nous avons recourt à l'encapsulation.
-    ##### L'idée est qu'un premier service soit appuyé sur un autre lui même appuyé sur un autre, le découpage de problémes complexs facilite leurs resolutions.
-    * #### 3.1.4 Modèle OSI.
-
-    ##### Le **Modèle OSI** est une norme de communication elle se décompose de la manière suivante:
+ ---
+ ##### Pour pallier au différents probléme lié au transport d'information et de donnée, nous avons recourt à l'encapsulation.
+##### L'idée est qu'un premier service soit appuyé sur un autre lui même appuyé sur un autre, le découpage de problémes complexs facilite leurs resolutions.
+* #### 3.1.4 Modèle OSI.
+---
+ ##### Le **Modèle OSI** est une norme de communication elle se décompose de la manière suivante:
     ![image](https://btssio-ccicampus-strasbourg.fr/wp-content/uploads/2022/06/OSI.png)
     ![image](https://doknet.fr/wp-content/uploads/2023/11/diagramme-osi-1024x751.png)
    * #### 3.1.5 Modèle **TCP\IP.**
+---
    ##### Le modéle TCP\IP Interconnexion de réseaux physiques, création de réseaux logiques pouvant communiquer, bien qu'étant sur des réseaux physiques différents par des passerelles.
 ![image](https://upload.wikimedia.org/wikipedia/commons/e/e4/TCPIP_couche_ISO_modele_OSI.png)
    * #### 3.1.6 Matériel d'interconnection.
-     * ##### Répéteur
-     * ##### Hub 
-     * ##### Bridge (pont)
-     * ##### Switch (commutateur)
-     * ##### Routeur
-     * ##### Gateway (passerelle)
+ --- 
+* ##### Répéteur
+* ##### Hub 
+* ##### Bridge (pont)
+* ##### Switch (commutateur)
+* ##### Routeur
+* ##### Gateway (passerelle)
 ![image](https://user.oc-static.com/upload/2021/06/01/16225671036921_P2C5-2.png)
 ![er](https://github.com/user-attachments/assets/122a5826-015b-4028-bba0-d617d350b21b)
 
 * #### 3.2 Ethernet :
- 
+--- 
   * #### 3.2.1 Normes et Architecture.
-      ##### Résumé des norme :
-    * ##### Ethernet est un protocole de communication utilisé pour les réseaux informatiques, exploitant la commutation de paquets. 
-    * ##### [IEEE 802](https://fr.wikipedia.org/wiki/IEEE_802#:~:text=IEEE%20802%20est%20un%20comit%C3%A9,liaisons%20filaires%20ou%20sans%20fil.) : Overview & Architecture
-    * ##### [IEEE 802.1](https://fr.wikipedia.org/wiki/IEEE_802.1): Bridging & Management
-    * ##### [IEEE 802.2](https://fr.wikipedia.org/wiki/IEEE_802#:~:text=IEEE%20802%20est%20un%20comit%C3%A9,liaisons%20filaires%20ou%20sans%20fil.): Logical Link Control (la couche LLC commune)
-    * ##### [IEEE 802.3](https://fr.wikipedia.org/wiki/IEEE_802.3#:~:text=IEEE%20802.3%20est%20une%20norme,sous%20le%20nom%20d'Ethernet.) Ethernet
-    * ##### [IEEE 802.11](https://fr.wikipedia.org/wiki/IEEE_802.11): Wireless LAN (WiFi)
-    * ##### [IEEE 802.15](https://fr.wikipedia.org/wiki/IEEE_802.15.4): Wireless PAN (bluetooth)
-    * ##### [IEEE 802.16](https://fr.wikipedia.org/wiki/IEEE_802.16#:~:text=IEEE%20802.16%20est%20un%20groupe,la%20promotion%20de%20ce%20standard.): Broadband Wireless MAN (WiMAX)
+---
+   ##### Résumé des norme :
+* ##### Ethernet est un protocole de communication utilisé pour les réseaux informatiques, exploitant la commutation de paquets. 
+* ##### [IEEE 802](https://fr.wikipedia.org/wiki/IEEE_802#:~:text=IEEE%20802%20est%20un%20comit%C3%A9,liaisons%20filaires%20ou%20sans%20fil.) : Overview & Architecture
+* ##### [IEEE 802.1](https://fr.wikipedia.org/wiki/IEEE_802.1): Bridging & Management
+* ##### [IEEE 802.2](https://fr.wikipedia.org/wiki/IEEE_802#:~:text=IEEE%20802%20est%20un%20comit%C3%A9,liaisons%20filaires%20ou%20sans%20fil.): Logical Link Control (la couche LLC commune)
+* ##### [IEEE 802.3](https://fr.wikipedia.org/wiki/IEEE_802.3#:~:text=IEEE%20802.3%20est%20une%20norme,sous%20le%20nom%20d'Ethernet.) Ethernet
+* ##### [IEEE 802.11](https://fr.wikipedia.org/wiki/IEEE_802.11): Wireless LAN (WiFi)
+* ##### [IEEE 802.15](https://fr.wikipedia.org/wiki/IEEE_802.15.4): Wireless PAN (bluetooth)
+* ##### [IEEE 802.16](https://fr.wikipedia.org/wiki/IEEE_802.16#:~:text=IEEE%20802.16%20est%20un%20groupe,la%20promotion%20de%20ce%20standard.): Broadband Wireless MAN (WiMAX)
        ##### différentes normes :PHY, MAC, IEEE
    * #### 3.2.2 Cablage et équipement.
-
-     * ##### Cable ethernet avec connecteurs RJ45 ( droit ou croisée)
-     * ##### Fibre optique (MMF -- ou SMF ++)
-     * ##### Carte Réseau 
-     * ##### Emetteur-recepteurs (GBIC,SFP,QSFP,CFP,XFP)
-     * ##### Switch(commutateurs)
+---
+* ##### Cable ethernet avec connecteurs RJ45 ( droit ou croisée)
+* ##### Fibre optique (MMF -- ou SMF ++)
+* ##### Carte Réseau 
+* ##### Emetteur-recepteurs (GBIC,SFP,QSFP,CFP,XFP)
+* ##### Switch(commutateurs)
  
    * #### 3.2.3 Adresse **Mac.**
-     ##### Permet de connaitre l'hôtes et le destinataire. Cencées être unique
-     ##### **Format :** En 48 bits (6 octets) noté en Héxa
+---
+##### Permet de connaitre l'hôtes et le destinataire. Cencées être unique
+##### **Format :** En 48 bits (6 octets) noté en Héxa
     ![image](https://upload.wikimedia.org/wikipedia/commons/9/94/MAC-48_Address.svg)
 
    * #### 3.2.4 Trame **ethernet.**
+--- 
   ##### La [trame](https://fr.slideshare.net/slideshow/les-trames-reseaux-22965265/22965265) ethernet est constituée des éléments suivants:
   #####  Un début de trame (ou **préambule**)
   ##### **Un MAC header** (entête de liaison):
@@ -733,58 +767,74 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ![trame](https://github.com/user-attachments/assets/157a8198-c807-4435-bda4-3450f8d234d5)
 
    * #### 3.2.5 Protocole **CSMA/CD**.
+---
    ##### Permet la bonne gestion du trafic et la transmition de données
    ##### **CS** (Carrier Sense) ⇒ Écoute de la porteuse
    ##### **MA** (Multiple Access) ⇒ Accès multiple
    ##### **Principes :**
-##### **1** Trame prête à être transmise
-##### **2** Si le support physique n'est pas libre, attendre jusqu'à ce qu'il le devienne puis attendre la durée du gap inter-trame
-##### **3** Envoyer la trame
-##### **4** Si une collision est détectée (décalage de tension continue sur le câble) → procédure de gestion des collisions
-  ##### CD (Collision Detection)
-#####   **1** Arrêt des envois de trame
-#####   **2** Envoi d’un signal de collision (jam signal = séquence de 4 à 6 octets).
- ##### **3** Temps d’attente aléatoire
-#####   **4** Reprise de la CSMA
+##### :one: Trame prête à être transmise
+##### 2️⃣ Si le support physique n'est pas libre, attendre jusqu'à ce qu'il le devienne puis attendre la durée du gap inter-trame
+##### 3️⃣ Envoyer la trame
+##### 4️⃣ Si une collision est détectée (décalage de tension continue sur le câble) → procédure de gestion des collisions
+  ##### 5️⃣ (Collision Detection)
+#####   :one: Arrêt des envois de trame
+#####   2️⃣ Envoi d’un signal de collision (jam signal = séquence de 4 à 6 octets).
+ ##### 3️⃣ Temps d’attente aléatoire
+#####   4️⃣ Reprise de la CSMA
 ##### Si le nombre maximal de transmissions (16) est atteint, la transmission est annulée.
-##### **5** Sinon → transmission réussie
+##### 5️⃣ Sinon → transmission réussie
    ![image](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEig6GVhhstxSls2GVXUH5FZ_Kfpe8rRRVs6SrgN3N5uJPeNH4yO_ii3AlWxqQ5R1tONQ2ea4rcCfLCDnQWq1IYWgh9e1-iWQRioubSegiBciS7ak4R4yf5Qak76jjtZTCcYDi5T-xf_qNJo/s1600/algorigrammeCSMACD.png)
    * #### 3.2.6 Les VLAN.
+---
 ##### Les VLAN (Virtual LAN) permettent de segmenter un réseau ethernet et il ajoute un entête de 4 octets après l'entête ethernet :
 ![vlan](https://github.com/user-attachments/assets/b0203650-79eb-4d72-a942-ad3db0f23e9e)
  ![IPV4](https://github.com/user-attachments/assets/9361c1e7-8c54-4ac7-9bd1-06026719c007)
   
 * #### 3.3 IPv4.
+---
   * #### 3.3.1 Protocole et Définitions.
+ ---
    #####  Le protocol **IP** (Internet Protocol) codée sur **32 bits** permet l'interconnection de réseaux physiques, selon le standard [IETF](https://fr.wikipedia.org/wiki/Internet_Engineering_Task_Force), **couche 3** et compte actuellement 2 versions,la 4 et la 6. Le protocole **distingue les liens**, les **réseaux** et les **interfaces des réseaux.**
   ##### Le protocole n'a **pas de coordinateur global** => **pas de configuration globale**
   ##### Chaque interface dispose de **sa propre configuration locale**, donc de sa **propre vision des réseaux logiques**, pour pouvoir communiquer, ces configurations doivent être compatibles.
    * #### 3.3.2 Les Adresses.
-     * #### 3.3.2.1 Définitions. 
-       * #####  L'adresse est donc codée sur 32 bits (4 octets), comporte deux partie ID réseau et l'ID hôtes => sur 32 bits => n bits(id réseau) et 32-n bits
-       * ##### Chaque octet est converti en base 10 => 4 octets => 4 nombres
-       * ##### Chaque adresses à des plages réservées : la première adresse => **l'adresse réseau** et la dernière adresse => **adresse de diffusion (broadcast)**
-       * #####  Utilisation de masque de sous réseau qui corespond au CIDR
-       * ##### Calcule nombre hôte: 32((ipv4))-21 CIDR  ==> 2^11=2048-2  ((Broadcast et reseau)).
+---
+* #### 3.3.2.1 Définitions. 
+---
+* #####  L'adresse est donc codée sur 32 bits (4 octets), comporte deux partie ID réseau et l'ID hôtes => sur 32 bits => n bits(id réseau) et 32-n bits
+* ##### Chaque octet est converti en base 10 => 4 octets => 4 nombres
+* ##### Chaque adresses à des plages réservées : la première adresse => **l'adresse réseau** et la dernière adresse => **adresse de diffusion (broadcast)**
+* #####  Utilisation de masque de sous réseau qui corespond au CIDR
+* ##### Calcule nombre hôte: 32((ipv4))-21 CIDR  ==> 2^11=2048-2  ((Broadcast et reseau)).
 
      * #### 3.3.2.2 CIDR.
-     ##### Le routage (CIDR) est une méthode d'attribution d'adresses IP qui améliore l'efficacité du routage des données sur Internet.
-     ##### Table de calcule:
-    ![image](https://www.it-connect.fr/wp-content-itc/uploads/2021/05/reseau-adresse-ipv4-calcul-masque-sous-reseau-01.png)
-     * #### 3.3.2.3 Adresse réservées.
-       * ##### Adresses réservées pour les réseaux privés RFC [1918](https://datatracker.ietf.org/doc/html/rfc1918)
-         * ##### 10.0.0.0/8
-         * ##### 172.16.0.0/12 (172.16.0.0 - 172.31.255.255)
-         * ##### 192.168.0.0/16
-       * ##### Adresses de bouclage (localhost) : 127.0.0.0/8
-       * ##### Adresse du réseau actuel (si inconnu) : 0.0.0.0/8
-       * ##### Adresses multicast : 224.0.0.0/4
-       * ##### Adresse de diffusion (locale !) sur réseau inconnu : 255.255.255.255/32
-     * #### 3.3.2.4 Les Masques.
-     * #### 3.3.2.5 Calculs.
+---
+##### Le routage (CIDR) est une méthode d'attribution d'adresses IP qui améliore l'efficacité du routage des données sur Internet.
+##### Table de calcule:
+ ![image](https://www.it-connect.fr/wp-content-itc/uploads/2021/05/reseau-adresse-ipv4-calcul-masque-sous-reseau-01.png)
+ * #### 3.3.2.3 Adresse réservées.
+   ---
+##### 🔹 Adresses réservées pour les réseaux privés RFC [1918](https://datatracker.ietf.org/doc/html/rfc1918)
+##### 🔹 10.0.0.0/8
+##### 🔹 172.16.0.0/12 (172.16.0.0 - 172.31.255.255)
+##### 🔹 192.168.0.0/16
+##### 🔹 Adresses de bouclage (localhost) : 127.0.0.0/8
+##### 🔹 Adresse du réseau actuel (si inconnu) : 0.0.0.0/8
+##### 🔹 Adresses multicast : 224.0.0.0/4
+##### Adresse de diffusion (locale !) sur réseau inconnu : 255.255.255.255/32
+* #### 3.3.2.4 Les Masques.
+* #### 3.3.2.5 Calculs.
+##### Dans le tableau des puissance de 2==>| 128 | 64 | 32 | 28 | 8 | 4 | 2 | 1 |
+##### On prend 10, combien de fois on peux le diviser par 8 => 1*8 et reste 2
+##### Donc les 8 premier octets donnent 255 et on applique 2 dans le tableau en partant de 128 ==> 128+64
+##### Donc
+##### 10 : 8=>255 et 2=>128+64=192 donc 255.192.0.0
+##### 13 : 8 reste 6 donc 128+64+32+28+8+4= 254 donc 255.254.0.0
+##### 19 : 8 .8 reste 3 donc 128+64+32 = 224 donc 255.255.224.0
 
   * #### 3.3.4 Les paquets :
-  ##### IP découpe l'information qu'il doit transmettre, reçu de la couche supérieure (Protocole de couche 4 : TCP, UDP…) => Pour transmission au lien (Protocole de couche 1&2 : Ethernet).Chaque paquet comporte un entête.
+---
+   ##### IP découpe l'information qu'il doit transmettre, reçu de la couche supérieure (Protocole de couche 4 : TCP, UDP…) => Pour transmission au lien (Protocole de couche 1&2 : Ethernet).Chaque paquet comporte un entête.
 #### **Voici la décoposition de l'entête :**
 ![1](https://github.com/user-attachments/assets/7d2cd000-53c1-4ab4-ae5e-d13c1691c46b)
 
@@ -805,6 +855,7 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ##### Liste des [protocoles](https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers) IPv4.
 
  * #### 3.3.5 Les Protocoles connexes :
+---
 ##### Protocoles servant au bon fontionnement de l'ip: ICMP et ARP
 ##### **ICMP** Protocole de niveau 3 **controle les erreurs de transmitions**
 ![7](https://github.com/user-attachments/assets/8126582a-2c8c-4227-be4b-eaf301f2d299)
@@ -815,22 +866,25 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ![IPV6](https://github.com/user-attachments/assets/04229f6c-a78a-45f5-b4c9-8d14c65b5bfa)
 
 * #### 3.4 IPv6
+---
   * #### 3.4.1 Objectifs.
+---
   ##### Ce protocole de v6 à pour but de:
-    * ##### Etendre les capacités d'adressage (lutter contre la pénurie de v4).
-    * ##### Simplification des entêtes (par rapport à v4).
-    * ##### Automatiser la configuration.
-    * ##### Authentification et confidentialité
-    * ##### Supprimer/diminuer la fragmentation
+ * ##### Etendre les capacités d'adressage (lutter contre la pénurie de v4).
+ * ##### Simplification des entêtes (par rapport à v4).
+ * ##### Automatiser la configuration.
+ * ##### Authentification et confidentialité
+ * ##### Supprimer/diminuer la fragmentation
   * #### 3.4.2 Définition + Notions
+ ---
   ##### Une adresse IPv6 est sur 128 bits (IPv4 32 bits), en héxadécimal, il existe 3 catégories :
-    * ##### Unicast (une interface)
+##### 🔹Unicast (une interface)
     ![unicast](https://github.com/user-attachments/assets/683d205d-09bf-4590-83ca-5da2fa14e18b)
 
-    * #####  Multicast : adresses de diffusion (un groupe)
+##### 🔹 Multicast : adresses de diffusion (un groupe)
     ![multicast](https://github.com/user-attachments/assets/6b7cc955-27e7-421b-9fab-01319e446623)
 
-    * ##### Anycast : adresse de groupe (un parmi le groupe)
+##### 🔹Anycast : adresse de groupe (un parmi le groupe)
 ![anycast](https://github.com/user-attachments/assets/6c4da70e-1def-492f-b2eb-12c421ad6e33)
     
  ##### (Disparition des broadcasts) 
@@ -852,77 +906,91 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 
   
   * #### 3.4.3 Autoconfiguration
-  ##### C'est un des avantage de IPv6, une machine est capable d’obtenir automatiquement une adresse sans avoir besoin d’une configuration manuelle ou d’un serveur. Il existe 2 méthodes avec et sans état. 
+---
+##### C'est un des avantage de IPv6, une machine est capable d’obtenir automatiquement une adresse sans avoir besoin d’une configuration manuelle ou d’un serveur. Il existe 2 méthodes avec et sans état. 
 ##### :large_blue_diamond:  Sans état est un mixe entre le préfixe réseau et de son identifiant d’interface. Le préfixe réseau est la partie de l’adresse qui identifie le segment de réseau et est généralement annoncée par un routeur. L’identificateur d’interface est la partie de l’adresse qui identifie le périphérique et est généralement dérivé de son adresse MAC
 ##### :large_blue_diamond: avec état via un DHCPv6
   * #### 3.4.4 Entêtes
+ ---
   ![ENTËTE IPv6](https://github.com/user-attachments/assets/4c3d9910-2784-4cd6-9483-cb091f7716a1)
 ##### La fragmentation devient optionnelle, en utilisant le PMUTUd, le paquet est rejeté jusqu'à que l'emméteur adapte la taille du paquet.
   * #### 3.4.5 Protocoles associés.
+---
 ![icmpv6](https://github.com/user-attachments/assets/3f4cd98a-23eb-40f5-90f6-6ec37d51faa6)
 ![dhcpv6](https://github.com/user-attachments/assets/3436e1f6-e2ab-4dee-891a-f22b23584e7d)
  ##### IPSEC : IPv6 amène des protocoles optionnels pour sécuriser les communications au niveau IP : IPsec. Authentification, contrôle d'intégrité et confidentialité cryptographique, avec protocole AH, ESP, IKE…
 
 
+![RO](https://github.com/user-attachments/assets/2d12127e-3049-4c1f-9b9b-74bfb119ca44)
 
 * ### 3.5 Le routage :
-  * #### 3..1 Définition et notions. 
-    ##### Le routage est in protocole d'interconection de réseau, en effet les noeuds d'un même réseau IP (logique) doivent être sur le même lien (réseau physique), des chemins sont sélectionnés dans un réseau pour acheminer les données d'un expéditeur jusqu'à un ou plusieurs destinataires.
+---
+---
+* #### 3.5.1 Définition et notions. 
+---
+  ##### Le routage est in protocole d'interconection de réseau, en effet les noeuds d'un même réseau IP (logique) doivent être sur le même lien (réseau physique), des chemins sont sélectionnés dans un réseau pour acheminer les données d'un expéditeur jusqu'à un ou plusieurs destinataires.
   * #### 3.5.2 Mécaniques.
-     #####  Chaque routeur possède des informations sur son voisinage. Chaque routeur maintient une liste des réseaux connus, chacun de ces réseaux étant associé à un ou plusieurs routeurs voisins à qui le message peut être passé.
-     #####  Si on veux envoyer sur une interface d'un même réseau, le paquet est directement envoyé sur l'interface physique corespondant à l'IP de destination, le routage interviens quand les machines ne sont pas sur le même réseau, en effet on encapsule donc le paquet IP dans une trame [ethernet](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#324-trame-ethernet-1), mais si la destrination ne fait pas partie du même réseau que l'hôte il fera appel à ça table de routage.
-     #####
+ ---
+#####  Chaque routeur possède des informations sur son voisinage. Chaque routeur maintient une liste des réseaux connus, chacun de ces réseaux étant associé à un ou plusieurs routeurs voisins à qui le message peut être passé.
+#####  Si on veux envoyer sur une interface d'un même réseau, le paquet est directement envoyé sur l'interface physique corespondant à l'IP de destination, le routage interviens quand les machines ne sont pas sur le même réseau, en effet on encapsule donc le paquet IP dans une trame [ethernet](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#324-trame-ethernet-1), mais si la destrination ne fait pas partie du même réseau que l'hôte il fera appel à ça table de routage.
+   
   * #### 3.5.3 Tables de routages.
-   ##### -Définitions- :
+---   
+   ##### :scroll: -Définitions- :
    ##### Chaque noeud d'un réseau IP (routeur ou pas) dispose d'une table de routage,chaque entrée de cette table est composée (au moins) :
-   ##### 1° **Une destination** (adresse de réseau et masque)
-   #####  2° **Saut suivant** (next hop) : l'adresse de la passerelle pour y aller (un autre noeud ou directement l'hôte) 
+   ##### :one: **Une destination** (adresse de réseau et masque)
+   #####  2️⃣ **Saut suivant** (next hop) : l'adresse de la passerelle pour y aller (un autre noeud ou directement l'hôte) 
     ##### (Note : en IPv6, on utilise les adresses lien local des routeurs/passerelles)
-   #####  3° (Eventuellement on peut y trouver aussi :) L'interface associée : celle par laquelle ce noeud peut joindre lapasserelle, une métrique : une mesure de la qualité de cette route (moins = mieux), parfois d'autres choses (comme le protocole utilisé).
+   #####  3️⃣ (Eventuellement on peut y trouver aussi :) L'interface associée : celle par laquelle ce noeud peut joindre lapasserelle, une métrique : une mesure de la qualité de cette route (moins = mieux), parfois d'autres choses (comme le protocole utilisé).
 ##### :large_blue_diamond: Le routeur reçoit donc une trame, l'ethertype ( qui contetient le protocole à appliquer sur le prochain noeud) ici IP, si on était dans le cas d'un hôte classique du réseau => on jette le paquet
 ##### Mais ce noeud est un routeur, donc il doit transmettre le paquet => Il procède à la même mécanique d'envoi de paquet IP.
 ##### :large_blue_diamond: Il est posible sur de très grand réseau d'utiliser der sur-réseaux comme préfixe de routage en agglomérant, quand c'est possible, plusieurs adresses de réseau en une seule, plus les réseaux sont grands plus la table de routage est petite.
 ##### Pour des réseaux de grande envergure, il est nécessaire de passer à du routage dynamique et de déployer des protocoles dédiées comme OSPF et BGP.
    * #### 3.5.4 Routage dynamique
+---
 ##### -Définitions- : 
 ##### Le routage dynamique est utilisé sur de grand réseau, étant amené à des modifications constantes, les routeur communique entre eux et échange sur leurs table de routages pour s'addapter aux modifications, aux pannes ou aux coupures.
    * #### 3.5.4.1 Protocoles dynamiques
+---
 ![wdfg](https://github.com/user-attachments/assets/3bfa004d-7e7b-4d6d-834e-e557d010c07f)
  ##### :large_blue_diamond: RIP (Routing Information Protocol) port ⇒ UDP 520. Pour de petit réseau, limite de 15 sauts.
 ##### :large_blue_diamond: EIGRP (Enhanced Interior Gateway Routing Protocol) port ⇒ 88 Protocole conçu par Cisco pour ses matériels utilisé dans les réseaux complexes.Convergence rapide, prend en charge plusieurs protocoles de couche réseau.
 ##### :large_blue_diamond: OSPF (Open Shortest Path First) port ⇒ 89 Principalement utilisé dans les réseaux de tailles moyenne.
 ##### :large_blue_diamond: BGP (Border Gateway Protocol) port ⇒ TCP 179 Ce protocole est utilisé pour le routage sur internet entre les différents systèmes autonomes. Il est utilisé pour l'échange d'informations de routage entre différents ISP (Internet Service Provider)
   * #### 3.5.4.2 [Protocoles de transport](https://www.it-connect.fr/les-protocoles-tcp-et-udp-pour-les-debutants/)
-     * #### 3.5.4.3.1 UDP
-       ##### -Définitions- :
-       ##### UDP - User Datagram Protocol port ⇒ 17
-       ##### Conçu comme un protocol minimal, Permet la communication entre processus (application), il est supporté par IPv4 et IPv6. Permet d'identifier certaines erreurs de transmission, contrôle de la taille, vérification de la Checksum.UDP est notâment utilisé pour le streaming. Mais il n'assure pas la fibilité , si les contrôles échouent le datagramme est jeté par le destinataire.
-       ##### -DATAGRAMME UDP- :
+  ---
+  * #### 3.5.4.3.1 UDP
+ --- 
+ ##### :scroll:-Définitions- :
+##### UDP - User Datagram Protocol port ⇒ 17
+##### Conçu comme un protocol minimal, Permet la communication entre processus (application), il est supporté par IPv4 et IPv6. Permet d'identifier certaines erreurs de transmission, contrôle de la taille, vérification de la Checksum.UDP est notâment utilisé pour le streaming. Mais il n'assure pas la fibilité , si les contrôles échouent le datagramme est jeté par le destinataire.
+##### -DATAGRAMME UDP- :
        ![edf](https://github.com/user-attachments/assets/4d895bad-2b8e-434d-891e-187a94d11aa9)
 
-       * #### 3.5.4.3.2 TCP
-        ##### -Définitions- :
-       ##### TCP - Transmission Control Protocol port ⇒ 6
-       ##### Protocole fiable, est un flux en mode connecté il établi une connexion bi-directionnelle et garantie du séquencement (ordre), les paquets sont vérrifier pour voir si il ne sont pas corompus, si c'est le cas le paquet est renvoyé, cherche à optimiser l'utilisation du réseau(congestion du réseau).
-       ##### Déroulé d'un envoi TCP :
-        ##### 1) Transmission de segments TCP : TCP découpe le PDU en segments, chaque segment est associé à un numéro de séquence par la source
-        ##### 2) À l'émission d'un segment => démarrage d'un compte à rebours pour ce numéro de séquence
-        ##### 3) Envoi d'un acquittement par le destinataire à réception
-        ##### 4) À réception de l'acquittement par la source => suppression du segment et du compte à rebours
-        ##### 5) À la fin d'un compte à rebours
-       ##### 6) OU => ré-émission du segment
+* #### 3.5.4.3.2 TCP
+  ---
+  ##### :scroll:-Définitions- :
+  ##### TCP - Transmission Control Protocol port ⇒ 6
+  ##### Protocole fiable, est un flux en mode connecté il établi une connexion bi-directionnelle et garantie du séquencement (ordre), les paquets sont vérrifier pour voir si il ne sont pas corompus, si c'est le cas le paquet est renvoyé, cherche à optimiser l'utilisation du réseau(congestion du réseau).
+   ##### Déroulé d'un envoi TCP :
+    ##### 1️⃣ Transmission de segments TCP : TCP découpe le PDU en segments, chaque segment est associé à un numéro de séquence par la source
+    ##### 2️⃣ À l'émission d'un segment => démarrage d'un compte à rebours pour ce numéro de séquence
+    ##### 3️⃣ Envoi d'un acquittement par le destinataire à réception
+    ##### 4️⃣ À réception de l'acquittement par la source => suppression du segment et du compte à rebours
+    ##### 5️⃣ À la fin d'un compte à rebours
+    ##### 6️⃣ OU => ré-émission du segment
      ##### -ENTETE TCP- :
        ![sddv](https://github.com/user-attachments/assets/898df453-1def-4df6-b5f2-67ac38afc47c)
      ##### -SEGMENT TCP- :
     ![sertg](https://github.com/user-attachments/assets/a1c7db57-269f-41c6-9cbb-3b93a6781700)
   ##### Voici quelques protocoles utilisant TCP:
-  * ##### HTTP HTTPS.
-  * ##### SMTP envoyer des mail.
-  * ##### NFS transferts de donnés + UNIX.
-  * ##### SMB transfert de donnés + WIN.
-  * ##### SSH Telnet gestion à distance des équipements.
-  * ##### RDP administration via bureau à distance.
-  * ##### LDAP intéroge l'AD.
+   ##### 🔹HTTP HTTPS.
+   ##### 🔹SMTP envoyer des mail.
+   ##### 🔹NFS transferts de donnés + UNIX.
+   ##### 🔹SMB transfert de donnés + WIN.
+   ##### 🔹SSH Telnet gestion à distance des équipements.
+   ##### 🔹RDP administration via bureau à distance.
+   ##### 🔹LDAP intéroge l'AD.
 ##### Principe de connection et fin de connection
 ![1](https://github.com/user-attachments/assets/edcf330a-79b6-4f37-baf3-6f1bba4d245d)
 ![2](https://github.com/user-attachments/assets/528629b8-f626-4ad3-92db-c83127d76b5d)
@@ -931,10 +999,11 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### Remettre les segments dans l'ordre une fois l'ensemble reçu.
 
  * #### 3.5.4.3 Les ports(Liens du sites avec tous les ports + les principaux)
+---
    ##### Un port est un identifiant de processus au sein d'une interface
    ##### Une communication est donc caractérisée par :
-     - ##### un couple adresse IP/port de destination.
-     - ##### un couple adresse IP/port source.
+   ##### 🔹 un couple adresse IP/port de destination.
+   ##### 🔹 un couple adresse IP/port source.
 ##### De la même façon qu'il ne peut pas y avoir 2 adresses identiques sur un réseau, il ne peut pas y avoir 2 ports identiques sur une même adresse
 ##### Les ports sont codés sur 16 bits (de 0 à 65535)
 * #####  On distingue 3 plages [liste exaustive](https://www.frameip.com/liste-des-ports-tcp-udp/):
@@ -943,16 +1012,17 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :large_blue_diamond: 49152 à 65535 : les ports dynamiques (Ephemeral Ports) - Client
  
 * #### 3.5.5 [NAT](https://www.it-connect.fr/le-nat-et-le-pat-pour-les-debutants/)
+ ---
  ##### -Définitions- :
  ##### Network Address Translation
  ##### Le NAT permettent à un routeur de modifier les paquets IP au moment de leur transmission. Ils visent à remplacer une adresse IP (source ou destination) par une autre pour substituer à une adresse valable sur le réseau interne (privée) une autre adresse valable sur un autre réseau (par exemple publique sur Internet).Historiquement, NAT était utilisé pour cacher son plan d'adressage interne. Maintenant il est massivement utiliser pour combler la pénurie d'IPv4.
    * #### 3.5.5.1 Basic NAT
-     ##### Dans sa version la plus simple, dite Basic NAT, on configure le routeur qui fait la passerelle entre un réseau interne et un réseau externe (Internet, réseau d'une autre structure, etc…), puis on choisi un ensemble d'adresses IP valables sur le réseau externe. Sur le routeur, on associe à chacune d'elles, l'adresse d'une machine interne devant communiquer avec l'extérieur.
-     ##### La table de routage peut-être configurée à la main (NAT statique) ou remplie dynamiquement (cas général)
+  ---
+  ##### Dans sa version la plus simple, dite Basic NAT, on configure le routeur qui fait la passerelle entre un réseau interne et un réseau externe (Internet, réseau d'une autre structure, etc…), puis on choisi un ensemble d'adresses IP valables sur le réseau externe. Sur le routeur, on associe à chacune d'elles, l'adresse d'une machine interne devant communiquer avec l'extérieur.
+  ##### La table de routage peut-être configurée à la main (NAT statique) ou remplie dynamiquement (cas général)
    ##### Pour héberger un serveur derrière un NAT, il faut mettre en place une correspondance statique, ce genre de correspondance est souvent appelée port forwarding. Elle consiste à déclarer un port sur le routeur NAT et à lui associer une adresse interne (et éventuellement un port).
    ##### large_red_diamond: Limite : dans le cas de plusieurs serveurs pour le même service, seul un d'entre euxpourra utiliser le port standard
-##### L'utilisation de NAT implique qu'une adresse IP est utilisée par plusieurs interfaces de
-manière transparente
+##### L'utilisation de NAT implique qu'une adresse IP est utilisée par plusieurs interfaces demanière transparente
 
  ##### large_blue_diamond: Exemple :
   ##### avec un routeur adresse publique 203.1.113.123
@@ -966,22 +1036,25 @@ manière transparente
 * #####  Le routeur cherche dans sa table une correspondance pour le port 52369 : 10.0.0.1
 * #####  Il transmet donc sur le réseau interne le paquet en remplaçant l'adresse dedestination (la sienne) par 10.0.0.1
    * #### 3.5.5. NAPT
-   ##### Utilisé quand il y à moins d'adresse privé que d'adresse publiques, exemple box inernet. Ne pas considérer juste l'adresse comme identifiant mais le couple adresse IP/port (couche 4).
+---
+  ##### Utilisé quand il y à moins d'adresse privé que d'adresse publiques, exemple box inernet. Ne pas considérer juste l'adresse comme identifiant mais le couple adresse IP/port (couche 4).
   ##### Le NAPT dynamique a de nombreux inconvénients :
-- ##### La table étant remplie lors de la requête de l'intérieur vers l'extérieur
-- ##### Le client doit être derrière le NAT
-- ##### Impossible d'avoir un serveur interne
-- ##### Le paquet IP ET le protocole de niveau 4 sont modifiés
-- ##### Lourd: nécessite un recalcul des checksum
-- ##### Pas possible avec tous les protocoles de couche 4
-- ##### Incompatible avec certains protocoles (Ex : FTP actif, voir site malekal)
-- ##### Incompatible avec certains contrôle d'intégrité
+ ##### 🔹 La table étant remplie lors de la requête de l'intérieur vers l'extérieur
+ ##### 🔹 Le client doit être derrière le NAT
+ ##### 🔹 Impossible d'avoir un serveur interne
+ ##### 🔹 Le paquet IP ET le protocole de niveau 4 sont modifiés
+ ##### 🔹 Lourd: nécessite un recalcul des checksum
+ ##### 🔹 Pas possible avec tous les protocoles de couche 4
+ ##### 🔹Incompatible avec certains protocoles (Ex : FTP actif, voir site malekal)
+ ##### 🔹Incompatible avec certains contrôle d'intégrité
 
 
 
+![AD](https://github.com/user-attachments/assets/a7884ac1-1af1-4d5f-848c-13233df32706)
 
 * ### 3.6 Active Directory
 ---
+
    * #### 3.6.1 Définitions/Protocole LDAP/rôle AD
 ---
 ##### :arrow_forward: L'AD est :arrow_heading_down:
@@ -1277,9 +1350,11 @@ manière transparente
 ##### Choisir la partie "Domain" et renseigner le domaine créer dans l'AD.
 ![VM 1](https://github.com/user-attachments/assets/14627ca2-8e8b-4642-bd23-7cc1b99e65ce)
 ##### Le pc client va reboot, et depuis l'AD on aura la main sur toutes les configuration de ce PC depuis GPO de l'AD.
-
+![SER](https://github.com/user-attachments/assets/3a8af9d1-cec6-4c6d-a1d1-5b8300ead725)
 * ### 4) Serveur
 **DEPLACER DHCP**
+![DNS](https://github.com/user-attachments/assets/60ce934f-f818-464e-8e2d-3804a21badfd)
+
   * ### 4.1 DNS
 * #### 4.1.1 Définitions et fonctionement
  ##### Base de donnée répartie et décentralisée, permettant la corespondance IP => Domain ==> Internet, AD
@@ -1460,6 +1535,7 @@ Tout d'abord il faut copier le fichier "*db.127*" vers "*reverse.wilders.lan*"
 
 
 
+![PROX](https://github.com/user-attachments/assets/c968ffd4-da09-44fa-824f-61b3b76bc805)
 
 * #### 4.2 PROXMOX
    
@@ -1475,6 +1551,8 @@ Tout d'abord il faut copier le fichier "*db.127*" vers "*reverse.wilders.lan*"
      * #### 4.2.2.2 Template
 
      * #### 4.2.2.3 Snapshot
+![SSH](https://github.com/user-attachments/assets/350f041d-c70f-447a-bc08-1d42604cfae4)
+
   * #### 4.3 SSH
  * ### 3.4.1 Instalation
       * ## Ubuntu
@@ -1764,6 +1842,7 @@ ________________________________________________
 >   *  ##### Chez le client, **ipconfig /renew**==> TADDAAAAAA!!
 ![Le routage](https://github.com/user-attachments/assets/1fa23eda-1740-4a3a-8743-ed35ff72fedf)
 
+![SSH](https://github.com/user-attachments/assets/8f736c0a-8d7a-4481-8218-66f616ec4b7c)
 
 * ### 5) Cisco Packet Tracer
   * #### 5.1 Routage Commande
