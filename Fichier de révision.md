@@ -1167,23 +1167,90 @@ manière transparente
 * ##### Longueur codé sur 128 bits
 * ##### Attribut : ObjectGUID
 * ##### Composé de Nombres aléatoires (122 bits), Nombres fixes (6 bits)
+* ##### (exemple 3F2504E0-4F89-11D3-9A0C-0305E82C3301 )
 
 2️⃣: Le SID (Security Identifier) 
-* #####
-* #####
-* #####
-* #####
-* #####
-##### :large_blue_diamond:le DN
-
-  
-  * #### 3.7.7 Bonne Pratiques
+* ##### Unique au sein d’un domaine
+* ##### Attribué à un objet à la création et peut changer
+* ##### Longueur maximale de 256 caractères
+* ##### Attribut: ObjectSID
+* #####  (exemple :  (s-1-5-21-156063872-1535639461-3779917529):arrow_right: :one:- (1134):arrow_right: 2️⃣: )
+:one: SID / :two: RID
+##### :large_blue_diamond: le DN (Distinguished Name)
+##### :small_blue_diamond: Correspond au chemin LDAP dans l’annuaire AD
+##### :small_blue_diamond: La longueur dépend de l’emplacement de l’objet dans l’AD
+##### :small_blue_diamond: ![ad1](https://github.com/user-attachments/assets/d82a326f-4028-4ee7-a90e-b9af85d49ca6)
+* #### 3.7.7 :+1:Bonne Pratiques :
 ---  
-  * #### 3.7.8 Créer un ADDS
+ ##### :large_blue_diamond:Gestion des identités et des accès
+##### :one:Principe de moindre privilège :
+##### :small_blue_diamond:Limiter les droits d'accès au strict nécessaire
+##### :small_blue_diamond:Uniquement les droits nécessaires pour exécuter des tâches précises
+##### 2️⃣:Utiliser des comptes d'administration séparés :
+##### :small_blue_diamond:Avoir des comptes distincts pour les tâches administratives et les tâches quotidiennes (règles des Tiers)
+##### :3️⃣Changer le mot de passe du compte administrateur local des clients :
+##### :small_blue_diamond: Utilisation de LAPS
+
+ ##### :large_blue_diamond:
+ ##### :one:Renforcer les politiques de mot de passe :
+ ##### :small_blue_diamond:Établir des règles strictes pour la création de mots de passe robustes 
+ ##### :2️⃣ Utiliser des groupes de sécurité pour l’accès aux ressources :
+ ##### :small_blue_diamond: Contrôler l'accès via des groupes plutôt que par des permissions individuelles
+ 
+ ##### :large_blue_diamond:Opérations sur le réseau
+:one:
+ ##### :small_blue_diamond:Les mettre dans un réseau dédié et sécurisé (vlan, DMZ)
+ ##### 2️⃣Effectuer les MAJ :
+ ##### :small_blue_diamond:Application régulière des MAJ de sécurité
+ ##### :small_blue_diamond:Faire évoluer les systèmes (OS, appliance)
+ ##### 3️⃣:Sécuriser les communications LDAP :
+ ##### :small_blue_diamond:Protéger les transmissions avec LDAPS (LDAP sur SSL/TLS)
+ 
+ ##### :large_blue_diamond:Surveillance
+##### :one: Effectuer des audits réguliers et surveiller les logs
+##### :small_blue_diamond:Audit interne ou externe
+##### :small_blue_diamond:Examiner les logs pour détecter les activités anormales
+##### :two:Mettre en place une stratégie de sauvegarde et de récupération 
+##### :small_blue_diamond:Préparer des plans de sauvegarde et de restauration pour les urgences
+##### :small_blue_diamond:Utiliser la règles 3, 2, 1
+![ad1](https://github.com/user-attachments/assets/51429f88-82f3-4d6d-9607-2bcdcd1c86d6)
+ ##### :large_blue_diamond:Microsoft Tiering Model
+##### :scroll: Définition : Modèle de sécurité qui sépare les ressources et les administrateurs pour limiter les risques de propagation d'attaques dans l'environnement AD, on sépare les composants de l’infrastructure en fonction de leur niveau d’importance en rendant les couches hermétiques les unes des autres.
+ ##### 🔷Séparation en niveaux de sécurité ou tiers
+##### :one: tier 0 (sensible ++ risque )
+##### :small_blue_diamond: DC, administrateurs d'entreprise et autres actifs avec contrôle direct sur l'ensemble de l'environnement AD (serveurs AD, PKI, ADFS …)
+##### 🔹Un admin T0 peut gérer uniquement des composants de cette couche.
+##### 🔹Il ne peux [RDP](https://fr.wikipedia.org/wiki/Remote_Desktop_Protocol) que sur des serveurs intégrés à ce niveau.
+##### :warning:L’accès ne doit PAS être utilisé pour se connecter à des serveurs d’une couche inférieure.⚠️
+![ad1](https://github.com/user-attachments/assets/90871efb-da57-4b29-af81-1dab2f8d65d9)
+##### :two: Tier 1 (sensible +/risque +)
+##### :small_blue_diamond: Serveurs et applications, administrateurs qui gèrent les services serveur et les applications d'entreprise (SCCM, WSUS, SCOM, etc.)
+##### :small_blue_diamond:Un admin T1 gère les serveurs applicatifs et middlewares de l’entreprise.
+##### :warning:L’accès ne doit PAS être utilisé pour se connecter à des serveurs d’une couche inférieure.⚠️
+![ad1](https://github.com/user-attachments/assets/cf8b6471-6620-4f5d-9dea-812cc32c6a18)
+##### 3️⃣:Tier 2 (sensible/risque ++) 
+##### :small_blue_diamond: Postes de travail des utilisateurs finaux, y compris ceux des administrateurs.
+##### :small_blue_diamond: Couche la plus à risque : Erreurs et intrusions (phishing, ransomware, etc.), Périphériques mobiles.
+##### :small_blue_diamond:Un admin T2 gère les postes de travail des utilisateurs.
+##### :warning:L’accès ne doit PAS être utilisé pour se connecter à des serveurs d’une couche supérieur.⚠️
+![ad1](https://github.com/user-attachments/assets/0e4839cd-4a4b-4ac4-891a-d3c2e8028db0)
+![ad1](https://github.com/user-attachments/assets/1b5c24ca-7842-4544-b8e5-d70d9767f3d4)
+##### 🔷JIT & JEA
+##### :one:JIT (Just-In-Time) :
+##### :small_blue_diamond:Permet aux administrateurs d'obtenir les privilèges nécessaires pour une tâche spécifique pendant une période limitée.
+##### :small_blue_diamond:A l'expiration, les droits élevés sont révoqués automatiquement.
+##### 2️⃣:JEA (Just Enough Administration) :
+##### :small_blue_diamond:Limite les privilèges des administrateurs aux seuls droits nécessaires pour effectuer une tâche spécifique, réduisant ainsi les risques associés à l'utilisation de comptes à privilèges élevés.
+* #### 3.7.8 Créer un ADDS :
  --- 
-     * #### 3.7.8.2 GPO
+ * #### 3.7.8.2 GPO
   ---   
-     * #### 3.7.8.3 Gestion client
+ 
+ 
+ 
+ 
+ 
+ * #### 3.7.8.3 Gestion client
 ---
 1) ##### **INSTALATION DU SERVEUR ADDS**
 * ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
