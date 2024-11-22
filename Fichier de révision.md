@@ -675,7 +675,7 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ![ssh git hub 1](https://github.com/user-attachments/assets/ed18b230-3595-4084-a405-42731a1b3c86)
 ![ssh git hub 2](https://github.com/user-attachments/assets/76963e14-2f63-474b-9ee0-379f76066134)
 
-   ![sd](https://github.com/user-attachments/assets/7287fcac-a5d0-4d43-a338-30fb3da71ecc)
+![sd](https://github.com/user-attachments/assets/7287fcac-a5d0-4d43-a338-30fb3da71ecc)
 
 #### 3) Réseau :
 ---
@@ -699,7 +699,7 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 
  * #### 3.1.2 protocole réseau.
 ---
-     ##### Définitions: Un protocole réseau est mis œuvre sur un réseau informatique ou un réseau de télécommunication. Ensemble des règles que doivent suivre tous les équipements pour pouvoir communiquer.L'idée est qu'un premier service soit appuyé sur un autre lui même appuyé sur un autre, lé découpage de problémes complexs facilite leurs resolutions.
+##### :scroll: Définitions: Un protocole réseau est mis œuvre sur un réseau informatique ou un réseau de télécommunication. Ensemble des règles que doivent suivre tous les équipements pour pouvoir communiquer.L'idée est qu'un premier service soit appuyé sur un autre lui même appuyé sur un autre, lé découpage de problémes complexs facilite leurs resolutions.
    
   * #### 3.1.3 Modéle en couche.
  ---
@@ -708,8 +708,8 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 * #### 3.1.4 Modèle OSI.
 ---
  ##### Le **Modèle OSI** est une norme de communication elle se décompose de la manière suivante:
-    ![image](https://btssio-ccicampus-strasbourg.fr/wp-content/uploads/2022/06/OSI.png)
-    ![image](https://doknet.fr/wp-content/uploads/2023/11/diagramme-osi-1024x751.png)
+![image](https://btssio-ccicampus-strasbourg.fr/wp-content/uploads/2022/06/OSI.png)
+![image](https://doknet.fr/wp-content/uploads/2023/11/diagramme-osi-1024x751.png)
    * #### 3.1.5 Modèle **TCP\IP.**
 ---
    ##### Le modéle TCP\IP Interconnexion de réseaux physiques, création de réseaux logiques pouvant communiquer, bien qu'étant sur des réseaux physiques différents par des passerelles.
@@ -738,7 +738,7 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 * ##### [IEEE 802.11](https://fr.wikipedia.org/wiki/IEEE_802.11): Wireless LAN (WiFi)
 * ##### [IEEE 802.15](https://fr.wikipedia.org/wiki/IEEE_802.15.4): Wireless PAN (bluetooth)
 * ##### [IEEE 802.16](https://fr.wikipedia.org/wiki/IEEE_802.16#:~:text=IEEE%20802.16%20est%20un%20groupe,la%20promotion%20de%20ce%20standard.): Broadband Wireless MAN (WiMAX)
-       ##### différentes normes :PHY, MAC, IEEE
+  ##### différentes normes :PHY, MAC, IEEE
    * #### 3.2.2 Cablage et équipement.
 ---
 * ##### Cable ethernet avec connecteurs RJ45 ( droit ou croisée)
@@ -751,7 +751,7 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ---
 ##### Permet de connaitre l'hôtes et le destinataire. Cencées être unique
 ##### **Format :** En 48 bits (6 octets) noté en Héxa
-    ![image](https://upload.wikimedia.org/wikipedia/commons/9/94/MAC-48_Address.svg)
+![image](https://upload.wikimedia.org/wikipedia/commons/9/94/MAC-48_Address.svg)
 
    * #### 3.2.4 Trame **ethernet.**
 --- 
@@ -763,7 +763,9 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
   ##### **EtherType** (type de contenu)
   ##### Le **Payload**: les données à transporter
   ##### **FCS**
+
 ![image](https://d33wubrfki0l68.cloudfront.net/08c7cec779cc2f558eed99e35cdbb76dcfde07f4/61ddf/assets/images/ccna/lucidchart/0fbb202c-c343-4c90-be0f-384448c27f24.png)
+
 ![trame](https://github.com/user-attachments/assets/157a8198-c807-4435-bda4-3450f8d234d5)
 
    * #### 3.2.5 Protocole **CSMA/CD**.
@@ -940,7 +942,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
    ##### Chaque noeud d'un réseau IP (routeur ou pas) dispose d'une table de routage,chaque entrée de cette table est composée (au moins) :
    ##### :one: **Une destination** (adresse de réseau et masque)
    #####  2️⃣ **Saut suivant** (next hop) : l'adresse de la passerelle pour y aller (un autre noeud ou directement l'hôte) 
-    ##### (Note : en IPv6, on utilise les adresses lien local des routeurs/passerelles)
+   ##### (Note : en IPv6, on utilise les adresses lien local des routeurs/passerelles)
    #####  3️⃣ (Eventuellement on peut y trouver aussi :) L'interface associée : celle par laquelle ce noeud peut joindre lapasserelle, une métrique : une mesure de la qualité de cette route (moins = mieux), parfois d'autres choses (comme le protocole utilisé).
 ##### :large_blue_diamond: Le routeur reçoit donc une trame, l'ethertype ( qui contetient le protocole à appliquer sur le prochain noeud) ici IP, si on était dans le cas d'un hôte classique du réseau => on jette le paquet
 ##### Mais ce noeud est un routeur, donc il doit transmettre le paquet => Il procède à la même mécanique d'envoi de paquet IP.
@@ -957,6 +959,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :large_blue_diamond: EIGRP (Enhanced Interior Gateway Routing Protocol) port ⇒ 88 Protocole conçu par Cisco pour ses matériels utilisé dans les réseaux complexes.Convergence rapide, prend en charge plusieurs protocoles de couche réseau.
 ##### :large_blue_diamond: OSPF (Open Shortest Path First) port ⇒ 89 Principalement utilisé dans les réseaux de tailles moyenne.
 ##### :large_blue_diamond: BGP (Border Gateway Protocol) port ⇒ TCP 179 Ce protocole est utilisé pour le routage sur internet entre les différents systèmes autonomes. Il est utilisé pour l'échange d'informations de routage entre différents ISP (Internet Service Provider)
+  
   * #### 3.5.4.2 [Protocoles de transport](https://www.it-connect.fr/les-protocoles-tcp-et-udp-pour-les-debutants/)
   ---
   * #### 3.5.4.3.1 UDP
@@ -965,7 +968,8 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### UDP - User Datagram Protocol port ⇒ 17
 ##### Conçu comme un protocol minimal, Permet la communication entre processus (application), il est supporté par IPv4 et IPv6. Permet d'identifier certaines erreurs de transmission, contrôle de la taille, vérification de la Checksum.UDP est notâment utilisé pour le streaming. Mais il n'assure pas la fibilité , si les contrôles échouent le datagramme est jeté par le destinataire.
 ##### -DATAGRAMME UDP- :
-       ![edf](https://github.com/user-attachments/assets/4d895bad-2b8e-434d-891e-187a94d11aa9)
+
+![edf](https://github.com/user-attachments/assets/4d895bad-2b8e-434d-891e-187a94d11aa9)
 
 * #### 3.5.4.3.2 TCP
   ---
@@ -980,9 +984,9 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
     ##### 5️⃣ À la fin d'un compte à rebours
     ##### 6️⃣ OU => ré-émission du segment
      ##### -ENTETE TCP- :
-       ![sddv](https://github.com/user-attachments/assets/898df453-1def-4df6-b5f2-67ac38afc47c)
+  ![sddv](https://github.com/user-attachments/assets/898df453-1def-4df6-b5f2-67ac38afc47c)
      ##### -SEGMENT TCP- :
-    ![sertg](https://github.com/user-attachments/assets/a1c7db57-269f-41c6-9cbb-3b93a6781700)
+  ![sertg](https://github.com/user-attachments/assets/a1c7db57-269f-41c6-9cbb-3b93a6781700)
   ##### Voici quelques protocoles utilisant TCP:
    ##### 🔹HTTP HTTPS.
    ##### 🔹SMTP envoyer des mail.
@@ -1353,9 +1357,11 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ![SER](https://github.com/user-attachments/assets/3a8af9d1-cec6-4c6d-a1d1-5b8300ead725)
 * ### 4) Serveur
 **DEPLACER DHCP**
+
 ![DNS](https://github.com/user-attachments/assets/60ce934f-f818-464e-8e2d-3804a21badfd)
 
-  * ### 4.1 DNS
+* ### 4.1 DNS
+
 * #### 4.1.1 Définitions et fonctionement
  ##### Base de donnée répartie et décentralisée, permettant la corespondance IP => Domain ==> Internet, AD
  ##### Ce protocole fonctionne en arborescence : :arrow_heading_down:
@@ -1771,8 +1777,8 @@ ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
 
 ![DHCP](https://github.com/user-attachments/assets/de1739a8-3a84-4ef3-b094-dbe0ff6831b3)
 
-* #### 4.2 DHCP.
-  * #### 3.5.1 Principes
+* #### 4.4 DHCP.
+  * #### 4.4.1 Principes
   ##### Gestion dynamique de l'adressage IP des hôtes du réseau. Utilisation Messages UDP - Port serveur 67 / Port client 68
  ##### **Les messages:**
 ##### **DHCPDISCOVER (Client -> broadcast) : demande d'adresse**
@@ -1783,9 +1789,9 @@ ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
 ##### DHCPDECLINE (Client -> Serveur) : après DHCPACK le client doit vérifier (par exemple via ARP) si l'adresse est déjà utilisée, si oui il décline l'offre du serveur
 ##### DHCPRELEASE (Client -> Serveur) : résiliation du bail par le client
 ##### DHCPINFORM (Client -> Serveur) : demande de paramètre de configuration sans réservation d'adresse (client ayant déjà une adresse)
-  * #### 3.5.2 Mise en oeuvre
+  * #### 4.4.2 Mise en oeuvre
 >[!NOTE]
->     * #### 3.5.2.1 Débian 12
+>* #### 4.4.2.1 Débian 12
 > ##### passer en root
 > ##### télécharger le packet
 >	apt-get install isc-dhcp-server
@@ -1819,7 +1825,7 @@ ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
 >	systemctl status isc-dhcp-server.service
 >###### [vidéo](https://www.youtube.com/watch?v=hdaHQR-7uAM&ab_channel=AlexDavantTech)
 ________________________________________________
-* #### 3.5.2.2 Windows 22 
+* #### 4.4.2.2 Windows 22 
 >[!NOTE]
 >* #### Instalation DHCP
 >* ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
@@ -1840,9 +1846,8 @@ ________________________________________________
 > * #### Créer une **Réservation** :
 >   *  ##### Clic droit sur réservation **New Reservation...**, rentrer l'IP **172.20.0.10** de réservation, le nom du clients et l'adresse MAC (du clients) choisir **DHCP**, puis **add**.
 >   *  ##### Chez le client, **ipconfig /renew**==> TADDAAAAAA!!
-![Le routage](https://github.com/user-attachments/assets/1fa23eda-1740-4a3a-8743-ed35ff72fedf)
 
-![SSH](https://github.com/user-attachments/assets/8f736c0a-8d7a-4481-8218-66f616ec4b7c)
+![CPT](https://github.com/user-attachments/assets/142301a2-3b9b-401f-b303-536ebedfc25b)
 
 * ### 5) Cisco Packet Tracer
   * #### 5.1 Routage Commande
