@@ -1063,7 +1063,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 * ### 3.6[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Active Directory
 ---
 
-   * #### 3.6.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Définitions/Protocole LDAP/rôle AD
+   * ## 3.6.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Définitions/Protocole LDAP/rôle AD
 ---
 ##### :arrow_forward: L'AD est :arrow_heading_down:
 ##### :large_blue_diamond: Un système qui intègre un stockage et les services pour mettre en relation les utilisateurs et les ressources réseau.Contient des objets (utilisateurs, ordinateurs, services, …).
@@ -1079,7 +1079,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :small_blue_diamond: `AD FS` (Active Directory Federation Services) :arrow_right: depuis Serv.2008 Via un portail gestion d’un SSO (Single Sign-On) pour les applications
 ##### :small_blue_diamond: `AD RMS` (Active Directory Rights Management Services) :arrow_right: depuis Serv.2008 R2 Gestion des autorisations fine sur les fichiers (uniquement sur applications compatibles, comme Office)
 ##### :small_blue_diamond `:AD LDS` (Active Directory Lightweight Directory Services)  :arrow_right: Service d’annuaire light, pas de domaine (pas de contrôle d’accès).
-  * #### 3.6.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Arborécence
+  * ## 3.6.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Arborécence
 --- 
   ##### :warning: Certains points de cette partie seront traités plus longuement par la suite:warning:
   ##### Cette arborescence AD représente une structure logique indépendante du site, dans une AD tout est Objet.
@@ -1119,7 +1119,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 #### ARBORESCENCE ACTIVE DIRECTORY
 ![AD1](https://github.com/user-attachments/assets/9835fa2a-f81e-4e23-b3ae-65cd17514f83)
 
- * #### 3.6.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Composants
+ * ## 3.6.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Composants
 ---  
  ##### :large_blue_diamond: DC (Domain Controler) : serveur sur lequel on effectue les opérations sont promus au rôle de DC du domaine créé, sera sollicité par les clients pour répondre aux demandes d’authentification à destination de ce domaine. 
  ##### :large_blue_diamond: RODC (Read Only Domain Controller) Serveur ayant le rôle de DC, utilisé pour les sites distants, possède des droits de lecture seule.
@@ -1128,7 +1128,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :small_blue_diamond: Transmission également des modifications du DNS afin que les utilisateurs du site distant disposent toujours d'un service de résolution de nom en local pour accéder à Internet en cas de coupure de la liaison internet
 ##### :mag: Recherche forest :arrow_heading_down:
 ![AD1](https://github.com/user-attachments/assets/895f5770-1324-4239-973b-9130d66abafe)
- * #### 3.6.4 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Protocoles
+ * ## 3.6.4 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Protocoles
 ---  
 ##### :one: `DNS` : Service obligatoire pour l'utilisation de l'AD, résolution des nom ET résolution des services.(voir 4.1)
 ##### 2️⃣: `SNTP` : synchronisation des horloges des systèmes, impératif pour le protocole d’authentification de Windows (Kerberos),
@@ -1137,7 +1137,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :five: `Kerberos` Protocole d’authentification central par défaut
 ##### 6️⃣: `X509` Moyen d'autentifications supplémentaire
 ##### 7️⃣: `NTFS` Gestion des droits, des contrôles d’accès et permissions par les groupes AD
-  * #### 3.6.5(Fontionalitées)
+  * ## 3.6.5[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)(Fontionalitées)
 ---   
 ##### :large_blue_diamond: `Le niveau fonctionnel` correspond à la version de l’OS serveur depuis lequel on crée le domaine.(Si plusieur DC avec niveau fontionnel différent, c'est le plus ancien qui prévaut.
 ##### :large_blue_diamond: ` Le schéma` contient des définitions formelles de chaque classe d’objets qui peuvent être créées dans une forêt Active Directory. 
@@ -1155,7 +1155,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :+1: Bonne pratique:
 ##### :small_blue_diamond: Ne pas avoir qu’un seul DC avec tous les rôles FSMO.(Par défaut le premier DC d’une nouvelle forêt cumule les cinq rôles.)
 #### :small_blue_diamond: Idéalement : 5 DC avec un rôle installé sur chacun
-* #### 3.6.6[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Objets
+* ## 3.6.6[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Objets
 ---  
 ![ad1](https://github.com/user-attachments/assets/e118faeb-159d-4139-83c9-380346d20e1d)
 
@@ -1183,7 +1183,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :small_blue_diamond: Correspond au chemin LDAP dans l’annuaire AD
 ##### :small_blue_diamond: La longueur dépend de l’emplacement de l’objet dans l’AD
 ##### :small_blue_diamond: ![ad1](https://github.com/user-attachments/assets/d82a326f-4028-4ee7-a90e-b9af85d49ca6)
-* #### 3.6.7[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) :+1:Bonne Pratiques :
+* ## 3.6.7[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) :+1:Bonne Pratiques :
 ---  
  ### :large_blue_diamond:Gestion des identités et des accès
 ##### :one:Principe de moindre privilège :
@@ -1244,9 +1244,9 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :small_blue_diamond:A l'expiration, les droits élevés sont révoqués automatiquement.
 ##### 2️⃣:JEA (Just Enough Administration) :
 ##### :small_blue_diamond:Limite les privilèges des administrateurs aux seuls droits nécessaires pour effectuer une tâche spécifique, réduisant ainsi les risques associés à l'utilisation de comptes à privilèges élevés.
-* #### 3.6.8[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Créer un ADDS :
+* ## 3.6.8[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Créer un ADDS :
  --- 
- * #### 3.6.8.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) GPO
+ * ## 3.6.8.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) GPO
   ---   
  ##### :scroll: Définition :GPO (Group Policy Object) sont des collections virtuelles de politiques de sécurité, une GPO permet la gestion du parc informatique.
  ##### :small_blue_diamond:Les GPO sont fonctionnelles sur les ordinateurs ayant un OS Microsoft (client ou serveur).
@@ -1303,7 +1303,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
    * ##### faire windows+R => Ecrire : Control.exe
 ##### Résultat machine client :
 ![vm 1](https://github.com/user-attachments/assets/5accd1aa-8048-4c96-9526-538866c74e59)
- * #### 3.6.8.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Gestion client
+ * ## 3.6.8.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Gestion client
 ---
 1) #### **INSTALATION DU SERVEUR ADDS**
 * ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
