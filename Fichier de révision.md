@@ -1,5 +1,5 @@
 ![j](https://github.com/user-attachments/assets/11c5c342-b7c1-44b0-a8fe-bfd417c9bb0a)
-
+[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)
 ---
 ---
 ---
@@ -110,25 +110,25 @@
   * #### 5.1 [Routage Commande](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#51-routage-commande-1)
 
 
-### 1) Méthodes Agiles 
+### 1)[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Méthodes Agiles 
  ---
  ---
- * ####  1.1 Définitions
+ * ####  1.1 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Définitions
 ---
    ##### Création de **cycles répétitif**, ayant pour buts la **réalisations de projets complexes,** en intégrant un procédé **incrémentale**, des différentre étape de la réalisation, des solutions techniques, et des livrables. 
- * #### 1.2 Etapes et Compositions
+ * #### 1.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Etapes et Compositions
 ---
-   * #### 1.2.1 Le Product Backlog:
+   * #### 1.2.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Le Product Backlog:
 ---
    #####  Il existe pendant **toute la durée du projet** et contient une **liste** de tout les éléments nécessaires à l'amélioration du produit.Ces éléments sont classés par ordre de priorité pour le client,ils évolue quotidiennement. Géré par le **Product Owner**
-   * #### 1.2.2  Sprint Backlog
+   * #### 1.2.2 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Sprint Backlog
 ---
    ##### Est un  **plan du sprint**, il construit le sprint **planning**, il contient les objectifs du sprint, la liste des éléments du product backlog choisi plan opérationnel pour réussir à finir cette liste pendant le sprint (planning détail technique).(Utilisation du **Definition of Done** niveau de qualité attendu).
 
-   * #### 1.2.3 Sprint planning
+   * #### 1.2.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Sprint planning
 ---
    ##### Planning du sprint, **Objectifs**, **points techniques**, Comment ces détails vont être réalisés.   
-   * #### 1.2.4 Daily scrum
+   * #### 1.2.4[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Daily scrum
 ---
    ##### **Réunions courtes**, Inspecter l'avancement et adapter le plan si besoin,Identifier les problèmes / Proposer des solutions, même heure, même lieu tous les jours.
    * #### 1.2.5 Sprint review
