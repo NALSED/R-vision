@@ -54,39 +54,34 @@
   * #### 3.4.3 [Autoconfiguration.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#343-autoconfiguration-1)
   * #### 3.4.4 [Entêtes.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#344-ent%C3%AAtes-1)
   * #### 3.4.5 [Protocoles associés.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#345-protocoles-associ%C3%A9s-1)
-* ### 3.5 [DHCP :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#35-dhcp)
-  * #### 3.5.1 [Principes.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#351-principes-1)
-  * #### 3.5.2 [Mise en oeuvre.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#352-mise-en-oeuvre-1)
-    * #### 3.5.2.1 [Débian 12.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3521-d%C3%A9bian-12-1)
-    * #### 3.5.2.2 [Windows 22.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3522-windows-22-1)
- * ### 3.6 [Le routage :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36-le-routage--1)
-   * #### 3.6.1 [Définition et notions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#361-d%C3%A9finition-et-notions-1)
-   * #### 3.6.2 [Mécaniques.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#362-m%C3%A9caniques-1)
-   * #### 3.6.3 [Tables de routages.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#363-tables-de-routages-1)
-   * #### 3.6.4 [Routage dynamique](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#364-routage-dynamique-1)
-     * #### 3.6.4.1 [Protocoles dynamiques](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3641-protocoles-dynamiques-1)
-     * #### 3.6.4.2 [Protocoles de transport](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3642-protocoles-de-transport-1)
-       * #### 3.6.4.3.1 [UDP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36431-udp-1)
-       * #### 3.6.4.3.2 [TCP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36432-tcp)
-      * #### 3.6.4.3 [Les ports](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3643-les-portsliens-du-sites-avec-tous-les-ports--les-principaux-1)
+* ### 3.5 [Le routage :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36-le-routage--1)
+   * #### 3.5.1 [Définition et notions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#361-d%C3%A9finition-et-notions-1)
+   * #### 3.5.2 [Mécaniques.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#362-m%C3%A9caniques-1)
+   * #### 3.5.3 [Tables de routages.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#363-tables-de-routages-1)
+   * #### 3.5.4 [Routage dynamique](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#364-routage-dynamique-1)
+     * #### 3.5.4.1 [Protocoles dynamiques](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3641-protocoles-dynamiques-1)
+     * #### 3.5.4.2 [Protocoles de transport](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3642-protocoles-de-transport-1)
+       * #### 3.5.4.3.1 [UDP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36431-udp-1)
+       * #### 3.5.4.3.2 [TCP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36432-tcp)
+      * #### 3.5.4.3 [Les ports](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3643-les-portsliens-du-sites-avec-tous-les-ports--les-principaux-1)
       
       
-* #### 3.6.5 [NAT :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#365-nat)
-     * #### 3.6.5.1 [Basic NAT](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3651-basic-nat-1)
-     * #### 3.6.5.2 [NAPT](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#365-napt)
+* #### 3.5.5 [NAT :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#365-nat)
+     * #### 3.5.5.1 [Basic NAT](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3651-basic-nat-1)
+     * #### 3.5.5.2 [NAPT](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#365-napt)
 
 
-* ### 3.7 [Active Directory](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#37-active-directory-1)
-  * #### 3.7.1 [Définitions/Protocole LDAP/rôle AD](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#371-d%C3%A9finitionsprotocole-ldapr%C3%B4le-ad-1)
-  * #### 3.7.2 [Arborécence](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#372-arbor%C3%A9cence-1)
-  * #### 3.7.3 [Composants](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#373-composants-1)
-  * #### 3.7.4 [Protocoles](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#374-protocoles-1)
-  * #### 3.7.5[(Fontionalitées)](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#375fontionalit%C3%A9es-1)
-  * #### 3.7.6 [Objets](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#376-objets-1)
-  * #### 3.7.7 [Bonne Pratiques](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#377-1bonne-pratiques-)
-  * #### 3.7.8 [Créer un ADDS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#378-cr%C3%A9er-un-adds-)
-     * #### 3.7.8.1 [GPO](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3781-gpo-1)
-     * #### 3.7.8.2 [Gestion client](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3783-gestion-client-1)
+* ### 3.6 [Active Directory](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36-active-directory-1)
+  * #### 3.6.1 [Définitions/Protocole LDAP/rôle AD](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#361-d%C3%A9finitionsprotocole-ldapr%C3%B4le-ad-1)
+  * #### 3.6.2 [Arborécence](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#362-arbor%C3%A9cence-1)
+  * #### 3.6.3 [Composants](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#363-composants-1)
+  * #### 3.6.4 [Protocoles](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#364-protocoles-1)
+  * #### 3.6.5[(Fontionalitées)](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#365fontionalit%C3%A9es-1)
+  * #### 3.6.6 [Objets](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#366-objets-1)
+  * #### 3.6.7 [Bonne Pratiques](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#367-1bonne-pratiques-)
+  * #### 3.6.8 [Créer un ADDS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#368-cr%C3%A9er-un-adds-)
+     * #### 3.6.8.1 [GPO](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3681-gpo-1)
+     * #### 3.6.8.2 [Gestion client](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3683-gestion-client-1)
 * ## 4) [Serveur](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4-serveur-1)
 **DEPLACER DHCP**
   * ## 4.1 [DNS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#41-dns-1)
@@ -868,88 +863,16 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ![dhcpv6](https://github.com/user-attachments/assets/3436e1f6-e2ab-4dee-891a-f22b23584e7d)
  ##### IPSEC : IPv6 amène des protocoles optionnels pour sécuriser les communications au niveau IP : IPsec. Authentification, contrôle d'intégrité et confidentialité cryptographique, avec protocole AH, ESP, IKE…
 
-![DHCP](https://github.com/user-attachments/assets/de1739a8-3a84-4ef3-b094-dbe0ff6831b3)
-
-* #### 3.5 DHCP.
-  * #### 3.5.1 Principes
-  ##### Gestion dynamique de l'adressage IP des hôtes du réseau. Utilisation Messages UDP - Port serveur 67 / Port client 68
- ##### **Les messages:**
-##### **DHCPDISCOVER (Client -> broadcast) : demande d'adresse**
-##### **DHCPOFFER (Serveur -> Client) : proposition d'adresse**
-##### **DHCPREQUEST (Client -> Serveur) : demande de réservation d'une adresse**
-##### **DHCPACK (Serveur -> Client) : acceptation avec envoi paramétrage**
-##### DHCPNACK (Serveur -> Client) : refus de réservation
-##### DHCPDECLINE (Client -> Serveur) : après DHCPACK le client doit vérifier (par exemple via ARP) si l'adresse est déjà utilisée, si oui il décline l'offre du serveur
-##### DHCPRELEASE (Client -> Serveur) : résiliation du bail par le client
-##### DHCPINFORM (Client -> Serveur) : demande de paramètre de configuration sans réservation d'adresse (client ayant déjà une adresse)
-  * #### 3.5.2 Mise en oeuvre
->[!NOTE]
->     * #### 3.5.2.1 Débian 12
-> ##### passer en root
-> ##### télécharger le packet
->	apt-get install isc-dhcp-server
-> ##### passer en réseau interne
-> ##### renomer la machine
->	nano /etc/hosts
->	srv-dhcp
->	nano /etc/hostname
->	srv-dhcp
-> ##### reboot
->	reboot
-> ##### passer en root
-> ##### configurer le serveur
->	nano /etc/network/interfaces
->	adress 172.20.0.2
->	netmask 255.255.255.0
-> ##### commenter la ligne IPv6
->	#iface enp0s3 inet6 auto
-> ##### reboot interface
->	ifdown enp0s3
-	ifup enp0s3
->##### Configurer le serveur DHCP
->	nano /etc/default/isc-dhcp_server
->		
->		host [PC NAME] [ADRESS MAC] {
->			hardware ethernet [ADRESS MAC]
->			fixed-adress [IP] }
->##### reboot DHCP
->	systemctl resart isc-dhcp-server.service
->##### chek le statut
->	systemctl status isc-dhcp-server.service
->###### [vidéo](https://www.youtube.com/watch?v=hdaHQR-7uAM&ab_channel=AlexDavantTech)
-________________________________________________
-* #### 3.5.2.2 Windows 22 
->[!NOTE]
->* #### Instalation DHCP
->* ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
->  * ##### Choisissez l'option **Role-based or feature-based instalation** et poursuivez.
->  * #####   Continuez, le serveur est déjà selectioné.
->  * ##### Dans la liste cochez "DHCP server" et dans la fenétre **include management tools**.Cliquez sur **Add Features**
->  * ##### Cliquez sur **Install**
-> * #### **Configuration** du serveur DHCP :
-> * ##### Ouvrir **Administrativ Tools**
-> * ##### Clic droit sur **IPv4**, choisir **New Scope**
-> * ##### Rentrer la plage d'adresse IP et le masque de sous réseau ici : **start** 172.20.0.100 / **end** 172.20.0.200 / **length** 24 / **subnet mask** 255.255.255.0
-> * ##### Dans Router rentrer un IP éloigné de la plage pour plus de visibilité là 172.20.0.254
-> * ##### Faire **next** jusqu'à la page suivante : **Configure DHCP Options** : cocher **Yes, i want to configure these options now** 
-> * ##### On peux ne pas remplir les Options **Router et DNS** car nous ne sortirons pas du réseau privé.
-> *  #### **Machine cliens :**
->   * ##### Ouvrir Powershell : **ipconfig**, pour vérifier l'adresse ip, si elle ne corespond pas à la plage définie **ipconfig /renew**
->   * ##### Si le problème persiste, dans la fenétre de configuration du serveur DHCP, dérouler IPv4 et regarder dans **Scope [172.20.0.0]**, l'option **Activate/Desactivate** est bien sur **Activate**.
-> * #### Créer une **Réservation** :
->   *  ##### Clic droit sur réservation **New Reservation...**, rentrer l'IP **172.20.0.10** de réservation, le nom du clients et l'adresse MAC (du clients) choisir **DHCP**, puis **add**.
->   *  ##### Chez le client, **ipconfig /renew**==> TADDAAAAAA!!
-![Le routage](https://github.com/user-attachments/assets/1fa23eda-1740-4a3a-8743-ed35ff72fedf)
 
 
-* ### 3.6 Le routage :
-  * #### 3.6.1 Définition et notions. 
+* ### 3.5 Le routage :
+  * #### 3..1 Définition et notions. 
     ##### Le routage est in protocole d'interconection de réseau, en effet les noeuds d'un même réseau IP (logique) doivent être sur le même lien (réseau physique), des chemins sont sélectionnés dans un réseau pour acheminer les données d'un expéditeur jusqu'à un ou plusieurs destinataires.
-  * #### 3.6.2 Mécaniques.
+  * #### 3.5.2 Mécaniques.
      #####  Chaque routeur possède des informations sur son voisinage. Chaque routeur maintient une liste des réseaux connus, chacun de ces réseaux étant associé à un ou plusieurs routeurs voisins à qui le message peut être passé.
      #####  Si on veux envoyer sur une interface d'un même réseau, le paquet est directement envoyé sur l'interface physique corespondant à l'IP de destination, le routage interviens quand les machines ne sont pas sur le même réseau, en effet on encapsule donc le paquet IP dans une trame [ethernet](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#324-trame-ethernet-1), mais si la destrination ne fait pas partie du même réseau que l'hôte il fera appel à ça table de routage.
      #####
-  * #### 3.6.3 Tables de routages.
+  * #### 3.5.3 Tables de routages.
    ##### -Définitions- :
    ##### Chaque noeud d'un réseau IP (routeur ou pas) dispose d'une table de routage,chaque entrée de cette table est composée (au moins) :
    ##### 1° **Une destination** (adresse de réseau et masque)
@@ -960,24 +883,24 @@ ________________________________________________
 ##### Mais ce noeud est un routeur, donc il doit transmettre le paquet => Il procède à la même mécanique d'envoi de paquet IP.
 ##### :large_blue_diamond: Il est posible sur de très grand réseau d'utiliser der sur-réseaux comme préfixe de routage en agglomérant, quand c'est possible, plusieurs adresses de réseau en une seule, plus les réseaux sont grands plus la table de routage est petite.
 ##### Pour des réseaux de grande envergure, il est nécessaire de passer à du routage dynamique et de déployer des protocoles dédiées comme OSPF et BGP.
-   * #### 3.6.4 Routage dynamique
+   * #### 3.5.4 Routage dynamique
 ##### -Définitions- : 
 ##### Le routage dynamique est utilisé sur de grand réseau, étant amené à des modifications constantes, les routeur communique entre eux et échange sur leurs table de routages pour s'addapter aux modifications, aux pannes ou aux coupures.
-   * #### 3.6.4.1 Protocoles dynamiques
+   * #### 3.5.4.1 Protocoles dynamiques
 ![wdfg](https://github.com/user-attachments/assets/3bfa004d-7e7b-4d6d-834e-e557d010c07f)
  ##### :large_blue_diamond: RIP (Routing Information Protocol) port ⇒ UDP 520. Pour de petit réseau, limite de 15 sauts.
 ##### :large_blue_diamond: EIGRP (Enhanced Interior Gateway Routing Protocol) port ⇒ 88 Protocole conçu par Cisco pour ses matériels utilisé dans les réseaux complexes.Convergence rapide, prend en charge plusieurs protocoles de couche réseau.
 ##### :large_blue_diamond: OSPF (Open Shortest Path First) port ⇒ 89 Principalement utilisé dans les réseaux de tailles moyenne.
 ##### :large_blue_diamond: BGP (Border Gateway Protocol) port ⇒ TCP 179 Ce protocole est utilisé pour le routage sur internet entre les différents systèmes autonomes. Il est utilisé pour l'échange d'informations de routage entre différents ISP (Internet Service Provider)
-  * #### 3.6.4.2 [Protocoles de transport](https://www.it-connect.fr/les-protocoles-tcp-et-udp-pour-les-debutants/)
-     * #### 3.6.4.3.1 UDP
+  * #### 3.5.4.2 [Protocoles de transport](https://www.it-connect.fr/les-protocoles-tcp-et-udp-pour-les-debutants/)
+     * #### 3.5.4.3.1 UDP
        ##### -Définitions- :
        ##### UDP - User Datagram Protocol port ⇒ 17
        ##### Conçu comme un protocol minimal, Permet la communication entre processus (application), il est supporté par IPv4 et IPv6. Permet d'identifier certaines erreurs de transmission, contrôle de la taille, vérification de la Checksum.UDP est notâment utilisé pour le streaming. Mais il n'assure pas la fibilité , si les contrôles échouent le datagramme est jeté par le destinataire.
        ##### -DATAGRAMME UDP- :
        ![edf](https://github.com/user-attachments/assets/4d895bad-2b8e-434d-891e-187a94d11aa9)
 
-       * #### 3.6.4.3.2 TCP
+       * #### 3.5.4.3.2 TCP
         ##### -Définitions- :
        ##### TCP - Transmission Control Protocol port ⇒ 6
        ##### Protocole fiable, est un flux en mode connecté il établi une connexion bi-directionnelle et garantie du séquencement (ordre), les paquets sont vérrifier pour voir si il ne sont pas corompus, si c'est le cas le paquet est renvoyé, cherche à optimiser l'utilisation du réseau(congestion du réseau).
@@ -1007,7 +930,7 @@ ________________________________________________
 #####  Réserver de la mémoire pour stocker les segments en attente.
 ##### Remettre les segments dans l'ordre une fois l'ensemble reçu.
 
- * #### 3.6.4.3 Les ports(Liens du sites avec tous les ports + les principaux)
+ * #### 3.5.4.3 Les ports(Liens du sites avec tous les ports + les principaux)
    ##### Un port est un identifiant de processus au sein d'une interface
    ##### Une communication est donc caractérisée par :
      - ##### un couple adresse IP/port de destination.
@@ -1019,11 +942,11 @@ ________________________________________________
 ##### :large_blue_diamond: 1024 à 49151 : les ports utilisateurs (Registered Ports) - Serveur
 ##### :large_blue_diamond: 49152 à 65535 : les ports dynamiques (Ephemeral Ports) - Client
  
-* #### 3.6.5 [NAT](https://www.it-connect.fr/le-nat-et-le-pat-pour-les-debutants/)
+* #### 3.5.5 [NAT](https://www.it-connect.fr/le-nat-et-le-pat-pour-les-debutants/)
  ##### -Définitions- :
  ##### Network Address Translation
  ##### Le NAT permettent à un routeur de modifier les paquets IP au moment de leur transmission. Ils visent à remplacer une adresse IP (source ou destination) par une autre pour substituer à une adresse valable sur le réseau interne (privée) une autre adresse valable sur un autre réseau (par exemple publique sur Internet).Historiquement, NAT était utilisé pour cacher son plan d'adressage interne. Maintenant il est massivement utiliser pour combler la pénurie d'IPv4.
-   * #### 3.6.5.1 Basic NAT
+   * #### 3.5.5.1 Basic NAT
      ##### Dans sa version la plus simple, dite Basic NAT, on configure le routeur qui fait la passerelle entre un réseau interne et un réseau externe (Internet, réseau d'une autre structure, etc…), puis on choisi un ensemble d'adresses IP valables sur le réseau externe. Sur le routeur, on associe à chacune d'elles, l'adresse d'une machine interne devant communiquer avec l'extérieur.
      ##### La table de routage peut-être configurée à la main (NAT statique) ou remplie dynamiquement (cas général)
    ##### Pour héberger un serveur derrière un NAT, il faut mettre en place une correspondance statique, ce genre de correspondance est souvent appelée port forwarding. Elle consiste à déclarer un port sur le routeur NAT et à lui associer une adresse interne (et éventuellement un port).
@@ -1042,7 +965,7 @@ manière transparente
 * #####  Le routeur reçoit cette réponse pour lui MAIS, il fait du NAT donc
 * #####  Le routeur cherche dans sa table une correspondance pour le port 52369 : 10.0.0.1
 * #####  Il transmet donc sur le réseau interne le paquet en remplaçant l'adresse dedestination (la sienne) par 10.0.0.1
-   * #### 3.6.5. NAPT
+   * #### 3.5.5. NAPT
    ##### Utilisé quand il y à moins d'adresse privé que d'adresse publiques, exemple box inernet. Ne pas considérer juste l'adresse comme identifiant mais le couple adresse IP/port (couche 4).
   ##### Le NAPT dynamique a de nombreux inconvénients :
 - ##### La table étant remplie lors de la requête de l'intérieur vers l'extérieur
@@ -1057,9 +980,9 @@ manière transparente
 
 
 
-* ### 3.7 Active Directory
+* ### 3.6 Active Directory
 ---
-   * #### 3.7.1 Définitions/Protocole LDAP/rôle AD
+   * #### 3.6.1 Définitions/Protocole LDAP/rôle AD
 ---
 ##### :arrow_forward: L'AD est :arrow_heading_down:
 ##### :large_blue_diamond: Un système qui intègre un stockage et les services pour mettre en relation les utilisateurs et les ressources réseau.Contient des objets (utilisateurs, ordinateurs, services, …).
@@ -1075,7 +998,7 @@ manière transparente
 ##### :small_blue_diamond: `AD FS` (Active Directory Federation Services) :arrow_right: depuis Serv.2008 Via un portail gestion d’un SSO (Single Sign-On) pour les applications
 ##### :small_blue_diamond: `AD RMS` (Active Directory Rights Management Services) :arrow_right: depuis Serv.2008 R2 Gestion des autorisations fine sur les fichiers (uniquement sur applications compatibles, comme Office)
 ##### :small_blue_diamond `:AD LDS` (Active Directory Lightweight Directory Services)  :arrow_right: Service d’annuaire light, pas de domaine (pas de contrôle d’accès).
-  * #### 3.7.2 Arborécence
+  * #### 3.6.2 Arborécence
 --- 
   ##### :warning: Certains points de cette partie seront traités plus longuement par la suite:warning:
   ##### Cette arborescence AD représente une structure logique indépendante du site, dans une AD tout est Objet.
@@ -1115,7 +1038,7 @@ manière transparente
 #### ARBORESCENCE ACTIVE DIRECTORY
 ![AD1](https://github.com/user-attachments/assets/9835fa2a-f81e-4e23-b3ae-65cd17514f83)
 
- * #### 3.7.3 Composants
+ * #### 3.6.3 Composants
 ---  
  ##### :large_blue_diamond: DC (Domain Controler) : serveur sur lequel on effectue les opérations sont promus au rôle de DC du domaine créé, sera sollicité par les clients pour répondre aux demandes d’authentification à destination de ce domaine. 
  ##### :large_blue_diamond: RODC (Read Only Domain Controller) Serveur ayant le rôle de DC, utilisé pour les sites distants, possède des droits de lecture seule.
@@ -1124,7 +1047,7 @@ manière transparente
 ##### :small_blue_diamond: Transmission également des modifications du DNS afin que les utilisateurs du site distant disposent toujours d'un service de résolution de nom en local pour accéder à Internet en cas de coupure de la liaison internet
 ##### :mag: Recherche forest :arrow_heading_down:
 ![AD1](https://github.com/user-attachments/assets/895f5770-1324-4239-973b-9130d66abafe)
- * #### 3.7.4 Protocoles
+ * #### 3.6.4 Protocoles
 ---  
 ##### :one: `DNS` : Service obligatoire pour l'utilisation de l'AD, résolution des nom ET résolution des services.(voir 4.1)
 ##### 2️⃣: `SNTP` : synchronisation des horloges des systèmes, impératif pour le protocole d’authentification de Windows (Kerberos),
@@ -1133,7 +1056,7 @@ manière transparente
 ##### :five: `Kerberos` Protocole d’authentification central par défaut
 ##### 6️⃣: `X509` Moyen d'autentifications supplémentaire
 ##### 7️⃣: `NTFS` Gestion des droits, des contrôles d’accès et permissions par les groupes AD
-  * #### 3.7.5(Fontionalitées)
+  * #### 3.6.5(Fontionalitées)
 ---   
 ##### :large_blue_diamond: `Le niveau fonctionnel` correspond à la version de l’OS serveur depuis lequel on crée le domaine.(Si plusieur DC avec niveau fontionnel différent, c'est le plus ancien qui prévaut.
 ##### :large_blue_diamond: ` Le schéma` contient des définitions formelles de chaque classe d’objets qui peuvent être créées dans une forêt Active Directory. 
@@ -1151,7 +1074,7 @@ manière transparente
 ##### :+1: Bonne pratique:
 ##### :small_blue_diamond: Ne pas avoir qu’un seul DC avec tous les rôles FSMO.(Par défaut le premier DC d’une nouvelle forêt cumule les cinq rôles.)
 #### :small_blue_diamond: Idéalement : 5 DC avec un rôle installé sur chacun
-* #### 3.7.6 Objets
+* #### 3.6.6 Objets
 ---  
 ![ad1](https://github.com/user-attachments/assets/e118faeb-159d-4139-83c9-380346d20e1d)
 
@@ -1179,7 +1102,7 @@ manière transparente
 ##### :small_blue_diamond: Correspond au chemin LDAP dans l’annuaire AD
 ##### :small_blue_diamond: La longueur dépend de l’emplacement de l’objet dans l’AD
 ##### :small_blue_diamond: ![ad1](https://github.com/user-attachments/assets/d82a326f-4028-4ee7-a90e-b9af85d49ca6)
-* #### 3.7.7 :+1:Bonne Pratiques :
+* #### 3.6.7 :+1:Bonne Pratiques :
 ---  
  ### :large_blue_diamond:Gestion des identités et des accès
 ##### :one:Principe de moindre privilège :
@@ -1240,9 +1163,9 @@ manière transparente
 ##### :small_blue_diamond:A l'expiration, les droits élevés sont révoqués automatiquement.
 ##### 2️⃣:JEA (Just Enough Administration) :
 ##### :small_blue_diamond:Limite les privilèges des administrateurs aux seuls droits nécessaires pour effectuer une tâche spécifique, réduisant ainsi les risques associés à l'utilisation de comptes à privilèges élevés.
-* #### 3.7.8 Créer un ADDS :
+* #### 3.6.8 Créer un ADDS :
  --- 
- * #### 3.7.8.2 GPO
+ * #### 3.6.8.2 GPO
   ---   
  ##### :scroll: Définition :GPO (Group Policy Object) sont des collections virtuelles de politiques de sécurité, une GPO permet la gestion du parc informatique.
  ##### :small_blue_diamond:Les GPO sont fonctionnelles sur les ordinateurs ayant un OS Microsoft (client ou serveur).
@@ -1299,7 +1222,7 @@ manière transparente
    * ##### faire windows+R => Ecrire : Control.exe
 ##### Résultat machine client :
 ![vm 1](https://github.com/user-attachments/assets/5accd1aa-8048-4c96-9526-538866c74e59)
- * #### 3.7.8.3 Gestion client
+ * #### 3.6.8.3 Gestion client
 ---
 1) #### **INSTALATION DU SERVEUR ADDS**
 * ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
@@ -1768,7 +1691,81 @@ ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
 - On se connecte en ssh et normalement pas de MDP:
 `ssh client@ip`
 
-* #### 5) Cisco Packet Tracer
+![DHCP](https://github.com/user-attachments/assets/de1739a8-3a84-4ef3-b094-dbe0ff6831b3)
+
+* #### 4.2 DHCP.
+  * #### 3.5.1 Principes
+  ##### Gestion dynamique de l'adressage IP des hôtes du réseau. Utilisation Messages UDP - Port serveur 67 / Port client 68
+ ##### **Les messages:**
+##### **DHCPDISCOVER (Client -> broadcast) : demande d'adresse**
+##### **DHCPOFFER (Serveur -> Client) : proposition d'adresse**
+##### **DHCPREQUEST (Client -> Serveur) : demande de réservation d'une adresse**
+##### **DHCPACK (Serveur -> Client) : acceptation avec envoi paramétrage**
+##### DHCPNACK (Serveur -> Client) : refus de réservation
+##### DHCPDECLINE (Client -> Serveur) : après DHCPACK le client doit vérifier (par exemple via ARP) si l'adresse est déjà utilisée, si oui il décline l'offre du serveur
+##### DHCPRELEASE (Client -> Serveur) : résiliation du bail par le client
+##### DHCPINFORM (Client -> Serveur) : demande de paramètre de configuration sans réservation d'adresse (client ayant déjà une adresse)
+  * #### 3.5.2 Mise en oeuvre
+>[!NOTE]
+>     * #### 3.5.2.1 Débian 12
+> ##### passer en root
+> ##### télécharger le packet
+>	apt-get install isc-dhcp-server
+> ##### passer en réseau interne
+> ##### renomer la machine
+>	nano /etc/hosts
+>	srv-dhcp
+>	nano /etc/hostname
+>	srv-dhcp
+> ##### reboot
+>	reboot
+> ##### passer en root
+> ##### configurer le serveur
+>	nano /etc/network/interfaces
+>	adress 172.20.0.2
+>	netmask 255.255.255.0
+> ##### commenter la ligne IPv6
+>	#iface enp0s3 inet6 auto
+> ##### reboot interface
+>	ifdown enp0s3
+	ifup enp0s3
+>##### Configurer le serveur DHCP
+>	nano /etc/default/isc-dhcp_server
+>		
+>		host [PC NAME] [ADRESS MAC] {
+>			hardware ethernet [ADRESS MAC]
+>			fixed-adress [IP] }
+>##### reboot DHCP
+>	systemctl resart isc-dhcp-server.service
+>##### chek le statut
+>	systemctl status isc-dhcp-server.service
+>###### [vidéo](https://www.youtube.com/watch?v=hdaHQR-7uAM&ab_channel=AlexDavantTech)
+________________________________________________
+* #### 3.5.2.2 Windows 22 
+>[!NOTE]
+>* #### Instalation DHCP
+>* ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
+>  * ##### Choisissez l'option **Role-based or feature-based instalation** et poursuivez.
+>  * #####   Continuez, le serveur est déjà selectioné.
+>  * ##### Dans la liste cochez "DHCP server" et dans la fenétre **include management tools**.Cliquez sur **Add Features**
+>  * ##### Cliquez sur **Install**
+> * #### **Configuration** du serveur DHCP :
+> * ##### Ouvrir **Administrativ Tools**
+> * ##### Clic droit sur **IPv4**, choisir **New Scope**
+> * ##### Rentrer la plage d'adresse IP et le masque de sous réseau ici : **start** 172.20.0.100 / **end** 172.20.0.200 / **length** 24 / **subnet mask** 255.255.255.0
+> * ##### Dans Router rentrer un IP éloigné de la plage pour plus de visibilité là 172.20.0.254
+> * ##### Faire **next** jusqu'à la page suivante : **Configure DHCP Options** : cocher **Yes, i want to configure these options now** 
+> * ##### On peux ne pas remplir les Options **Router et DNS** car nous ne sortirons pas du réseau privé.
+> *  #### **Machine cliens :**
+>   * ##### Ouvrir Powershell : **ipconfig**, pour vérifier l'adresse ip, si elle ne corespond pas à la plage définie **ipconfig /renew**
+>   * ##### Si le problème persiste, dans la fenétre de configuration du serveur DHCP, dérouler IPv4 et regarder dans **Scope [172.20.0.0]**, l'option **Activate/Desactivate** est bien sur **Activate**.
+> * #### Créer une **Réservation** :
+>   *  ##### Clic droit sur réservation **New Reservation...**, rentrer l'IP **172.20.0.10** de réservation, le nom du clients et l'adresse MAC (du clients) choisir **DHCP**, puis **add**.
+>   *  ##### Chez le client, **ipconfig /renew**==> TADDAAAAAA!!
+![Le routage](https://github.com/user-attachments/assets/1fa23eda-1740-4a3a-8743-ed35ff72fedf)
+
+
+* ### 5) Cisco Packet Tracer
   * #### 5.1 Routage Commande
 
 Cisco packet tracer
