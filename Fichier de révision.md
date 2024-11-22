@@ -1858,25 +1858,25 @@ ________________________________________________
 
 Cisco packet tracer
 
-interface GigabitEthernet0/*.................Accède au mode de configuration de l'interface.
-ip address...................................Définit l'adresse IPv4 et son masque de sous-réseau pour l'interface.
-ipv6 address.................................Définit l'adresse IPv6 et son préfixe pour l'interface.
-no shutdown..................................Active l'interface.
-exit.........................................Quitte le mode de configuration de l'interface pour retourner au mode de configuration terminal.
-ipv6 unicast-routing.........................Active le routage de IPv6.
-do show ipv6 interface brief.................Voir la config' ipv6
+* ##### interface GigabitEthernet0/*.................Accède au mode de configuration de l'interface.
+* ##### ip address...................................Définit l'adresse IPv4 et son masque de sous-réseau pour l'interface.
+* ##### ipv6 address.................................Définit l'adresse IPv6 et son préfixe pour l'interface.
+* ##### no shutdown..................................Active l'interface.
+* ##### exit.........................................Quitte le mode de configuration de l'interface pour retourner au mode de configuration terminal.
+* ##### ipv6 unicast-routing.........................Active le routage de IPv6.
+* ##### do show ipv6 interface brief.................Voir la config' ipv6
 
 
-Configurer un router CLI :
+#### Configurer un router CLI :
 
-Le nom :
+### Le nom :
 * #### Router> enable
 * #### Router# configure terminal
 * #### Router(config)# hostname R0
 * #### R0(config)# 
 
 
-Les IP
+### Les IP
 * #### R0> enable
 * #### R0# configure terminal
 * #### R0(config)# interface GigabitEthernet0/1
@@ -1937,13 +1937,13 @@ IPv6
 
 ##### 2) Déclarer une route pour toutes les réseaux non relié directement:
 ##### AVEC LA COMMANDE ET SYNTAXE :
-R0> enable
-R0# configure terminal
+##### R0> enable
+##### R0# configure terminal
 
 * ##### IPv4	R0(config)# ip route IPv4 RESEAU + MASQUE + IPv4 PASSERELLE  ➡️  R0(config)# ip route 192.168.3.0 255.255.255.0 192.168.4.2 		
 	
 
-  * #####  IPv6	ipv6 route IPv6 RESEAU/CIDR + INTERFACE +  IPv6 PASSERELLE   ➡️  ipv6 route 2001:db8:f3c1:3::/64 GigabitEthernet0/2 FE80::20C:85FF:FE83:1D01
+* #####  IPv6	ipv6 route IPv6 RESEAU/CIDR + INTERFACE +  IPv6 PASSERELLE   ➡️  ipv6 route 2001:db8:f3c1:3::/64 GigabitEthernet0/2 FE80::20C:85FF:FE83:1D01
 
 	
 
