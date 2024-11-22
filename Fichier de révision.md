@@ -58,16 +58,16 @@
   * #### 3.4.3 [Autoconfiguration.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#343-autoconfiguration-1)
   * #### 3.4.4 [Entêtes.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#344-ent%C3%AAtes-1)
   * #### 3.4.5 [Protocoles associés.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#345-protocoles-associ%C3%A9s-1)
-* ### 3.5 [Le routage :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36-le-routage--1)
-   * #### 3.5.1 [Définition et notions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#361-d%C3%A9finition-et-notions-1)
-   * #### 3.5.2 [Mécaniques.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#362-m%C3%A9caniques-1)
-   * #### 3.5.3 [Tables de routages.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#363-tables-de-routages-1)
-   * #### 3.5.4 [Routage dynamique](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#364-routage-dynamique-1)
-     * #### 3.5.4.1 [Protocoles dynamiques](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3641-protocoles-dynamiques-1)
-     * #### 3.5.4.2 [Protocoles de transport](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3642-protocoles-de-transport-1)
-       * #### 3.5.4.3.1 [UDP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36431-udp-1)
-       * #### 3.5.4.3.2 [TCP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36432-tcp)
-      * #### 3.5.4.3 [Les ports](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3643-les-portsliens-du-sites-avec-tous-les-ports--les-principaux-1)
+* ### 3.5 [Le routage :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#35-le-routage--1)
+   * #### 3.5.1 [Définition et notions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#351-d%C3%A9finition-et-notions-1)
+   * #### 3.5.2 [Mécaniques.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#352-m%C3%A9caniques-1)
+   * #### 3.5.3 [Tables de routages.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#353-tables-de-routages-1)
+   * #### 3.5.4 [Routage dynamique](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#354-routage-dynamique-1)
+     * #### 3.5.4.1 [Protocoles dynamiques](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3541-protocoles-dynamiques-1)
+     * #### 3.5.4.2 [Protocoles de transport](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3542-protocoles-de-transport-1)
+       * #### 3.5.4.3.1 [UDP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#35431-udp-1)
+       * #### 3.5.4.3.2 [TCP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#35432-tcp)
+      * #### 3.5.4.3 [Les ports](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3543-les-portsliens-du-sites-avec-tous-les-ports--les-principaux-1)
       
       
 * #### 3.5.5 [NAT :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#365-nat)
@@ -1858,25 +1858,25 @@ ________________________________________________
 
 Cisco packet tracer
 
-* ##### interface GigabitEthernet0/*.................Accède au mode de configuration de l'interface.
-* ##### ip address...................................Définit l'adresse IPv4 et son masque de sous-réseau pour l'interface.
-* ##### ipv6 address.................................Définit l'adresse IPv6 et son préfixe pour l'interface.
-* ##### no shutdown..................................Active l'interface.
-* ##### exit.........................................Quitte le mode de configuration de l'interface pour retourner au mode de configuration terminal.
-* ##### ipv6 unicast-routing.........................Active le routage de IPv6.
-* ##### do show ipv6 interface brief.................Voir la config' ipv6
+interface GigabitEthernet0/*.................Accède au mode de configuration de l'interface.
+ip address...................................Définit l'adresse IPv4 et son masque de sous-réseau pour l'interface.
+ipv6 address.................................Définit l'adresse IPv6 et son préfixe pour l'interface.
+no shutdown..................................Active l'interface.
+exit.........................................Quitte le mode de configuration de l'interface pour retourner au mode de configuration terminal.
+ipv6 unicast-routing.........................Active le routage de IPv6.
+do show ipv6 interface brief.................Voir la config' ipv6
 
 
-#### Configurer un router CLI :
+Configurer un router CLI :
 
-### Le nom :
+Le nom :
 * #### Router> enable
 * #### Router# configure terminal
 * #### Router(config)# hostname R0
 * #### R0(config)# 
 
 
-### Les IP
+Les IP
 * #### R0> enable
 * #### R0# configure terminal
 * #### R0(config)# interface GigabitEthernet0/1
@@ -1937,13 +1937,13 @@ IPv6
 
 ##### 2) Déclarer une route pour toutes les réseaux non relié directement:
 ##### AVEC LA COMMANDE ET SYNTAXE :
-##### R0> enable
-##### R0# configure terminal
+R0> enable
+R0# configure terminal
 
 * ##### IPv4	R0(config)# ip route IPv4 RESEAU + MASQUE + IPv4 PASSERELLE  ➡️  R0(config)# ip route 192.168.3.0 255.255.255.0 192.168.4.2 		
 	
 
-* #####  IPv6	ipv6 route IPv6 RESEAU/CIDR + INTERFACE +  IPv6 PASSERELLE   ➡️  ipv6 route 2001:db8:f3c1:3::/64 GigabitEthernet0/2 FE80::20C:85FF:FE83:1D01
+  * #####  IPv6	ipv6 route IPv6 RESEAU/CIDR + INTERFACE +  IPv6 PASSERELLE   ➡️  ipv6 route 2001:db8:f3c1:3::/64 GigabitEthernet0/2 FE80::20C:85FF:FE83:1D01
 
 	
 
