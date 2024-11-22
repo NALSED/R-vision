@@ -1142,7 +1142,7 @@ manière transparente
 ##### :large_blue_diamond: `KCC` (Knowledge Consistency Checker) est un composant qui génère et gère automatiquement la topologie de réplication intrasite et intersite
 ![AD 1](https://github.com/user-attachments/assets/99f58f65-d250-4f97-ae77-8849f7d7a28d)
 ####  :warning: Intervalle de réplication (par defaut) inter-site de 180 min/intra-site de 5 min.Un petit intervalle réduit la latence, mais augmente la quantité de trafic réseau. Pour tenir à jour les partitions d’annuaire de domaine, une faible latence est recommandée.:warning:
-##### :large_blue_diamond: `FSMO` (Flexible Single Master Operation), Dans un AD avec plusieurs DC (disposent d’un accès en écriture sur l’annuaire), les données sensible sont donc gére par FSMO, pour eviter que tout les DC puissent modifier l'AD. 
+#### :large_blue_diamond: `FSMO` (Flexible Single Master Operation), Dans un AD avec plusieurs DC (disposent d’un accès en écriture sur l’annuaire), les données sensible sont donc gére par FSMO, pour eviter que tout les DC puissent modifier l'AD. 
 ##### :one: `Schema master` 1 seul par forêt (obligatoire), Gère les MAJ du schéma
 ##### 2️⃣: `domain naming master` 1 seul par forêt Gère les noms de domaines, peut les supprimer, les ajouter, 
 ##### 3️⃣: `RID master`1 seul par domaine Gère les attributions de SID ( identifiant de sécurité unique, stocké dans l'attribut "objectSid", si un objet est renommez, l'AD sera toujours en mesure de l'identifier, car le SID reste le même pendant toute la vie d'un objet.)
@@ -1150,17 +1150,16 @@ manière transparente
 ##### 5️⃣: `PDC emulator`  seul par domaine (primordial) Gère la synchronisation du temps, processus de verrouillage de comptes
 ##### :+1: Bonne pratique:
 ##### :small_blue_diamond: Ne pas avoir qu’un seul DC avec tous les rôles FSMO.(Par défaut le premier DC d’une nouvelle forêt cumule les cinq rôles.)
-#
 #### :small_blue_diamond: Idéalement : 5 DC avec un rôle installé sur chacun
 * #### 3.7.6 Objets
 ---  
 ![ad1](https://github.com/user-attachments/assets/e118faeb-159d-4139-83c9-380346d20e1d)
 
-##### :large_blue_diamond:[Les attributs](https://learn.microsoft.com/fr-fr/windows/win32/adschema/attributes-all) définissent les caractéristiques/constituant de l'objet.
+#### :large_blue_diamond:[Les attributs](https://learn.microsoft.com/fr-fr/windows/win32/adschema/attributes-all) définissent les caractéristiques/constituant de l'objet.
 ##### :mag: Recherche d'attributs :arrow_heading_down:
 ![ad1](https://github.com/user-attachments/assets/d91ec276-4c0f-4ee8-a097-7dfe8ea1fd4c)
 
-##### :large_blue_diamond:les id uniques
+#### :large_blue_diamond:les id uniques
 :one: GUID (Globally Unique Identifier)
 * ##### Unique au sein d’une forêt
 * ##### Attribué à un objet à la création (ne change jamais)
@@ -1176,13 +1175,13 @@ manière transparente
 * ##### Attribut: ObjectSID
 * #####  (exemple :  (s-1-5-21-156063872-1535639461-3779917529):arrow_right: :one:- (1134):arrow_right: 2️⃣: )
 :one: SID / :two: RID
-##### :large_blue_diamond: le DN (Distinguished Name)
+#### :large_blue_diamond: le DN (Distinguished Name)
 ##### :small_blue_diamond: Correspond au chemin LDAP dans l’annuaire AD
 ##### :small_blue_diamond: La longueur dépend de l’emplacement de l’objet dans l’AD
 ##### :small_blue_diamond: ![ad1](https://github.com/user-attachments/assets/d82a326f-4028-4ee7-a90e-b9af85d49ca6)
 * #### 3.7.7 :+1:Bonne Pratiques :
 ---  
- ##### :large_blue_diamond:Gestion des identités et des accès
+ ### :large_blue_diamond:Gestion des identités et des accès
 ##### :one:Principe de moindre privilège :
 ##### :small_blue_diamond:Limiter les droits d'accès au strict nécessaire
 ##### :small_blue_diamond:Uniquement les droits nécessaires pour exécuter des tâches précises
@@ -1191,13 +1190,13 @@ manière transparente
 ##### :3️⃣Changer le mot de passe du compte administrateur local des clients :
 ##### :small_blue_diamond: Utilisation de LAPS
 
- ##### :large_blue_diamond:
+ ### :large_blue_diamond:Politique et contrôles d’accès
  ##### :one:Renforcer les politiques de mot de passe :
  ##### :small_blue_diamond:Établir des règles strictes pour la création de mots de passe robustes 
  ##### :2️⃣ Utiliser des groupes de sécurité pour l’accès aux ressources :
  ##### :small_blue_diamond: Contrôler l'accès via des groupes plutôt que par des permissions individuelles
  
- ##### :large_blue_diamond:Opérations sur le réseau
+ ### :large_blue_diamond:Opérations sur le réseau
 :one:
  ##### :small_blue_diamond:Les mettre dans un réseau dédié et sécurisé (vlan, DMZ)
  ##### 2️⃣Effectuer les MAJ :
@@ -1206,7 +1205,7 @@ manière transparente
  ##### 3️⃣:Sécuriser les communications LDAP :
  ##### :small_blue_diamond:Protéger les transmissions avec LDAPS (LDAP sur SSL/TLS)
  
- ##### :large_blue_diamond:Surveillance
+ ### :large_blue_diamond:Surveillance
 ##### :one: Effectuer des audits réguliers et surveiller les logs
 ##### :small_blue_diamond:Audit interne ou externe
 ##### :small_blue_diamond:Examiner les logs pour détecter les activités anormales
@@ -1214,9 +1213,9 @@ manière transparente
 ##### :small_blue_diamond:Préparer des plans de sauvegarde et de restauration pour les urgences
 ##### :small_blue_diamond:Utiliser la règles 3, 2, 1
 ![ad1](https://github.com/user-attachments/assets/51429f88-82f3-4d6d-9607-2bcdcd1c86d6)
- ##### :large_blue_diamond:Microsoft Tiering Model
+ #### :large_blue_diamond:Microsoft Tiering Model
 ##### :scroll: Définition : Modèle de sécurité qui sépare les ressources et les administrateurs pour limiter les risques de propagation d'attaques dans l'environnement AD, on sépare les composants de l’infrastructure en fonction de leur niveau d’importance en rendant les couches hermétiques les unes des autres.
- ##### 🔷Séparation en niveaux de sécurité ou tiers
+ ### 🔷Séparation en niveaux de sécurité ou tiers
 ##### :one: tier 0 (sensible ++ risque )
 ##### :small_blue_diamond: DC, administrateurs d'entreprise et autres actifs avec contrôle direct sur l'ensemble de l'environnement AD (serveurs AD, PKI, ADFS …)
 ##### 🔹Un admin T0 peut gérer uniquement des composants de cette couche.
@@ -1235,7 +1234,7 @@ manière transparente
 ##### :warning:L’accès ne doit PAS être utilisé pour se connecter à des serveurs d’une couche supérieur.⚠️
 ![ad1](https://github.com/user-attachments/assets/0e4839cd-4a4b-4ac4-891a-d3c2e8028db0)
 ![ad1](https://github.com/user-attachments/assets/1b5c24ca-7842-4544-b8e5-d70d9767f3d4)
-##### 🔷JIT & JEA
+### 🔷JIT & JEA
 ##### :one:JIT (Just-In-Time) :
 ##### :small_blue_diamond:Permet aux administrateurs d'obtenir les privilèges nécessaires pour une tâche spécifique pendant une période limitée.
 ##### :small_blue_diamond:A l'expiration, les droits élevés sont révoqués automatiquement.
@@ -1245,14 +1244,64 @@ manière transparente
  --- 
  * #### 3.7.8.2 GPO
   ---   
- 
- 
- 
- 
- 
+ ##### :scroll: Définition :GPO (Group Policy Object) sont des collections virtuelles de politiques de sécurité, une GPO permet la gestion du parc informatique.
+ ##### :small_blue_diamond:Les GPO sont fonctionnelles sur les ordinateurs ayant un OS Microsoft (client ou serveur).
+ ##### :small_blue_diamond:Constitution d’une GPO en trois parties :
+#####  :one: Une entrée LDAP
+ ![ad1](https://github.com/user-attachments/assets/8c06ed5c-68eb-4dae-80a2-299a0f9361b6)
+#####  2️⃣: Le contenu de la GPO
+![ad1](https://github.com/user-attachments/assets/507a069b-b6df-4404-8dab-e340a7f65dfe)
+##### 3️⃣:Un attribut gPLink
+![ad1](https://github.com/user-attachments/assets/3a1bdc94-4dfc-4f7c-a934-f267328fd258)
+ ##### :small_blue_diamond:Etat => En plus des caractéristiques d’une GPO vus précédemment, 2 types d’états existent :
+ ##### :one:Forcée (Enforced) avec 2 possibilitées: oui ou non
+ ##### Lorsqu'une GPO est "enforced", elle a la priorité sur les GPO appliquées à des niveaux inférieurs dans la hiérarchie AD.
+ ##### 2️⃣:Active (Enable), qui peut avoir également l’état désactivée (Disable)
+
+##### :small_blue_diamond:Statégies locales :les stratégies locales, sont un ensemble de configurations de sécurité et de gestion appliquées directement à un ordinateur individuel.
+ ![ad1](https://github.com/user-attachments/assets/61ccbd9e-1778-45f4-94ea-63e74cb44698)
+![ad1](https://github.com/user-attachments/assets/d608776f-753c-42fa-87e4-e96434dff783)
+![ad1](https://github.com/user-attachments/assets/79a61df4-67c6-43e5-a7c8-14a2c2b44795)
+![ad1](https://github.com/user-attachments/assets/1c3ee734-1c27-4afa-8669-ef306baad3e2)
+![ad1](https://github.com/user-attachments/assets/29b7036e-0d78-447d-8e25-ac7cf8491301)
+ ##### :small_blue_diamond: BONNES PRATIQUES
+![ad1](https://github.com/user-attachments/assets/9e674835-6acf-49e1-b4c9-af17a92245aa)
+
+  #### :arrow_forward: GPO Général
+ ##### Se rendre sur cette page : 
+![vm 1](https://github.com/user-attachments/assets/bef961d1-2071-4962-8134-48523ada8f20)
+##### :arrow_up: => Group Policy Management.
+##### Sur la page Group Policy Management : 
+![vm 1](https://github.com/user-attachments/assets/7bc1754a-5761-4ce7-aa4f-3f227f49edf6)
+##### Dérouler Forest => Domains => domain.local => Domain controllers Policy => clic droit => Default Domain Controllers Policy => Edit
+![vm 1](https://github.com/user-attachments/assets/29d472fa-6fa3-4007-94fb-395c71a7a008)
+##### Dans cette fenêtre toutes les régle User et Computer son réalisable :
+![vm 1](https://github.com/user-attachments/assets/59942eaa-1e84-44f2-b43e-656c6b4e5c71)
+#### :arrow_forward: exemple edition de GPO
+##### Restriction d'un groupe d'utilisateur
+##### Dans "Group Policy Management" => dérouler jusqu'au groupe souhaitez => Wilder_student => clic droit => Première option
+![vm 1](https://github.com/user-attachments/assets/b2bdc3f9-2b41-4eba-b8c7-b79858f73818)
+##### Donner un nom à ce nouveau GPO :arrow_up:
+##### Dans wilder_students on vois maintenant le nouveau GPO à droite
+
+![vm 1](https://github.com/user-attachments/assets/65fe4691-7d9b-49d9-810c-e73e5866eca5)
+##### Editer
+![vm 1](https://github.com/user-attachments/assets/f0d96297-e79e-4617-9492-8f2f5e2db38d)
+##### Dérouler le menu corespondant pour trouver la politique de paneau de configuration :
+##### Ici User Configuration => Policies => Administrative Templates => Control Panel => Toutes les régles relatives au Control Panel.
+![vm 1](https://github.com/user-attachments/assets/eab7e2ff-7310-4ff9-93a5-c7bb008693fd)
+##### Mettre disabled puis ok
+![vm 1](https://github.com/user-attachments/assets/a837248b-1331-482c-a9db-7d42f6182997)
+##### Résultat:
+![vm 1](https://github.com/user-attachments/assets/f3145f00-ddc3-49ff-bd53-a51b993a027d)
+##### Sur la machine client:
+   * ##### Sur Powershell en Admistrator exécuter la commande : gpupdate /force
+   * ##### faire windows+R => Ecrire : Control.exe
+##### Résultat machine client :
+![vm 1](https://github.com/user-attachments/assets/5accd1aa-8048-4c96-9526-538866c74e59)
  * #### 3.7.8.3 Gestion client
 ---
-1) ##### **INSTALATION DU SERVEUR ADDS**
+1) #### **INSTALATION DU SERVEUR ADDS**
 * ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
   * ##### Choisissez l'option **Role-based or feature-based instalation** et poursuivez.
   * ##### Choisir Active Directory Domain Services
@@ -1287,42 +1336,9 @@ manière transparente
 * ##### Le renseigner 
 ![adds 9](https://github.com/user-attachments/assets/0378aca1-178e-426b-8f18-6f65bd5dc731)
 
- * #### 3.7.8.2 GPO
-  #### :arrow_forward: GPO Général
- ##### Se rendre sur cette page : 
-![vm 1](https://github.com/user-attachments/assets/bef961d1-2071-4962-8134-48523ada8f20)
-##### :arrow_up: => Group Policy Management.
-##### Sur la page Group Policy Management : 
-![vm 1](https://github.com/user-attachments/assets/7bc1754a-5761-4ce7-aa4f-3f227f49edf6)
-##### Dérouler Forest => Domains => domain.local => Domain controllers Policy => clic droit => Default Domain Controllers Policy => Edit
-![vm 1](https://github.com/user-attachments/assets/29d472fa-6fa3-4007-94fb-395c71a7a008)
-##### Dans cette fenêtre toutes les régle User et Computer son réalisable :
-![vm 1](https://github.com/user-attachments/assets/59942eaa-1e84-44f2-b43e-656c6b4e5c71)
-#### :arrow_forward: exemple edition de GPO
-##### Restriction d'un groupe d'utilisateur
-##### Dans "Group Policy Management" => dérouler jusqu'au groupe souhaitez => Wilder_student => clic droit => Première option
-![vm 1](https://github.com/user-attachments/assets/b2bdc3f9-2b41-4eba-b8c7-b79858f73818)
-##### Donner un nom à ce nouveau GPO :arrow_up:
-##### Dans wilder_students on vois maintenant le nouveau GPO à droite
+### Faire entrer un client dans un domain
 
-![vm 1](https://github.com/user-attachments/assets/65fe4691-7d9b-49d9-810c-e73e5866eca5)
-##### Editer
-![vm 1](https://github.com/user-attachments/assets/f0d96297-e79e-4617-9492-8f2f5e2db38d)
-##### Dérouler le menu corespondant pour trouver la politique de paneau de configuration :
-##### Ici User Configuration => Policies => Administrative Templates => Control Panel => Toutes les régles relatives au Control Panel.
-![vm 1](https://github.com/user-attachments/assets/eab7e2ff-7310-4ff9-93a5-c7bb008693fd)
-##### Mettre disabled puis ok
-![vm 1](https://github.com/user-attachments/assets/a837248b-1331-482c-a9db-7d42f6182997)
-##### Résultat:
-![vm 1](https://github.com/user-attachments/assets/f3145f00-ddc3-49ff-bd53-a51b993a027d)
-##### Sur la machine client:
-   * ##### Sur Powershell en Admistrator exécuter la commande : gpupdate /force
-   * ##### faire windows+R => Ecrire : Control.exe
-##### Résultat machine client :
-![vm 1](https://github.com/user-attachments/assets/5accd1aa-8048-4c96-9526-538866c74e59)
-* #### 3.7.8.3 Gestion client
-
-#### :bangbang: Prérequis machine sur le même réseau et seveur DNS renseigner sur le/les client(s), les Différent cliens renommé avec des nom diférent :bangbang:
+#### ⚠️ Prérequis machine sur le même réseau et seveur DNS renseigner sur le/les client(s), les Différent cliens renommé avec des nom diférent ⚠️
 
 ##### :arrow_forward: AD GPO sur le clients:
 ##### clic sur "View" :arrow_down:
@@ -1566,12 +1582,6 @@ Tout d'abord il faut copier le fichier "*db.127*" vers "*reverse.wilders.lan*"
 #### L'activer au démarage => dans le même menu => Properties
 #### Selectionner => Atomatic (Delayed Start)
 ![vm 1](https://github.com/user-attachments/assets/820ad474-e52d-46f1-841e-831102c639a8)
-
-
-
-
-
-
 #### DEMO SSH AVEC IDENTIFICATION AUTO
 ## UBUNTU -> UBUNTU
 
@@ -1761,25 +1771,27 @@ ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
 * #### 5) Cisco Packet Tracer
   * #### 5.1 Routage Commande
 
-#### interface GigabitEthernet0/*.................Accède au mode de configuration de l'interface.
-#### ip address...................................Définit l'adresse IPv4 et son masque de sous-réseau pour l'interface.
-#### ipv6 address.................................Définit l'adresse IPv6 et son préfixe pour l'interface.
-#### no shutdown..................................Active l'interface.
-#### exit.........................................Quitte le mode de configuration de l'interface pour retourner au mode de configuration terminal.
-#### ipv6 unicast-routing.........................Active le routage de IPv6.
-#### do show ipv6 interface brief.................Voir la config' ipv6
+Cisco packet tracer
+
+interface GigabitEthernet0/*.................Accède au mode de configuration de l'interface.
+ip address...................................Définit l'adresse IPv4 et son masque de sous-réseau pour l'interface.
+ipv6 address.................................Définit l'adresse IPv6 et son préfixe pour l'interface.
+no shutdown..................................Active l'interface.
+exit.........................................Quitte le mode de configuration de l'interface pour retourner au mode de configuration terminal.
+ipv6 unicast-routing.........................Active le routage de IPv6.
+do show ipv6 interface brief.................Voir la config' ipv6
 
 
-### Configurer un router CLI :
+Configurer un router CLI :
 
-#### Le nom :
+Le nom :
 * #### Router> enable
 * #### Router# configure terminal
 * #### Router(config)# hostname R0
 * #### R0(config)# 
 
 
-#### Les IP :
+Les IP
 * #### R0> enable
 * #### R0# configure terminal
 * #### R0(config)# interface GigabitEthernet0/1
@@ -1794,6 +1806,61 @@ ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
 * #### R0(config-if)# exit
 * #### R0(config)# ipv6 unicast-routin
 
+### Déclarer une route
+
+ ##### 1) TABLES DE ROUTAGE:
+ 
+Table de routage R0
+IPv4
+| Réseau         | Masque          | Passerelle      | Interface          | Type |
+|----------------|-----------------|-----------------|--------------------|------|
+| 192.168.1.0    | 255.255.255.0   | Directement     | GigabitEthernet0/0 | C    |
+| 192.168.2.0    | 255.255.255.0   | Directement     | GigabitEthernet0/1 | C    |
+| 192.168.4.0    | 255.255.255.252 | Directement     | GigabitEthernet0/2 | C    |
+| 192.168.3.0    | 255.255.255.0   | 192.168.4.2    | GigabitEthernet0/2 | S    |
+
+
+IPV6
+| Réseau                    | Préfixe | Passerelle                        | Interface          | Type |
+|---------------------------|---------|------------------------------------|--------------------|------|
+| 2001:db8:f3c1:1::/64      | /64     | Directement                        | GigabitEthernet0/0 | C    |
+| 2001:db8:f3c1:2::/64      | /64     | Directement                        | GigabitEthernet0/1 | C    |
+| fe80::/64                 | /64     | Directement                        | GigabitEthernet0/2 | C    |
+| 2001:db8:f3c1:3::/64      | /64     | fe80::20c:85ff:fe83:1d01           | GigabitEthernet0/2 | S    |
+
+
+
+Table de routage R1
+
+IPv4
+| Réseau         | Masque          | Passerelle      | Interface          | Type |
+|----------------|-----------------|-----------------|--------------------|------|
+| 192.168.3.0    | 255.255.255.0   | Directement     | GigabitEthernet0/1 | C    |
+| 192.168.4.0    | 255.255.255.252 | Directement     | GigabitEthernet0/0 | C    |
+| 192.168.1.0    | 255.255.255.0   | 192.168.4.1    | GigabitEthernet0/0 | S    |
+| 192.168.2.0    | 255.255.255.0   | 192.168.4.1    | GigabitEthernet0/0 | S    |
+
+
+IPv6
+| Réseau                   | Préfixe | Passerelle                        | Interface          | Type |
+|--------------------------|---------|------------------------------------|--------------------|------|
+| 2001:db8:f3c1:3::/64     | /64     | Directement                        | GigabitEthernet0/1 | C    |
+| fe80::/64                | /64     | Directement                        | GigabitEthernet0/0 | C    |
+| 2001:db8:f3c1:1::/64     | /64     | fe80::260:70ff:fecd:3703           | GigabitEthernet0/0 | S    |
+| 2001:db8:f3c1:2::/64     | /64     | fe80::260:70ff:fecd:3703           | GigabitEthernet0/0 | S    |
+
+
+##### 2) Déclarer une route pour toutes les réseaux non relié directement:
+##### AVEC LA COMMANDE ET SYNTAXE :
+R0> enable
+R0# configure terminal
+
+* ##### IPv4	R0(config)# ip route IPv4 RESEAU + MASQUE + IPv4 PASSERELLE  ➡️  R0(config)# ip route 192.168.3.0 255.255.255.0 192.168.4.2 		
+	
+
+  * #####  IPv6	ipv6 route IPv6 RESEAU/CIDR + INTERFACE +  IPv6 PASSERELLE   ➡️  ipv6 route 2001:db8:f3c1:3::/64 GigabitEthernet0/2 FE80::20C:85FF:FE83:1D01
+
+	
 
 
 
