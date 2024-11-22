@@ -87,7 +87,7 @@
      * #### 3.6.8.1 [GPO](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3681-gpo-1)
      * #### 3.6.8.2 [Gestion client](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3683-gestion-client-1)
 * ## 4) [Serveur](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4-serveur-1)
-**DEPLACER DHCP**
+
   * ## 4.1 [DNS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#41-dns-1)
     * #### 4.1.1 [Deffinitions et Fonctionnements](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#411-d%C3%A9finitions-et-fonctionement)
     * #### 4.1.2 [DNS récurcifs/DNS faisant autorités](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#412-closed_book-dns-r%C3%A9curcif--blue_book-dns-faisant-autorit%C3%A9)
@@ -101,7 +101,11 @@
      * #### 4.2.2.2 [Template](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4222-template-1)
      * #### 4.2.2.3 [Snapshot](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4223-snapshot-1)
   * #### 4.3  [SSH](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#43-ssh)
-  *  #### 4.4 [DHCP]()
+  *  #### 4.4 [DHCP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#44-dhcp-1)
+     * #### 4.4.1 [Principes](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#441-principes)
+     * #### 4.4.2 [Mise en oeuvre](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#442-mise-en-oeuvre)
+       * #### 4.4.2.1 [Débian 12](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4421-d%C3%A9bian-12)
+       * #### 4.4.2.2 [Window 2022](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4422-windows-22)
 * ## 5) [Cisco Packet Tracer](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#5-cisco-packet-tracer-1)
   * #### 5.1 [Routage Commande](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#51-routage-commande-1)
 
@@ -1356,12 +1360,12 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### Le pc client va reboot, et depuis l'AD on aura la main sur toutes les configuration de ce PC depuis GPO de l'AD.
 ![SER](https://github.com/user-attachments/assets/3a8af9d1-cec6-4c6d-a1d1-5b8300ead725)
 * ### 4) Serveur
----
----
+**DEPLACER DHCP**
+
 ![DNS](https://github.com/user-attachments/assets/60ce934f-f818-464e-8e2d-3804a21badfd)
 
 * ### 4.1 DNS
----
+
 * #### 4.1.1 Définitions et fonctionement
  ##### Base de donnée répartie et décentralisée, permettant la corespondance IP => Domain ==> Internet, AD
  ##### Ce protocole fonctionne en arborescence : :arrow_heading_down:
@@ -1396,7 +1400,6 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
  |Responsabilité| résolution DNS pour les utilisateurs finaux|hargés de fournir les enregistrements DNS officiels et de répondre aux requêtes des serveurs récursifs|
  
  #### 4.1.3 Serveurs Racines et Résolveurs
-  ---
    ##### :red_circle: Hyérarchie :
    ##### :one: Serveurs faisant autorité : contenant les informations pour une (ou plusieurs) zone(s), plusieurs serveurs sur une zones pour éviter les pannes.
    ##### 2️⃣ Serveurs Racines : Ils gèrent une zone contenant les TLD et sont censés être connus par tous les résolveurs
@@ -1404,7 +1407,6 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
    ##### 4️⃣ Stub résolver (DNS Local) non récurcif, gére un cache, connais l'adresse d'au moins un résolveur récursif.En générale intégrer à un systéme d'exploitation.
      
  * #### 4.1.4 Windows
----
 ##### **Le serveur est configuré avec une IP fixe de 172.16.10.10 et le client 172.16.10.20.**
 
 ##### 1 Créer un nouveau services DNS avec "Manage==> Add roles and Features."
@@ -1562,11 +1564,9 @@ Tout d'abord il faut copier le fichier "*db.127*" vers "*reverse.wilders.lan*"
 ![SSH](https://github.com/user-attachments/assets/350f041d-c70f-447a-bc08-1d42604cfae4)
 
   * #### 4.3 SSH
----
  * ### 3.4.1 Instalation
----
-* ## Ubuntu
-  * #### Installer ssh server :
+      * ## Ubuntu
+      * #### Installer ssh server :
 ![VM 1](https://github.com/user-attachments/assets/f4a662b1-7c56-4857-8912-6638bbd139d6)
     * #### Check ssh et sshd
  ![ssh clients ubuntu](https://github.com/user-attachments/assets/e091e228-089c-4bb4-961c-fa1d313b49c8)
@@ -1782,10 +1782,8 @@ ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
 ![DHCP](https://github.com/user-attachments/assets/de1739a8-3a84-4ef3-b094-dbe0ff6831b3)
 
 * #### 4.4 DHCP.
----
   * #### 4.4.1 Principes
- ---
-##### Gestion dynamique de l'adressage IP des hôtes du réseau. Utilisation Messages UDP - Port serveur 67 / Port client 68
+  ##### Gestion dynamique de l'adressage IP des hôtes du réseau. Utilisation Messages UDP - Port serveur 67 / Port client 68
  ##### **Les messages:**
 ##### **DHCPDISCOVER (Client -> broadcast) : demande d'adresse**
 ##### **DHCPOFFER (Serveur -> Client) : proposition d'adresse**
@@ -1796,7 +1794,6 @@ ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
 ##### DHCPRELEASE (Client -> Serveur) : résiliation du bail par le client
 ##### DHCPINFORM (Client -> Serveur) : demande de paramètre de configuration sans réservation d'adresse (client ayant déjà une adresse)
   * #### 4.4.2 Mise en oeuvre
----
 >[!NOTE]
 >* #### 4.4.2.1 Débian 12
 > ##### passer en root
@@ -1857,10 +1854,8 @@ ________________________________________________
 ![CPT](https://github.com/user-attachments/assets/142301a2-3b9b-401f-b303-536ebedfc25b)
 
 * ### 5) Cisco Packet Tracer
----
----
   * #### 5.1 Routage Commande
----
+
 Cisco packet tracer
 
 interface GigabitEthernet0/*.................Accède au mode de configuration de l'interface.
