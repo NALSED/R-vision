@@ -131,16 +131,16 @@
    * #### 1.2.4[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Daily scrum
 ---
    ##### **Réunions courtes**, Inspecter l'avancement et adapter le plan si besoin,Identifier les problèmes / Proposer des solutions, même heure, même lieu tous les jours.
-   * #### 1.2.5 Sprint review
+   * #### 1.2.5 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Sprint review
    ---
    **Réunion pour examiner le résultat du sprint**, décider des adaptations nécessaires, ajustement du product backlog 
-   * #### 1.3 Rôles et Définitions
+   * #### 1.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Rôles et Définitions
  ---
  #####  Un **Scrum master :** facilite l'application de la méthode Scrum, un **Product Owner :** porteur de la vision de la valeur du produit,Des développeurs : équipe pluridisciplinaire en charge de la réalisation du produit.
-#### 2) Git/Git-Hub : 
+#### 2)[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Git/Git-Hub : 
 ---
 ---
-   * #### 2.1 Git
+   * #### 2.1 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Git
 ---
      * #### 2.1.1 Dépot Distant
      ##### ((penser à passer en "main" pour pouvoir faire certaine action ( rendre la destination C:, safe aux yeux de git):)) 
@@ -162,7 +162,7 @@
  7) ##### lande@Admin MINGW64 /c/my-awesome-project (main) git commit -m <"NEW MESSAGE">
  8) ##### lande@Admin MINGW64 /c/my-awesome-project (main) git push origin main
 
- * #### 2.1.2 Branche et Flow 
+ * #### 2.1.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Branche et Flow 
  ---
    intro: 	après création de différentes branches, on peux visionner l'avancement via Insights puis 	Network en bas à Gauche.
 
@@ -173,7 +173,7 @@
 1) ##### lande@Admin MINGW64 ~/git/website-flow (main)  git branch ((donne la branche ou l'on se trouve)) 					2) lande@Admin MINGW64 ~/git/website-flow (main) git branch [NEWBRANCH]
 3) ##### lande@Admin MINGW64 ~/git/website-flow (main) git checkout [OTHERBRANCH]
 4) ##### Modification via le tuto précédent et push sur GitHub
-   * ##### 2.1.3 Conflit Merge
+   * ##### 2.1.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Conflit Merge
 ---
   ###### Quand un conflit apparait entre un dépôt distant et un dépôt local:(( après git pull))
      git pull origin main
@@ -208,10 +208,10 @@ Automatic merge failed; fix conflicts and then commit the result.
 3) ##### lande@Admin MINGW64 ~/git/A (main) git pull origin main ((UPDATE LES DEUX VERSION))
 4) ##### lande@Admin MINGW64 ~/git/A (main) git push origin main ((C'EST BUENOS!!))
 
-* #### 2.1.4 Clé SSH.
+* #### 2.1.4[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Clé SSH.
 ---
 ##### Utiliser gh_2.57.0_windows_amd64 avec le tuto pour créer un clé SSH entre GitHub et Git
-* #### 2.2 Full git francois!
+* #### 2.2 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Full git francois!
 --- 
 # SOMMAIRE : 
 
@@ -681,12 +681,12 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 
 ![sd](https://github.com/user-attachments/assets/7287fcac-a5d0-4d43-a338-30fb3da71ecc)
 
-#### 3) Réseau :
+#### 3)[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Réseau :
 ---
 ---
- * #### 3.1 Principes des réseaux :  
+ * #### 3.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Principes des réseaux :  
 ---
-   * #### 3.1.1 Introduction.
+   * #### 3.1.1 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Introduction.
 --- 
  ###### Un **réseau** est un **ensemble d’éléments reliés** les uns aux autres et entre lesquels** circulent des informations**
 ###### Il est constitué :
@@ -701,24 +701,24 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ##### - Le GAN (Global Area Network) →  échelle mondial
 #####  Pour transporter l'information, découpage de l'information, et du réseau via le principe de datagramme et le routage.
 
- * #### 3.1.2 protocole réseau.
+ * #### 3.1.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) protocole réseau.
 ---
 ##### :scroll: Définitions: Un protocole réseau est mis œuvre sur un réseau informatique ou un réseau de télécommunication. Ensemble des règles que doivent suivre tous les équipements pour pouvoir communiquer.L'idée est qu'un premier service soit appuyé sur un autre lui même appuyé sur un autre, lé découpage de problémes complexs facilite leurs resolutions.
    
-  * #### 3.1.3 Modéle en couche.
+  * #### 3.1.3 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Modéle en couche.
  ---
  ##### Pour pallier au différents probléme lié au transport d'information et de donnée, nous avons recourt à l'encapsulation.
 ##### L'idée est qu'un premier service soit appuyé sur un autre lui même appuyé sur un autre, le découpage de problémes complexs facilite leurs resolutions.
-* #### 3.1.4 Modèle OSI.
+* #### 3.1.4 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Modèle OSI.
 ---
  ##### Le **Modèle OSI** est une norme de communication elle se décompose de la manière suivante:
 ![image](https://btssio-ccicampus-strasbourg.fr/wp-content/uploads/2022/06/OSI.png)
 ![image](https://doknet.fr/wp-content/uploads/2023/11/diagramme-osi-1024x751.png)
-   * #### 3.1.5 Modèle **TCP\IP.**
+   * #### 3.1.5[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Modèle **TCP\IP.**
 ---
    ##### Le modéle TCP\IP Interconnexion de réseaux physiques, création de réseaux logiques pouvant communiquer, bien qu'étant sur des réseaux physiques différents par des passerelles.
 ![image](https://upload.wikimedia.org/wikipedia/commons/e/e4/TCPIP_couche_ISO_modele_OSI.png)
-   * #### 3.1.6 Matériel d'interconnection.
+   * #### 3.1.6[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Matériel d'interconnection.
  --- 
 * ##### Répéteur
 * ##### Hub 
@@ -729,9 +729,9 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ![image](https://user.oc-static.com/upload/2021/06/01/16225671036921_P2C5-2.png)
 ![er](https://github.com/user-attachments/assets/122a5826-015b-4028-bba0-d617d350b21b)
 
-* #### 3.2 Ethernet :
+* #### 3.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Ethernet :
 --- 
-  * #### 3.2.1 Normes et Architecture.
+  * #### 3.2.1 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Normes et Architecture.
 ---
    ##### Résumé des norme :
 * ##### Ethernet est un protocole de communication utilisé pour les réseaux informatiques, exploitant la commutation de paquets. 
@@ -743,7 +743,7 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 * ##### [IEEE 802.15](https://fr.wikipedia.org/wiki/IEEE_802.15.4): Wireless PAN (bluetooth)
 * ##### [IEEE 802.16](https://fr.wikipedia.org/wiki/IEEE_802.16#:~:text=IEEE%20802.16%20est%20un%20groupe,la%20promotion%20de%20ce%20standard.): Broadband Wireless MAN (WiMAX)
   ##### différentes normes :PHY, MAC, IEEE
-   * #### 3.2.2 Cablage et équipement.
+   * #### 3.2.2 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Cablage et équipement.
 ---
 * ##### Cable ethernet avec connecteurs RJ45 ( droit ou croisée)
 * ##### Fibre optique (MMF -- ou SMF ++)
@@ -751,13 +751,13 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 * ##### Emetteur-recepteurs (GBIC,SFP,QSFP,CFP,XFP)
 * ##### Switch(commutateurs)
  
-   * #### 3.2.3 Adresse **Mac.**
+   * #### 3.2.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Adresse **Mac.**
 ---
 ##### Permet de connaitre l'hôtes et le destinataire. Cencées être unique
 ##### **Format :** En 48 bits (6 octets) noté en Héxa
 ![image](https://upload.wikimedia.org/wikipedia/commons/9/94/MAC-48_Address.svg)
 
-   * #### 3.2.4 Trame **ethernet.**
+   * #### 3.2.4[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Trame **ethernet.**
 --- 
   ##### La [trame](https://fr.slideshare.net/slideshow/les-trames-reseaux-22965265/22965265) ethernet est constituée des éléments suivants:
   #####  Un début de trame (ou **préambule**)
@@ -772,7 +772,7 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 
 ![trame](https://github.com/user-attachments/assets/157a8198-c807-4435-bda4-3450f8d234d5)
 
-   * #### 3.2.5 Protocole **CSMA/CD**.
+   * #### 3.2.5[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Protocole **CSMA/CD**.
 ---
    ##### Permet la bonne gestion du trafic et la transmition de données
    ##### **CS** (Carrier Sense) ⇒ Écoute de la porteuse
@@ -790,22 +790,22 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ##### Si le nombre maximal de transmissions (16) est atteint, la transmission est annulée.
 ##### 5️⃣ Sinon → transmission réussie
    ![image](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEig6GVhhstxSls2GVXUH5FZ_Kfpe8rRRVs6SrgN3N5uJPeNH4yO_ii3AlWxqQ5R1tONQ2ea4rcCfLCDnQWq1IYWgh9e1-iWQRioubSegiBciS7ak4R4yf5Qak76jjtZTCcYDi5T-xf_qNJo/s1600/algorigrammeCSMACD.png)
-   * #### 3.2.6 Les VLAN.
+   * #### 3.2.6[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Les VLAN.
 ---
 ##### Les VLAN (Virtual LAN) permettent de segmenter un réseau ethernet et il ajoute un entête de 4 octets après l'entête ethernet :
 ![vlan](https://github.com/user-attachments/assets/b0203650-79eb-4d72-a942-ad3db0f23e9e)
  ![IPV4](https://github.com/user-attachments/assets/9361c1e7-8c54-4ac7-9bd1-06026719c007)
   
-* #### 3.3 IPv4.
+* #### 3.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) IPv4.
 ---
-  * #### 3.3.1 Protocole et Définitions.
+  * #### 3.3.1 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Protocole et Définitions.
  ---
    #####  Le protocol **IP** (Internet Protocol) codée sur **32 bits** permet l'interconnection de réseaux physiques, selon le standard [IETF](https://fr.wikipedia.org/wiki/Internet_Engineering_Task_Force), **couche 3** et compte actuellement 2 versions,la 4 et la 6. Le protocole **distingue les liens**, les **réseaux** et les **interfaces des réseaux.**
   ##### Le protocole n'a **pas de coordinateur global** => **pas de configuration globale**
   ##### Chaque interface dispose de **sa propre configuration locale**, donc de sa **propre vision des réseaux logiques**, pour pouvoir communiquer, ces configurations doivent être compatibles.
-   * #### 3.3.2 Les Adresses.
+   * #### 3.3.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Les Adresses.
 ---
-* #### 3.3.2.1 Définitions. 
+* #### 3.3.2.1 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Définitions. 
 ---
 * #####  L'adresse est donc codée sur 32 bits (4 octets), comporte deux partie ID réseau et l'ID hôtes => sur 32 bits => n bits(id réseau) et 32-n bits
 * ##### Chaque octet est converti en base 10 => 4 octets => 4 nombres
@@ -813,12 +813,12 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 * #####  Utilisation de masque de sous réseau qui corespond au CIDR
 * ##### Calcule nombre hôte: 32((ipv4))-21 CIDR  ==> 2^11=2048-2  ((Broadcast et reseau)).
 
-     * #### 3.3.2.2 CIDR.
+     * #### 3.3.2.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) CIDR.
 ---
 ##### Le routage (CIDR) est une méthode d'attribution d'adresses IP qui améliore l'efficacité du routage des données sur Internet.
 ##### Table de calcule:
  ![image](https://www.it-connect.fr/wp-content-itc/uploads/2021/05/reseau-adresse-ipv4-calcul-masque-sous-reseau-01.png)
- * #### 3.3.2.3 Adresse réservées.
+ * #### 3.3.2.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Adresse réservées.
    ---
 ##### 🔹 Adresses réservées pour les réseaux privés RFC [1918](https://datatracker.ietf.org/doc/html/rfc1918)
 ##### 🔹 10.0.0.0/8
@@ -829,7 +829,7 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ##### 🔹 Adresses multicast : 224.0.0.0/4
 ##### Adresse de diffusion (locale !) sur réseau inconnu : 255.255.255.255/32
 * #### 3.3.2.4 Les Masques.
-* #### 3.3.2.5 Calculs.
+* #### 3.3.2.5[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Calculs.
 ##### Dans le tableau des puissance de 2==>| 128 | 64 | 32 | 28 | 8 | 4 | 2 | 1 |
 ##### On prend 10, combien de fois on peux le diviser par 8 => 1*8 et reste 2
 ##### Donc les 8 premier octets donnent 255 et on applique 2 dans le tableau en partant de 128 ==> 128+64
@@ -838,7 +838,7 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ##### 13 : 8 reste 6 donc 128+64+32+28+8+4= 254 donc 255.254.0.0
 ##### 19 : 8 .8 reste 3 donc 128+64+32 = 224 donc 255.255.224.0
 
-  * #### 3.3.4 Les paquets :
+  * #### 3.3.4 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Les paquets :
 ---
    ##### IP découpe l'information qu'il doit transmettre, reçu de la couche supérieure (Protocole de couche 4 : TCP, UDP…) => Pour transmission au lien (Protocole de couche 1&2 : Ethernet).Chaque paquet comporte un entête.
 #### **Voici la décoposition de l'entête :**
@@ -871,9 +871,9 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 * ####  
 ![IPV6](https://github.com/user-attachments/assets/04229f6c-a78a-45f5-b4c9-8d14c65b5bfa)
 
-* #### 3.4 IPv6
+* #### 3.4 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)IPv6
 ---
-  * #### 3.4.1 Objectifs.
+  * #### 3.4.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Objectifs.
 ---
   ##### Ce protocole de v6 à pour but de:
  * ##### Etendre les capacités d'adressage (lutter contre la pénurie de v4).
@@ -881,7 +881,7 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
  * ##### Automatiser la configuration.
  * ##### Authentification et confidentialité
  * ##### Supprimer/diminuer la fragmentation
-  * #### 3.4.2 Définition + Notions
+  * #### 3.4.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Définition + Notions
  ---
   ##### Une adresse IPv6 est sur 128 bits (IPv4 32 bits), en héxadécimal, il existe 3 catégories :
 ##### 🔹Unicast (une interface)
@@ -911,16 +911,16 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
   ![sd](https://github.com/user-attachments/assets/362e2508-4086-4e28-b218-faf166ddfadc)
 
   
-  * #### 3.4.3 Autoconfiguration
+  * #### 3.4.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Autoconfiguration
 ---
 ##### C'est un des avantage de IPv6, une machine est capable d’obtenir automatiquement une adresse sans avoir besoin d’une configuration manuelle ou d’un serveur. Il existe 2 méthodes avec et sans état. 
 ##### :large_blue_diamond:  Sans état est un mixe entre le préfixe réseau et de son identifiant d’interface. Le préfixe réseau est la partie de l’adresse qui identifie le segment de réseau et est généralement annoncée par un routeur. L’identificateur d’interface est la partie de l’adresse qui identifie le périphérique et est généralement dérivé de son adresse MAC
 ##### :large_blue_diamond: avec état via un DHCPv6
-  * #### 3.4.4 Entêtes
+  * #### 3.4.4[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Entêtes
  ---
   ![ENTËTE IPv6](https://github.com/user-attachments/assets/4c3d9910-2784-4cd6-9483-cb091f7716a1)
 ##### La fragmentation devient optionnelle, en utilisant le PMUTUd, le paquet est rejeté jusqu'à que l'emméteur adapte la taille du paquet.
-  * #### 3.4.5 Protocoles associés.
+  * #### 3.4.5[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Protocoles associés.
 ---
 ![icmpv6](https://github.com/user-attachments/assets/3f4cd98a-23eb-40f5-90f6-6ec37d51faa6)
 ![dhcpv6](https://github.com/user-attachments/assets/3436e1f6-e2ab-4dee-891a-f22b23584e7d)
@@ -929,18 +929,18 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 
 ![RO](https://github.com/user-attachments/assets/2d12127e-3049-4c1f-9b9b-74bfb119ca44)
 
-* ### 3.5 Le routage :
+* ### 3.5[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Le routage :
 ---
 ---
-* #### 3.5.1 Définition et notions. 
+* #### 3.5.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Définition et notions. 
 ---
   ##### Le routage est in protocole d'interconection de réseau, en effet les noeuds d'un même réseau IP (logique) doivent être sur le même lien (réseau physique), des chemins sont sélectionnés dans un réseau pour acheminer les données d'un expéditeur jusqu'à un ou plusieurs destinataires.
-  * #### 3.5.2 Mécaniques.
+  * #### 3.5.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Mécaniques.
  ---
 #####  Chaque routeur possède des informations sur son voisinage. Chaque routeur maintient une liste des réseaux connus, chacun de ces réseaux étant associé à un ou plusieurs routeurs voisins à qui le message peut être passé.
 #####  Si on veux envoyer sur une interface d'un même réseau, le paquet est directement envoyé sur l'interface physique corespondant à l'IP de destination, le routage interviens quand les machines ne sont pas sur le même réseau, en effet on encapsule donc le paquet IP dans une trame [ethernet](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#324-trame-ethernet-1), mais si la destrination ne fait pas partie du même réseau que l'hôte il fera appel à ça table de routage.
    
-  * #### 3.5.3 Tables de routages.
+  * #### 3.5.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Tables de routages.
 ---   
    ##### :scroll: -Définitions- :
    ##### Chaque noeud d'un réseau IP (routeur ou pas) dispose d'une table de routage,chaque entrée de cette table est composée (au moins) :
@@ -952,11 +952,11 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### Mais ce noeud est un routeur, donc il doit transmettre le paquet => Il procède à la même mécanique d'envoi de paquet IP.
 ##### :large_blue_diamond: Il est posible sur de très grand réseau d'utiliser der sur-réseaux comme préfixe de routage en agglomérant, quand c'est possible, plusieurs adresses de réseau en une seule, plus les réseaux sont grands plus la table de routage est petite.
 ##### Pour des réseaux de grande envergure, il est nécessaire de passer à du routage dynamique et de déployer des protocoles dédiées comme OSPF et BGP.
-   * #### 3.5.4 Routage dynamique
+   * #### 3.5.4[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Routage dynamique
 ---
 ##### -Définitions- : 
 ##### Le routage dynamique est utilisé sur de grand réseau, étant amené à des modifications constantes, les routeur communique entre eux et échange sur leurs table de routages pour s'addapter aux modifications, aux pannes ou aux coupures.
-   * #### 3.5.4.1 Protocoles dynamiques
+   * #### 3.5.4.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Protocoles dynamiques
 ---
 ![wdfg](https://github.com/user-attachments/assets/3bfa004d-7e7b-4d6d-834e-e557d010c07f)
  ##### :large_blue_diamond: RIP (Routing Information Protocol) port ⇒ UDP 520. Pour de petit réseau, limite de 15 sauts.
@@ -964,9 +964,9 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :large_blue_diamond: OSPF (Open Shortest Path First) port ⇒ 89 Principalement utilisé dans les réseaux de tailles moyenne.
 ##### :large_blue_diamond: BGP (Border Gateway Protocol) port ⇒ TCP 179 Ce protocole est utilisé pour le routage sur internet entre les différents systèmes autonomes. Il est utilisé pour l'échange d'informations de routage entre différents ISP (Internet Service Provider)
   
-  * #### 3.5.4.2 [Protocoles de transport](https://www.it-connect.fr/les-protocoles-tcp-et-udp-pour-les-debutants/)
+  * #### 3.5.4.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) [Protocoles de transport](https://www.it-connect.fr/les-protocoles-tcp-et-udp-pour-les-debutants/)
   ---
-  * #### 3.5.4.3.1 UDP
+  * #### 3.5.4.3.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) UDP
  --- 
  ##### :scroll:-Définitions- :
 ##### UDP - User Datagram Protocol port ⇒ 17
@@ -975,7 +975,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 
 ![edf](https://github.com/user-attachments/assets/4d895bad-2b8e-434d-891e-187a94d11aa9)
 
-* #### 3.5.4.3.2 TCP
+* #### 3.5.4.3.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) TCP
   ---
   ##### :scroll:-Définitions- :
   ##### TCP - Transmission Control Protocol port ⇒ 6
@@ -1006,7 +1006,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 #####  Réserver de la mémoire pour stocker les segments en attente.
 ##### Remettre les segments dans l'ordre une fois l'ensemble reçu.
 
- * #### 3.5.4.3 Les ports(Liens du sites avec tous les ports + les principaux)
+ * #### 3.5.4.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Les ports(Liens du sites avec tous les ports + les principaux)
 ---
    ##### Un port est un identifiant de processus au sein d'une interface
    ##### Une communication est donc caractérisée par :
@@ -1019,12 +1019,12 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :large_blue_diamond: 1024 à 49151 : les ports utilisateurs (Registered Ports) - Serveur
 ##### :large_blue_diamond: 49152 à 65535 : les ports dynamiques (Ephemeral Ports) - Client
  
-* #### 3.5.5 [NAT](https://www.it-connect.fr/le-nat-et-le-pat-pour-les-debutants/)
+* #### 3.5.5[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) [NAT](https://www.it-connect.fr/le-nat-et-le-pat-pour-les-debutants/)
  ---
  ##### -Définitions- :
  ##### Network Address Translation
  ##### Le NAT permettent à un routeur de modifier les paquets IP au moment de leur transmission. Ils visent à remplacer une adresse IP (source ou destination) par une autre pour substituer à une adresse valable sur le réseau interne (privée) une autre adresse valable sur un autre réseau (par exemple publique sur Internet).Historiquement, NAT était utilisé pour cacher son plan d'adressage interne. Maintenant il est massivement utiliser pour combler la pénurie d'IPv4.
-   * #### 3.5.5.1 Basic NAT
+   * #### 3.5.5.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Basic NAT
   ---
   ##### Dans sa version la plus simple, dite Basic NAT, on configure le routeur qui fait la passerelle entre un réseau interne et un réseau externe (Internet, réseau d'une autre structure, etc…), puis on choisi un ensemble d'adresses IP valables sur le réseau externe. Sur le routeur, on associe à chacune d'elles, l'adresse d'une machine interne devant communiquer avec l'extérieur.
   ##### La table de routage peut-être configurée à la main (NAT statique) ou remplie dynamiquement (cas général)
@@ -1043,7 +1043,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 * #####  Le routeur reçoit cette réponse pour lui MAIS, il fait du NAT donc
 * #####  Le routeur cherche dans sa table une correspondance pour le port 52369 : 10.0.0.1
 * #####  Il transmet donc sur le réseau interne le paquet en remplaçant l'adresse dedestination (la sienne) par 10.0.0.1
-   * #### 3.5.5. NAPT
+   * #### 3.5.5.[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) NAPT
 ---
   ##### Utilisé quand il y à moins d'adresse privé que d'adresse publiques, exemple box inernet. Ne pas considérer juste l'adresse comme identifiant mais le couple adresse IP/port (couche 4).
   ##### Le NAPT dynamique a de nombreux inconvénients :
@@ -1060,10 +1060,10 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 
 ![AD](https://github.com/user-attachments/assets/a7884ac1-1af1-4d5f-848c-13233df32706)
 
-* ### 3.6 Active Directory
+* ### 3.6[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Active Directory
 ---
 
-   * #### 3.6.1 Définitions/Protocole LDAP/rôle AD
+   * #### 3.6.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Définitions/Protocole LDAP/rôle AD
 ---
 ##### :arrow_forward: L'AD est :arrow_heading_down:
 ##### :large_blue_diamond: Un système qui intègre un stockage et les services pour mettre en relation les utilisateurs et les ressources réseau.Contient des objets (utilisateurs, ordinateurs, services, …).
@@ -1079,7 +1079,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :small_blue_diamond: `AD FS` (Active Directory Federation Services) :arrow_right: depuis Serv.2008 Via un portail gestion d’un SSO (Single Sign-On) pour les applications
 ##### :small_blue_diamond: `AD RMS` (Active Directory Rights Management Services) :arrow_right: depuis Serv.2008 R2 Gestion des autorisations fine sur les fichiers (uniquement sur applications compatibles, comme Office)
 ##### :small_blue_diamond `:AD LDS` (Active Directory Lightweight Directory Services)  :arrow_right: Service d’annuaire light, pas de domaine (pas de contrôle d’accès).
-  * #### 3.6.2 Arborécence
+  * #### 3.6.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Arborécence
 --- 
   ##### :warning: Certains points de cette partie seront traités plus longuement par la suite:warning:
   ##### Cette arborescence AD représente une structure logique indépendante du site, dans une AD tout est Objet.
@@ -1119,7 +1119,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 #### ARBORESCENCE ACTIVE DIRECTORY
 ![AD1](https://github.com/user-attachments/assets/9835fa2a-f81e-4e23-b3ae-65cd17514f83)
 
- * #### 3.6.3 Composants
+ * #### 3.6.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Composants
 ---  
  ##### :large_blue_diamond: DC (Domain Controler) : serveur sur lequel on effectue les opérations sont promus au rôle de DC du domaine créé, sera sollicité par les clients pour répondre aux demandes d’authentification à destination de ce domaine. 
  ##### :large_blue_diamond: RODC (Read Only Domain Controller) Serveur ayant le rôle de DC, utilisé pour les sites distants, possède des droits de lecture seule.
@@ -1128,7 +1128,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :small_blue_diamond: Transmission également des modifications du DNS afin que les utilisateurs du site distant disposent toujours d'un service de résolution de nom en local pour accéder à Internet en cas de coupure de la liaison internet
 ##### :mag: Recherche forest :arrow_heading_down:
 ![AD1](https://github.com/user-attachments/assets/895f5770-1324-4239-973b-9130d66abafe)
- * #### 3.6.4 Protocoles
+ * #### 3.6.4 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Protocoles
 ---  
 ##### :one: `DNS` : Service obligatoire pour l'utilisation de l'AD, résolution des nom ET résolution des services.(voir 4.1)
 ##### 2️⃣: `SNTP` : synchronisation des horloges des systèmes, impératif pour le protocole d’authentification de Windows (Kerberos),
@@ -1155,7 +1155,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :+1: Bonne pratique:
 ##### :small_blue_diamond: Ne pas avoir qu’un seul DC avec tous les rôles FSMO.(Par défaut le premier DC d’une nouvelle forêt cumule les cinq rôles.)
 #### :small_blue_diamond: Idéalement : 5 DC avec un rôle installé sur chacun
-* #### 3.6.6 Objets
+* #### 3.6.6[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Objets
 ---  
 ![ad1](https://github.com/user-attachments/assets/e118faeb-159d-4139-83c9-380346d20e1d)
 
@@ -1183,7 +1183,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :small_blue_diamond: Correspond au chemin LDAP dans l’annuaire AD
 ##### :small_blue_diamond: La longueur dépend de l’emplacement de l’objet dans l’AD
 ##### :small_blue_diamond: ![ad1](https://github.com/user-attachments/assets/d82a326f-4028-4ee7-a90e-b9af85d49ca6)
-* #### 3.6.7 :+1:Bonne Pratiques :
+* #### 3.6.7[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) :+1:Bonne Pratiques :
 ---  
  ### :large_blue_diamond:Gestion des identités et des accès
 ##### :one:Principe de moindre privilège :
@@ -1244,9 +1244,9 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :small_blue_diamond:A l'expiration, les droits élevés sont révoqués automatiquement.
 ##### 2️⃣:JEA (Just Enough Administration) :
 ##### :small_blue_diamond:Limite les privilèges des administrateurs aux seuls droits nécessaires pour effectuer une tâche spécifique, réduisant ainsi les risques associés à l'utilisation de comptes à privilèges élevés.
-* #### 3.6.8 Créer un ADDS :
+* #### 3.6.8[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Créer un ADDS :
  --- 
- * #### 3.6.8.2 GPO
+ * #### 3.6.8.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) GPO
   ---   
  ##### :scroll: Définition :GPO (Group Policy Object) sont des collections virtuelles de politiques de sécurité, une GPO permet la gestion du parc informatique.
  ##### :small_blue_diamond:Les GPO sont fonctionnelles sur les ordinateurs ayant un OS Microsoft (client ou serveur).
@@ -1303,7 +1303,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
    * ##### faire windows+R => Ecrire : Control.exe
 ##### Résultat machine client :
 ![vm 1](https://github.com/user-attachments/assets/5accd1aa-8048-4c96-9526-538866c74e59)
- * #### 3.6.8.3 Gestion client
+ * #### 3.6.8.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Gestion client
 ---
 1) #### **INSTALATION DU SERVEUR ADDS**
 * ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
@@ -1359,14 +1359,14 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ![VM 1](https://github.com/user-attachments/assets/14627ca2-8e8b-4642-bd23-7cc1b99e65ce)
 ##### Le pc client va reboot, et depuis l'AD on aura la main sur toutes les configuration de ce PC depuis GPO de l'AD.
 ![SER](https://github.com/user-attachments/assets/3a8af9d1-cec6-4c6d-a1d1-5b8300ead725)
-* ### 4) Serveur
+* ### 4)[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Serveur
 **DEPLACER DHCP**
 
 ![DNS](https://github.com/user-attachments/assets/60ce934f-f818-464e-8e2d-3804a21badfd)
 
-* ### 4.1 DNS
+* ### 4.1 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)DNS
 
-* #### 4.1.1 Définitions et fonctionement
+* #### 4.1.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Définitions et fonctionement
  ##### Base de donnée répartie et décentralisée, permettant la corespondance IP => Domain ==> Internet, AD
  ##### Ce protocole fonctionne en arborescence : :arrow_heading_down:
 ![vm](https://github.com/user-attachments/assets/bde287af-cf89-4b15-b972-07224e85ad4b)
@@ -1378,7 +1378,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :five: FQDN (Fully Qualified Domain Name)
 ##### Fontionement d'un DNS 
 ![Enregistrement 2024-11-21 084923](https://github.com/user-attachments/assets/c6568452-e3b0-48f5-9d98-31bb537918d6)
-* #### 4.1.2 :closed_book: DNS Récurcif / :blue_book: DNS faisant autorité
+* #### 4.1.2 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-):closed_book: DNS Récurcif / :blue_book: DNS faisant autorité
 
  ##### :closed_book: DNS Récurcif
  ##### :large_blue_diamond: Le terme « récursif » est à une procédure pouvant se répéter indéfiniment.
@@ -1399,14 +1399,14 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
  |Mise en cache| mettent en cache les données DNS pour accélérer les requêtes futures et de réduire la charge des serveurs faisant autorité|pas de données en cache puisqu'ils détiennent les informations DNS les plus récentes et les plus précises pour les domaines qui leur sont attribués.|
  |Responsabilité| résolution DNS pour les utilisateurs finaux|hargés de fournir les enregistrements DNS officiels et de répondre aux requêtes des serveurs récursifs|
  
- #### 4.1.3 Serveurs Racines et Résolveurs
+ #### 4.1.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Serveurs Racines et Résolveurs
    ##### :red_circle: Hyérarchie :
    ##### :one: Serveurs faisant autorité : contenant les informations pour une (ou plusieurs) zone(s), plusieurs serveurs sur une zones pour éviter les pannes.
    ##### 2️⃣ Serveurs Racines : Ils gèrent une zone contenant les TLD et sont censés être connus par tous les résolveurs
    ##### 3️⃣ Résolveurs publiques accéssibles à tous, intéroge les Srv autoritaire comme vu dans la section précédente.  
    ##### 4️⃣ Stub résolver (DNS Local) non récurcif, gére un cache, connais l'adresse d'au moins un résolveur récursif.En générale intégrer à un systéme d'exploitation.
      
- * #### 4.1.4 Windows
+ * #### 4.1.4 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Windows
 ##### **Le serveur est configuré avec une IP fixe de 172.16.10.10 et le client 172.16.10.20.**
 
 ##### 1 Créer un nouveau services DNS avec "Manage==> Add roles and Features."
@@ -1428,7 +1428,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 
 ##### 6 Test nslookup et ping avec le nom de domain( sur le client et le serveur)=> présent dans=>wilder.lan=>srv ou user=>Properties=>user.wilder.lan ou srv.wilder.lan
 
-* #### 4.1.5 Linux
+* #### 4.1.5[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Linux
 ## :trident: Labo DNS sous Bind9
 
 ### :one: Dans ce tuto nous allons mettre en place un labo composé de :  
@@ -1547,7 +1547,7 @@ Tout d'abord il faut copier le fichier "*db.127*" vers "*reverse.wilders.lan*"
 
 ![PROX](https://github.com/user-attachments/assets/c968ffd4-da09-44fa-824f-61b3b76bc805)
 
-* #### 4.2 PROXMOX
+* #### 4.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) PROXMOX
    
    #### Connection à PROXMOX https://@IP:8006/
    
@@ -1563,7 +1563,7 @@ Tout d'abord il faut copier le fichier "*db.127*" vers "*reverse.wilders.lan*"
      * #### 4.2.2.3 Snapshot
 ![SSH](https://github.com/user-attachments/assets/350f041d-c70f-447a-bc08-1d42604cfae4)
 
-  * #### 4.3 SSH
+  * #### 4.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) SSH
  * ### 3.4.1 Instalation
       * ## Ubuntu
       * #### Installer ssh server :
@@ -1781,8 +1781,8 @@ ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
 
 ![DHCP](https://github.com/user-attachments/assets/de1739a8-3a84-4ef3-b094-dbe0ff6831b3)
 
-* #### 4.4 DHCP.
-  * #### 4.4.1 Principes
+* #### 4.4[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) DHCP.
+  * #### 4.4.1 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Principes
   ##### Gestion dynamique de l'adressage IP des hôtes du réseau. Utilisation Messages UDP - Port serveur 67 / Port client 68
  ##### **Les messages:**
 ##### **DHCPDISCOVER (Client -> broadcast) : demande d'adresse**
@@ -1793,9 +1793,9 @@ ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
 ##### DHCPDECLINE (Client -> Serveur) : après DHCPACK le client doit vérifier (par exemple via ARP) si l'adresse est déjà utilisée, si oui il décline l'offre du serveur
 ##### DHCPRELEASE (Client -> Serveur) : résiliation du bail par le client
 ##### DHCPINFORM (Client -> Serveur) : demande de paramètre de configuration sans réservation d'adresse (client ayant déjà une adresse)
-  * #### 4.4.2 Mise en oeuvre
+  * #### 4.4.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Mise en oeuvre
 >[!NOTE]
->* #### 4.4.2.1 Débian 12
+>* #### 4.4.2.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Débian 12
 > ##### passer en root
 > ##### télécharger le packet
 >	apt-get install isc-dhcp-server
@@ -1829,7 +1829,7 @@ ON EXCECUTE TERMINAL ET POWERSHELL EN ADMIN SUR LES MACHINES RESPECTIVES
 >	systemctl status isc-dhcp-server.service
 >###### [vidéo](https://www.youtube.com/watch?v=hdaHQR-7uAM&ab_channel=AlexDavantTech)
 ________________________________________________
-* #### 4.4.2.2 Windows 22 
+* #### 4.4.2.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Windows 22 
 >[!NOTE]
 >* #### Instalation DHCP
 >* ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
@@ -1853,8 +1853,8 @@ ________________________________________________
 
 ![CPT](https://github.com/user-attachments/assets/142301a2-3b9b-401f-b303-536ebedfc25b)
 
-* ### 5) Cisco Packet Tracer
-  * #### 5.1 Routage Commande
+* ### 5)[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Cisco Packet Tracer
+  * #### 5.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Routage Commande
 
 Cisco packet tracer
 
