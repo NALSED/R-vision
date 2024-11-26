@@ -830,6 +830,7 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ##### Adresse de diffusion (locale !) sur réseau inconnu : 255.255.255.255/32
 * #### 3.3.2.4 Les Masques.
 * #### 3.3.2.5[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) Calculs.
+##### `Calcule des masque`  ⬇️
 ##### Dans le tableau des puissance de 2==>| 128 | 64 | 32 | 28 | 8 | 4 | 2 | 1 |
 ##### On prend 10, combien de fois on peux le diviser par 8 => 1*8 et reste 2
 ##### Donc les 8 premier octets donnent 255 et on applique 2 dans le tableau en partant de 128 ==> 128+64
@@ -837,6 +838,19 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ##### 10 : 8=>255 et 2=>128+64=192 donc 255.192.0.0
 ##### 13 : 8 reste 6 donc 128+64+32+28+8+4= 254 donc 255.254.0.0
 ##### 19 : 8 .8 reste 3 donc 128+64+32 = 224 donc 255.255.224.0
+##### `Calcule adresse du réseau`:
+##### Ce calcule ce fait avec le CIDR : 192.168.10.5/18
+##### 18 = 8*2 + 2
+##### Les deux premier bit 8 et 8 donnent le UserID => 192.168
+##### pour l'adresse de réseau on se référe au tableau des puissance de 2 | 128 | 64 | => donc le réseau va de 64 en 64 🔽
+##### Résumé : 
+| **Propriété**                 | **Valeur**          |
+|-------------------------------|---------------------|
+| **Adresse de réseau**          | 192.168.0.0         |
+| **Première adresse IP**        | 192.168.0.1         |
+| **Dernière adresse IP**        | 192.168.63.254      |
+| **Adresse de broadcast**       | 192.168.63.255      |
+| **Nombre d'adresses IP dispo** | 16 382              |
 
   * #### 3.3.4 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)Les paquets :
 ---
