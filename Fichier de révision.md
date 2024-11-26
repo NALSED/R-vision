@@ -841,7 +841,7 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ##### `Calcule adresse du réseau`:
 ##### Ce calcule ce fait avec le CIDR : 192.168.10.5/18
 ##### 18 = 8*2 + 2
-##### Les deux premier bit 8 et 8 donnent le UserID => 192.168
+##### Les deux premier bit 8 et 8 donnent le NetID => 192.168
 ##### pour l'adresse de réseau on se référe au tableau des puissance de 2 | 128 | 64 | => donc le réseau va de 64 en 64 🔽
 ##### Résumé : 
 | **Propriété**                 | **Valeur**          |
