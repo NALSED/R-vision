@@ -1262,7 +1262,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :small_blue_diamond:Limite les privilèges des administrateurs aux seuls droits nécessaires pour effectuer une tâche spécifique, réduisant ainsi les risques associés à l'utilisation de comptes à privilèges élevés.
 * ### 3.6.8[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `Créer un ADDS :`
  --- 
- * ### 3.6.8.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `GPO`
+ * ### 3.6.8.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `GPO`
   ---   
  ##### :scroll: Définition :GPO (Group Policy Object) sont des collections virtuelles de politiques de sécurité, une GPO permet la gestion du parc informatique.
  ##### :small_blue_diamond:Les GPO sont fonctionnelles sur les ordinateurs ayant un OS Microsoft (client ou serveur).
@@ -1319,7 +1319,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
    * ##### faire windows+R => Ecrire : Control.exe
 ##### Résultat machine client :
 ![vm 1](https://github.com/user-attachments/assets/5accd1aa-8048-4c96-9526-538866c74e59)
- * ### 3.6.8.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `Gestion client`
+ * ### 3.6.8.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `Gestion client`
 ---
 1) #### **INSTALATION DU SERVEUR ADDS**
 * ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
