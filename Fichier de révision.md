@@ -1372,10 +1372,9 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### Choisir la partie "Domain" et renseigner le domaine créer dans l'AD.
 ![VM 1](https://github.com/user-attachments/assets/14627ca2-8e8b-4642-bd23-7cc1b99e65ce)
 ##### Le pc client va reboot, et depuis l'AD on aura la main sur toutes les configuration de ce PC depuis GPO de l'AD.
-![SER](https://github.com/user-attachments/assets/3a8af9d1-cec6-4c6d-a1d1-5b8300ead725)
+
+
 * #### 3.6.9 Redondance DHCP,DNS,ADDS
-
-
 # 1️⃣ Redondance DHCP :
 ### Vérifier les serveurs autorisés => clic droit DHCP (bleu) => Manage authorized servers...(rouge)
 ![ad1](https://github.com/user-attachments/assets/2eb6d9e9-f246-4b1b-b7bb-fb9c22b64c2a)
@@ -1475,6 +1474,8 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ### Resultet attendu ⬇️
 ![ad2](https://github.com/user-attachments/assets/9e486877-1727-4c84-b498-ff0fb610572b)
 ### Editer le fichier hostname avec le FQDN
+![SER](https://github.com/user-attachments/assets/3a8af9d1-cec6-4c6d-a1d1-5b8300ead725)
+
 * # 4)[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `Serveur`
 
 ![DNS](https://github.com/user-attachments/assets/60ce934f-f818-464e-8e2d-3804a21badfd)
