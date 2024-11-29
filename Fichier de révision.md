@@ -1022,7 +1022,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 #####  Réserver de la mémoire pour stocker les segments en attente.
 ##### Remettre les segments dans l'ordre une fois l'ensemble reçu.
 
- * ### 3.5.4.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)[`Les ports`]([Liens du sites avec tous les ports + les principaux](https://www.ionos.fr/digitalguide/serveur/know-how/ports-tcpet-udp/)
+ * ### 3.5.4.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)[`Les ports`]([Principaux ports](https://www.ionos.fr/digitalguide/serveur/know-how/ports-tcpet-udp/)
 ---
    ##### Un port est un identifiant de processus au sein d'une interface
    ##### Une communication est donc caractérisée par :
