@@ -84,7 +84,7 @@
   * #### 3.6.8 [Créer un ADDS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#368-cr%C3%A9er-un-adds-)
      * #### 3.6.8.1 [GPO](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3681-gpo-1)
      * #### 3.6.8.2 [Gestion client](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3682-gestion-client-1)
-  * #### 3.6.8 Redondance DHCP,DNS,ADDS
+  * #### 3.6.8 [Redondance DHCP,DNS,ADDS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#369-redondance-dhcpdnsadds)
 
 * ## 4) [`Serveur`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4-serveur-1)
 
@@ -1374,8 +1374,8 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### Le pc client va reboot, et depuis l'AD on aura la main sur toutes les configuration de ce PC depuis GPO de l'AD.
 
 
-* #### 3.6.9 Redondance DHCP,DNS,ADDS
-# 1️⃣ Redondance DHCP :
+* ### 3.6.9[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `Redondance DHCP,DNS,ADDS`
+## 1️⃣ `Redondance DHCP :`
 ### Vérifier les serveurs autorisés => clic droit DHCP (bleu) => Manage authorized servers...(rouge)
 ![ad1](https://github.com/user-attachments/assets/2eb6d9e9-f246-4b1b-b7bb-fb9c22b64c2a)
 ### Ici le serveur à répliquer nest pas autorisé
@@ -1406,7 +1406,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ![ad1](https://github.com/user-attachments/assets/c8f106f4-e136-4b07-b66b-7b0ecc3a7dab)
 
 
-# 2️⃣ Redondance DNS :
+## 2️⃣ `Redondance DNS :`
 ### :pencil2:Prérequis un serveur DNS :pencil2:
 
 ### clic droit sur le serveur DNS => DNS Manage
@@ -1442,7 +1442,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ### Pour finir Zone Transfers (bleu) 
 ### Cocher Only to servers listed on the Name Server tab (rouge)
 ![ad1](https://github.com/user-attachments/assets/72f50913-50b5-4b9a-9423-72e43b30b55e)
-# 3️⃣ Redondance ADDS
+## 3️⃣ `Redondance ADDS`
 #### ⚠️Les deux serveurs doivent être sur le même réseau, et le DNS du serveur maitre renseigné dans le serveur secondaire. 
 ### sur un second serveur créer un rôle ADDS
 ### Puis Promote ths server to a domain controller
@@ -1457,7 +1457,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ![ad1](https://github.com/user-attachments/assets/baefd9d0-0382-4fd8-baf1-756ae837341e)
 ### Next jusqu'a Install.
 
-* # 4️⃣ Debian
+* ## 4️⃣ `Debian`
 ### Intégration du serveur débian => ADDS maitre
 ### Configurer les deuxcarte réseaux(interne, bridge)
 ### Se connecter en root
