@@ -1373,7 +1373,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ![VM 1](https://github.com/user-attachments/assets/14627ca2-8e8b-4642-bd23-7cc1b99e65ce)
 ##### Le pc client va reboot, et depuis l'AD on aura la main sur toutes les configuration de ce PC depuis GPO de l'AD.
 ![SER](https://github.com/user-attachments/assets/3a8af9d1-cec6-4c6d-a1d1-5b8300ead725)
-* #### 3.6.8 Redondance DHCP,DNS,ADDS
+* #### 3.6.9 Redondance DHCP,DNS,ADDS
 
 
 # 1️⃣ Redondance DHCP :
