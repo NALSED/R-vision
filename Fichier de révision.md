@@ -36,12 +36,11 @@
 * ### 3.2 [`Ethernet`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#32-ethernet-) 
    * #### 3.2.1 [Normes et Architecture.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#321-normes-et-architecture-1)
    * #### 3.2.2 [Cablage et équipement.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#322-cablage-et-%C3%A9quipement-1)
-     * #### 3.2.2.1 [La commutation.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3221-la-commutation-1)
    * #### 3.2.3 [Adresse Mac.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#323-adresse-mac-1)
    * #### 3.2.4 [Trame ethernet.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#324-trame-ethernet-1)
    * #### 3.2.5 [Protocole CSMA/CD.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#325-protocole-csmacd-1)
    * #### 3.2.6 [Les VLAN.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#326-les-vlan-1)
-* ### 3.3 [`IPv4`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#31-principes-des-r%C3%A9seaux-).
+* ### 3.3 [`IPv4`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#33-ipv4-1).
    * #### 3.3.1 [Protocole et Définitions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#331-protocole-et-d%C3%A9finitions-1)
    * #### 3.3.2 [Les Adresses.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#332-les-adresses-1)
      * #### 3.3.2.1 [Définitions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3321-d%C3%A9finitions-1)
@@ -49,13 +48,12 @@
      * #### 3.3.2.3 [Adresse réservées.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3323-adresse-r%C3%A9serv%C3%A9es-1)
      * #### 3.3.2.4 [Les Masques.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3324-les-masques-1)
      * #### 3.3.2.5 [Calculs.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3325-calculs-1)
-  * #### 3.3.3 [Configurations du réseau :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#333-configurations-du-r%C3%A9seau--1)
   * #### 3.3.4 [Les paquets :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
   * #### 3.3.5 [Les Protocoles connexes :](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#334-les-paquets--1)
 * ### 3.4 [`IPv6 :`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#34-ipv6) 
   * #### 3.4.1 [Objectifs.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#341-objectifs-1)
   * #### 3.4.2 [Définition + Notions.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#342-d%C3%A9finition--notions-1)
-  * #### 3.4.3 [Autoconfiguration.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#343-autoconfiguration-1)
+  * #### 3.4.3 [Autoconfiguration.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#343autoconfiguration)
   * #### 3.4.4 [Entêtes.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#344-ent%C3%AAtes-1)
   * #### 3.4.5 [Protocoles associés.](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#345-protocoles-associ%C3%A9s-1)
 * ### 3.5 [`Le routage :`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#35-le-routage--1)
@@ -66,13 +64,13 @@
      * #### 3.5.4.1 [Protocoles dynamiques](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3541-protocoles-dynamiques-1)
      * #### 3.5.4.2 [Protocoles de transport](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3542-protocoles-de-transport-1)
        * #### 3.5.4.3.1 [UDP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#35431-udp-1)
-       * #### 3.5.4.3.2 [TCP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#35432-tcp)
-      * #### 3.5.4.3 [Les ports](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3543-les-portsliens-du-sites-avec-tous-les-ports--les-principaux-1)
+       * #### 3.5.4.3.2 [TCP](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#35432-tcp-1)
+      * #### 3.5.4.3 [Les ports](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3543les-portsprincipaux-ports)
       
       
-* #### 3.5.5 [`NAT :`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#365-nat)
-     * #### 3.5.5.1 [Basic NAT](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3651-basic-nat-1)
-     * #### 3.5.5.2 [NAPT](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#365-napt)
+* #### 3.5.5 [`NAT :`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#355-nat)
+     * #### 3.5.5.1 [Basic NAT](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3551-basic-nat-1)
+     * #### 3.5.5.2 [NAPT](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3552-napt-1)
 
 
 * ### 3.6 [`Active Directory`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#36-active-directory-1)
@@ -85,7 +83,7 @@
   * #### 3.6.7 [Bonne Pratiques](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#367-1bonne-pratiques-)
   * #### 3.6.8 [Créer un ADDS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#368-cr%C3%A9er-un-adds-)
      * #### 3.6.8.1 [GPO](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3681-gpo-1)
-     * #### 3.6.8.2 [Gestion client](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3683-gestion-client-1)
+     * #### 3.6.8.2 [Gestion client](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3682-gestion-client-1)
   * #### 3.6.8 Redondance DHCP,DNS,ADDS
 
 * ## 4) [`Serveur`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4-serveur-1)
@@ -104,9 +102,9 @@
      * #### 4.2.2.3 [Snapshot](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4223-snapshot-1)
   * ### 4.3  [`SSH`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#43-ssh)
   * ### 4.4 [`DHCP`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#44-dhcp-1)
-     * #### 4.4.1 [Principes](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#441-principes)
-     * #### 4.4.2 [Mise en oeuvre](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#442-mise-en-oeuvre)
-       * #### 4.4.2.1 [Débian 12](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4421-d%C3%A9bian-12)
+     * #### 4.4.1 [Principes](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#441-principes-1)
+     * #### 4.4.2 [Mise en oeuvre](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#442-mise-en-oeuvre-1)
+       * #### 4.4.2.1 [Débian 12](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4421-d%C3%A9bian-12-1)
        * #### 4.4.2.2 [Window 2022](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4422-windows-22)
 * ## 5) [`Cisco Packet Tracer`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#5-cisco-packet-tracer-1)
   * ### 5.1 [`Routage Commande`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#51-routage-commande-1)
@@ -1022,7 +1020,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 #####  Réserver de la mémoire pour stocker les segments en attente.
 ##### Remettre les segments dans l'ordre une fois l'ensemble reçu.
 
- * ### 3.5.4.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)[`Les ports`]([Principaux ports](https://www.ionos.fr/digitalguide/serveur/know-how/ports-tcpet-udp/)
+ * ### 3.5.4.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)[`Les ports`]([Liens du sites avec tous les ports + les principaux](https://www.ionos.fr/digitalguide/serveur/know-how/ports-tcpet-udp/)
 ---
    ##### Un port est un identifiant de processus au sein d'une interface
    ##### Une communication est donc caractérisée par :
@@ -1059,7 +1057,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 * #####  Le routeur reçoit cette réponse pour lui MAIS, il fait du NAT donc
 * #####  Le routeur cherche dans sa table une correspondance pour le port 52369 : 10.0.0.1
 * #####  Il transmet donc sur le réseau interne le paquet en remplaçant l'adresse dedestination (la sienne) par 10.0.0.1
-   * ### 3.5.5.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `NAPT`
+   * ### 3.5.5.[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `NAPT`
 ---
   ##### Utilisé quand il y à moins d'adresse privé que d'adresse publiques, exemple box inernet. Ne pas considérer juste l'adresse comme identifiant mais le couple adresse IP/port (couche 4).
   ##### Le NAPT dynamique a de nombreux inconvénients :
@@ -1262,7 +1260,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### :small_blue_diamond:Limite les privilèges des administrateurs aux seuls droits nécessaires pour effectuer une tâche spécifique, réduisant ainsi les risques associés à l'utilisation de comptes à privilèges élevés.
 * ### 3.6.8[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `Créer un ADDS :`
  --- 
- * ### 3.6.8.1[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `GPO`
+ * ### 3.6.8.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `GPO`
   ---   
  ##### :scroll: Définition :GPO (Group Policy Object) sont des collections virtuelles de politiques de sécurité, une GPO permet la gestion du parc informatique.
  ##### :small_blue_diamond:Les GPO sont fonctionnelles sur les ordinateurs ayant un OS Microsoft (client ou serveur).
@@ -1319,7 +1317,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
    * ##### faire windows+R => Ecrire : Control.exe
 ##### Résultat machine client :
 ![vm 1](https://github.com/user-attachments/assets/5accd1aa-8048-4c96-9526-538866c74e59)
- * ### 3.6.8.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `Gestion client`
+ * ### 3.6.8.3[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `Gestion client`
 ---
 1) #### **INSTALATION DU SERVEUR ADDS**
 * ##### Au sein du **Serveur manager**, cliquez sur **Manage** et **add roles and feature** .
