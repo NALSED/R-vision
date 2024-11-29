@@ -1059,7 +1059,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 * #####  Le routeur reçoit cette réponse pour lui MAIS, il fait du NAT donc
 * #####  Le routeur cherche dans sa table une correspondance pour le port 52369 : 10.0.0.1
 * #####  Il transmet donc sur le réseau interne le paquet en remplaçant l'adresse dedestination (la sienne) par 10.0.0.1
-   * ### 3.5.5.[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `NAPT`
+   * ### 3.5.5.2[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `NAPT`
 ---
   ##### Utilisé quand il y à moins d'adresse privé que d'adresse publiques, exemple box inernet. Ne pas considérer juste l'adresse comme identifiant mais le couple adresse IP/port (couche 4).
   ##### Le NAPT dynamique a de nombreux inconvénients :
