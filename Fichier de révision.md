@@ -85,10 +85,12 @@ djqj![j](https://github.com/user-attachments/assets/11c5c342-b7c&&qssssddhhshsy5
      * #### 3.6.8.1 [GPO](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3681-gpo-1)
      * #### 3.6.8.2 [Gestion client](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3682-gestion-client-1)
   * #### 3.6.9 [Redondance DHCP,DNS,ADDS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#369-redondance-dhcpdnsadds)
-  * #### 3.6.10 Partage de fichier et SMB
-    * #### 3.6.10.1 Partage de fichier
-    * #### 3.6.10.2 SMB
-* ### 3.7 `Gestion des logs`    
+  * #### 3.6.10 [Partage de fichier et SMB]()
+    * #### 3.6.10.1 [Partage de fichier]()
+    * #### 3.6.10.2 [SMB](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3612-smb-)
+* ### 3.7 [`Gestion des logs`](https://github.com/NALSED/R-vision/edit/main/Fichier%20de%20r%C3%A9vision.md#37-gestion-des-logs-1)    
+  * ### 3.7.1  [Instalation configuration WinRM](https://github.com/NALSED/R-vision/edit/main/Fichier%20de%20r%C3%A9vision.md#371-instalation-configuration-winrm)
+  * ### 3.7.2 [Création journal de log](https://github.com/NALSED/R-vision/edit/main/Fichier%20de%20r%C3%A9vision.md#372-r%C3%A9cup%C3%A9ration-des-logs-via-journal-event)
 * ## 4) [`Serveur`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4-serveur-1)
 
   * ### 4.1 [`DNS`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#41-dns-1)
@@ -1511,7 +1513,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ### Resultet attendu ⬇️
 ![ad2](https://github.com/user-attachments/assets/9e486877-1727-4c84-b498-ff0fb610572b)
 ### Editer le fichier hostname avec le FQDN
-
+![SER](https://github.com/user-attachments/assets/3a8af9d1-cec6-4c6d-a1d1-5b8300ead725)
   ### 3.6.1.2 SMB [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)
 
 # Partage de fichier via SMB sur Win 2022 (Présent ADDS DNS)
@@ -1676,7 +1678,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ![image](https://github.com/user-attachments/assets/d14a9037-c4fd-4bb9-92b8-962c6570073c)
 
 
-![SER](https://github.com/user-attachments/assets/3a8af9d1-cec6-4c6d-a1d1-5b8300ead725)
+
 * # 4)[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `Serveur`
 
 ![DNS](https://github.com/user-attachments/assets/60ce934f-f818-464e-8e2d-3804a21badfd)
