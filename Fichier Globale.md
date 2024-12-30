@@ -1,4 +1,4 @@
-![j](https://github.com/user-attachments/assets/11c5c342-b7c1-44b0-a8fe-bfd417c9bb0a)
+djqj![j](https://github.com/user-attachments/assets/11c5c342-b7c&&qssssddhhshsy51-44b0-a8fe-bfd417c9bb0a)
 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)
 ---
 ---
@@ -84,8 +84,11 @@
   * #### 3.6.8 [Créer un ADDS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#368-cr%C3%A9er-un-adds-)
      * #### 3.6.8.1 [GPO](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3681-gpo-1)
      * #### 3.6.8.2 [Gestion client](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#3682-gestion-client-1)
-  * #### 3.6.8 [Redondance DHCP,DNS,ADDS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#369-redondance-dhcpdnsadds)
-
+  * #### 3.6.9 [Redondance DHCP,DNS,ADDS](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#369-redondance-dhcpdnsadds)
+  * #### 3.6.10 Partage de fichier et SMB
+    * #### 3.6.10.1 Partage de fichier
+    * #### 3.6.10.2 SMB
+* ### 3.7 `Gestion des logs`    
 * ## 4) [`Serveur`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#4-serveur-1)
 
   * ### 4.1 [`DNS`](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#41-dns-1)
@@ -1372,6 +1375,7 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ##### Choisir la partie "Domain" et renseigner le domaine créer dans l'AD.
 ![VM 1](https://github.com/user-attachments/assets/14627ca2-8e8b-4642-bd23-7cc1b99e65ce)
 ##### Le pc client va reboot, et depuis l'AD on aura la main sur toutes les configuration de ce PC depuis GPO de l'AD.
+## ⚠️`Autre exemples de` [GPO](https://github.com/NALSED/Future-R-vision/blob/main/GPO/Securite.md)
 
 
 * ### 3.6.9[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `Redondance DHCP,DNS,ADDS`
@@ -1456,8 +1460,41 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ### Spécifier le domaine
 ![ad1](https://github.com/user-attachments/assets/baefd9d0-0382-4fd8-baf1-756ae837341e)
 ### Next jusqu'a Install.
-
-* ## 4️⃣ `Debian`
+* ### 3.6.10[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `Partage de fichier et SMB`
+  ### 3.6.10.1 Partage de fichier[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)
+#### Clic droit sur le dossier 
+![ad1](https://github.com/user-attachments/assets/a9024313-01d9-488e-9870-42593f27f786)
+#### Sharing
+![ad1](https://github.com/user-attachments/assets/3bffadf5-87b3-4325-beae-ab93646ee319)
+#### puis ⬇️
+![ad1](https://github.com/user-attachments/assets/71abebb5-5a54-406a-964a-46f3e6bfe1fd)
+#### :one: bleu 2️⃣ rouge
+![ad1](https://github.com/user-attachments/assets/1200dd21-5314-49a6-bc91-041fa2885ffc)
+##### En bleu gérer les groupes et en rouge gérer les droits => OK
+![ad1](https://github.com/user-attachments/assets/38c55d50-cf74-4b8f-bfca-d73e2cdfb4fe)
+#### Sur la fenêtre précédente => OK
+![ad1](https://github.com/user-attachments/assets/944153cf-7b7c-4222-b44a-fc18156cf93d)
+##### Puis  ⬇️
+![ad1](https://github.com/user-attachments/assets/b896af97-77ae-417e-8902-ffa2da013675)
+##### Autorisé l'utilisateur choisi plus haut à utiliser le dossier :
+##### Edit => sur la seconde fenêtre Add ⬇️
+![ad1](https://github.com/user-attachments/assets/d4a91ed0-ed1b-40c1-9980-b8774787dfb6)
+![ad1](https://github.com/user-attachments/assets/04ac1757-a6ec-44a5-b26c-6f67683ee6b0)
+#### Puis Advanced ⬆️
+#### Pour finir Find now => touver le/les groupes concerné(s) => OK
+![ad1](https://github.com/user-attachments/assets/64837a7a-12e3-4b89-bd9b-7aedf49ca084)
+#### Choisir les programme ou autre à partager.
+#### Les déposer dans le fichier Créer à la racine de This PC
+#### Puis éditer un GPO ⬇️
+![ad1](https://github.com/user-attachments/assets/50aee1fb-08c1-477b-8099-6111d92e78d2)
+#### Computer configuration => Software installation => New => Package
+![ad1](https://github.com/user-attachments/assets/8459bcb5-a2f7-4b63-b800-5dc94b605fa5)
+#### Choisir le programme 
+![ad1](https://github.com/user-attachments/assets/e1d66936-4419-4874-bddb-6846b809cef0)
+#### Dans la fenêtre suivante, choix entre Assigned et Advanced :
+#### Assigned valide directement le package
+#### Advanced permet de configurer le package
+ * ## 4️⃣ `Debian`
 ### Intégration du serveur débian => ADDS maitre
 ### Configurer les deuxcarte réseaux(interne, bridge)
 ### Se connecter en root
@@ -1475,6 +1512,170 @@ Simplification : 2001:0db8:0000:85a3:0000:0000:ac1f:8001 ==> 2001:db8:0:85a3::ac
 ![ad2](https://github.com/user-attachments/assets/9e486877-1727-4c84-b498-ff0fb610572b)
 ### Editer le fichier hostname avec le FQDN
 ![SER](https://github.com/user-attachments/assets/3a8af9d1-cec6-4c6d-a1d1-5b8300ead725)
+  ### 3.6.1.2 SMB [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)
+
+# Partage de fichier via SMB sur Win 2022 (Présent ADDS DNS)
+
+## Installer "Files and storage Service => via Tools
+---
+---
+## Création du dossier de partage à la racine de C:
+![ad1](https://github.com/user-attachments/assets/05e985b3-0a4d-435b-8e08-a4e58b461024)
+### Modifier les régle pour que tout les Utilisateur du domaine est accés en lecture seul à Document_Entreprise
+### (Pour les modifications de régle dossier de référer au Document Partage AD)
+![ad1](https://github.com/user-attachments/assets/d8dff58f-a29b-49e3-891c-ebfef7b6ab8e)
+---
+
+## Configuration de l'AD
+### Création de Client1 dans l'OU User2
+![ad1](https://github.com/user-attachments/assets/0cdf2258-0e3f-4c04-b949-43d7f2365574)
+### Création d'un OU GrpDeTravail puis des groupes :
+* ### RH
+* ### Comptabilité
+* ### Direction
+![ad1](https://github.com/user-attachments/assets/3dad570c-8e68-44f5-ada7-60ee8f05fe4a)
+
+---
+## Configurer le serveur SMB.
+###  Créer un nouveau partage SMB 
+### SERVEUR => Disk => Volumes => C: clic droit puis "New Shares"
+![ad1](https://github.com/user-attachments/assets/81949bab-44f7-499e-8da5-a05495659590)
+### SMB Share- Quick
+![ad1](https://github.com/user-attachments/assets/082b6bfb-c7dc-45fb-bfe1-086ebe787f25)
+### Rentrer le nom du dossier de partage créer à la racine ⬇️
+![ad1](https://github.com/user-attachments/assets/fa0163f0-a99c-4f12-890e-204978038735)
+### Configuration d'un partage Docs dans le deossier à la racine :
+![ad1](https://github.com/user-attachments/assets/be4e42a9-704f-4514-827e-097b83021cfe)
+### Choisir l'option voulu
+### Créer le partage.
+
+## Gestion des Autorisations
+### (Comme dans expliqué dans la section partage AD)
+### Autorisation⬇️
+### RH
+
+![ad1](https://github.com/user-attachments/assets/42e89c18-63bc-4ead-8cf2-41043b81e5ee)
+### Comptabilité
+
+![ad1](https://github.com/user-attachments/assets/a2bad913-6dc7-4549-a12c-d897c9c84084)
+### Direction
+
+![ad1](https://github.com/user-attachments/assets/8154c87a-3878-4692-bf58-62f304a9fd52)
+
+### Vérification avec Powershell des partages
+  Get-SmbShare
+### Résultat 
+![ad1](https://github.com/user-attachments/assets/aca750f6-f644-4683-8752-b28af9620e47)
+
+## Configuration de la connection client serveur au partage :
+    New-PSDrive -Name "Z" -PSProvider FileSystem -Root "\\NOM_DU_SERVEUR\NOM_DU_PARTAGE" -Persist
+  
+    New-PSDrive -Name "Z" -PSProvider FileSystem -Root "\\WIN-35VEAKCKMFU\Docs" -Persist
+![ad1](https://github.com/user-attachments/assets/e1c38cb5-b16a-44c3-89d4-fed1925b5450)
+
+* ## 3.7) `Gestion des logs`
+
+  * ### `3.7.1) Instalation configuration WinRM` 
+## Configuration de WinRM par GPO
+### 1️⃣ `Edition GPO`
+#### Computer Configuration => Polities Administrative Templates => Windows Composents => windows Remote Management => WinRM Service
+![image](https://github.com/user-attachments/assets/ffaf09db-9622-40be-aafb-25832f072e72)
+#### Allow remote server management through WinRM
+![image](https://github.com/user-attachments/assets/966e873b-8f8e-4ed2-b855-0d53e01385f1)
+#### Enable , puis dans IPv4 et IPv6 filter => * pour que toutes les addresse IP puissent (mais il est conseillé de rentrer les IP du service SI non configuré encore)
+### 2️⃣ `Démarrer automatiquement le service WinRM`
+#### Computer Configuration => Polities => Windows Settings => Security Settings => System Service 
+![image](https://github.com/user-attachments/assets/58a257a7-ae3b-4878-a6be-aec4eae4c484)
+### Automatic 
+![image](https://github.com/user-attachments/assets/3c0ed8bc-7ab7-4e07-8424-38e692d15849)
+### 3️⃣ Firewall
+#### Dans les régle rentrante => New Rules
+![image](https://github.com/user-attachments/assets/d10bddad-6dd2-49b7-a52b-84ba5f389711)
+#### Cocher Predefined => Windows Remote Management
+![image](https://github.com/user-attachments/assets/58edd5e1-7735-46f4-a2cc-6db7c8ffd39f)
+#### Puis Profile => Domain, Pivate
+![image](https://github.com/user-attachments/assets/76f7488e-ccff-435e-ade2-fa8adb10d025)
+#### Allow Connection
+### 4️⃣ Edition de la Régle Firewall
+#### Clic droit sur Windows Remote Management (HTTP-In) => Properties
+![image](https://github.com/user-attachments/assets/7be50976-2c66-47f2-97e9-28dd08801eba)
+#### Advanced => Cocher Domain
+![image](https://github.com/user-attachments/assets/d33ab730-74d3-4fbe-bc96-8a92957a63a3)
+  * ### `3.7.2 Récupération des Logs via journal event`
+# Instalation/Configuration de WinRM
+##### Source [IT1](https://www.it-connect.fr/observateur-devenements-transferts-et-abonnements/)
+##### [IT2](https://www.it-connect.fr/activer-winrm-par-gpo-sous-windows-server/)
+---
+## 1️⃣ Configuration de WinRM => Client
+---
+* ###  `Activer WinRM` 
+#### Services => Windows Remote Management (WS-Management) => clic droit Properties
+![image](https://github.com/user-attachments/assets/c6dd562b-b1b5-42a5-9b92-66890c0edab3)
+#### Puis Automatic (Delayed Start)
+![image](https://github.com/user-attachments/assets/890c875e-f02c-42d6-95c8-2d0b6e99f0a1)
+---
+* ### `Firewall`
+#### Dans les régle rentrante => New Rules 
+![image](https://github.com/user-attachments/assets/d10bddad-6dd2-49b7-a52b-84ba5f389711)
+#### Cocher Predefined => Windows Remote Management et par la suite Remote Management(compatibility
+![image](https://github.com/user-attachments/assets/58edd5e1-7735-46f4-a2cc-6db7c8ffd39f)
+#### Puis Profile => Domain, Pivate
+![image](https://github.com/user-attachments/assets/76f7488e-ccff-435e-ade2-fa8adb10d025)
+#### Allow Connection
+#### Clic droit sur Windows Remote Management (HTTP-In) => Properties
+![image](https://github.com/user-attachments/assets/7be50976-2c66-47f2-97e9-28dd08801eba)
+#### Advanced => Cocher Domain
+![image](https://github.com/user-attachments/assets/d33ab730-74d3-4fbe-bc96-8a92957a63a3)
+---
+* ### `Computer Manager`
+#### System Tools => Local Users and Group => clic droit sur l'utilisateur concerné => Properties
+![image](https://github.com/user-attachments/assets/e9d8111b-9854-47a5-84f1-121840cd36a3)
+#### 🔵 Member of => 🔴 Add..
+![image](https://github.com/user-attachments/assets/4a86c6a9-a73a-49e2-9e80-d8b03a02edc0)
+#### Advanced..
+![image](https://github.com/user-attachments/assets/ea99d218-7102-4a01-ba79-7afdd0948ec4)
+#### Find Now
+![image](https://github.com/user-attachments/assets/31a45453-9104-4126-91d7-a05f1601908e)
+#### Remote Management Users
+![image](https://github.com/user-attachments/assets/3651b310-94c0-4630-a33c-7638a5fc51f3)
+---
+* ### `PS en Admin`
+#### la commande       
+      winrm quickconfig
+      Enable-PSRemoting
+#### Configurer l'hôtes de confiance
+      Set-Item WSMan:\localhost\Client\TrustedHosts SRVWIN-ADDS-GUI.Pharmgreen.com
+      winrm get winrm/config/client
+#### On voit que le client de confiance est bien présent :
+![image](https://github.com/user-attachments/assets/41b2a654-bbc6-4223-9d19-179310bf83ac)
+---
+* ### `Autorisation de lecture`
+##### ⚠️La configuration est effectué sur une machine, mais il faut l'effectuer en GPO pour l'entreprise
+#### Computer Management => System tools => Local Users and Groups => Groups => Event Log Readers
+![image](https://github.com/user-attachments/assets/76161ea9-3587-435f-81e3-8aacbf3a7b79)
+##### Cocher ordinateur
+![image](https://github.com/user-attachments/assets/acbe0bcc-e857-4f0d-b25e-1a653d4a08d1)
+#### Rentrer le nom du serveur
+![image](https://github.com/user-attachments/assets/4f29e518-77a6-494d-bef6-8f8829790583)
+#### Résultat
+![image](https://github.com/user-attachments/assets/130944d9-430f-4a2c-b0fe-a846919cf0ee)
+## 2️⃣ Configuration du Serveur 
+* ### `créer un abonnement`
+#### Event Viewer => clic droit Create Subsciption...
+![image](https://github.com/user-attachments/assets/d81c7eac-4ab0-4632-808e-7db5ca8e13c3)
+#### 🔵 Renseigner le Nom du serveur colecteur et une description.
+#### 🔴 Ici le nom du journal dans lequel l'abonement sera collecté.
+#### 🟢 Ici c'est le serveur colecteur qui est à l'initiative de la collecte, renseiger sont FQDN.
+![image](https://github.com/user-attachments/assets/7a807ef6-f053-4f18-9adb-1f1c971a05d1)
+#### 🔵 Select Events... => Filtrages des Evenements
+#### 🔴 Event Level => Critical + Warning
+#### 🟢 By log(filtres) Secutity + System
+![image](https://github.com/user-attachments/assets/d212babd-3845-4e77-8818-c4aefe5a830c)
+#### 🔵Advenced...
+#### 🔴 Normal
+![image](https://github.com/user-attachments/assets/d14a9037-c4fd-4bb9-92b8-962c6570073c)
+
+
 
 * # 4)[⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-) `Serveur`
 
