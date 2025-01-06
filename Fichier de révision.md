@@ -856,7 +856,41 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 | **Dernière adresse IP**        | 192.168.63.254      |
 | **Adresse de broadcast**       | 192.168.63.255      |
 | **Nombre d'adresses IP dispo** | 16 382              |
+##### `Calcule pour englober plusieurs réseau`
+##### Exemple : Pour éditer une régle NAT ou des routes, j'ai besoin de prendre plusieurs réseaux ave un seul afin de ne pas avoir à tous les retaopper dans les fichiers de configurations.
+##### On cherche donc un CIDR capable de le faire :
 
+##### Trouver un réseau qui comprend ces trois réseaux 10.0.1.0/24 // 10.0.2.0/24 // 10.0.3.0/24
+##### Recherche de l'étendu rotal des trois réseaux :
+
+##### 10.0.1.0/24 
+##### 10.0.1.1
+##### 10.0.1.254
+
+##### 10.0.2.0/24 
+##### 10.0.2.1
+##### 10.0.2.254
+
+##### 10.0.3.0/24
+##### 10.0.3.1
+##### 10.0.3.254
+
+#### Donc étendu Total :
+##### 10.0.1.0 
+##### 10.0.3.255
+
+##### Les deux premier octets sont à 8 => 8+8 = 16 
+##### On cherche donc combien d'octets sont nécessaires pour pouvoir créer un réseau qui va de 4 en 4, pour corespondre à l'étendu Total
+##### En se référent au tableau des puissance de 2 pour aller à 4
+##### | 128 | 64 | 32 | 28 | 8 | [4] | 2 | 1 |
+##### Il faut donc rajouter 6 octets
+##### Cequi fait 8+8+6 = 22
+### Donc Réseau global => 10.0.0.0/22 prend les trois réseaux précédent.
+  
+  
+  
+  
+  
   * ### 3.3.4 [⏫](https://github.com/NALSED/R-vision/blob/main/Fichier%20de%20r%C3%A9vision.md#sommaire-)`Les paquets :`
 ---
    ##### IP découpe l'information qu'il doit transmettre, reçu de la couche supérieure (Protocole de couche 4 : TCP, UDP…) => Pour transmission au lien (Protocole de couche 1&2 : Ethernet).Chaque paquet comporte un entête.
