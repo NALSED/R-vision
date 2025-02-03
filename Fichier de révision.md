@@ -878,7 +878,7 @@ g Basic-gitGithub-manip-pour-TSSR.md…]()
 ##### On cherche donc combien d'octets sont nécessaires pour pouvoir créer un réseau qui va de 4 en 4, pour corespondre à l'étendu Total
 ##### En se référent au tableau des puissance de 2 pour aller à 4
 ##### | 128 | 64 | 32 | 28 | 8 | [4] | 2 | 1 |
-##### Il faut donc rajouter 6 octets
+##### Il faut donc rajouter 6 bits
 ##### Cequi fait 8+8+6 = 22
 ### Donc Réseau global => 10.0.0.0/22 prend les trois réseaux précédent.
   
